@@ -8,21 +8,21 @@ firebase_admin.initialize_app(cred)
 
 db = firestore.client()
 
-# db.collection('persons').add({'name':'John', 'age':40})
+db.collection('persons').add({'name':'John', 'age':40})
 
-# #ADD DOCUMENTS (WITH AUTO IDs)
-# data1 = {'name': 'paolo', 'age':30, 'employed':True}
-# db.collection('people').add(data1)
-# db.collection('people').add({'name': 'marko', 'age':20, 'employed':False})
-
-
-# #SET DOCUMENTS WITH KNOWN IDs
-# data = {'name': 'paolo', 'age':30, 'employed':True}
-# db.collection('people').document('paolone').set(data) #document reference: paolone
+#ADD DOCUMENTS (WITH AUTO IDs)
+data1 = {'name': 'paolo', 'age':30, 'employed':True}
+db.collection('people').add(data1)
+db.collection('people').add({'name': 'marko', 'age':20, 'employed':False})
 
 
-# #SET DOCUMENTS WITH AUTO IDS
-# db.collection('people').document().set(data)
+#SET DOCUMENTS WITH KNOWN IDs
+data = {'name': 'paolo', 'age':30, 'employed':True}
+db.collection('people').document('paolone').set(data) #document reference: paolone
+
+
+#SET DOCUMENTS WITH AUTO IDS
+db.collection('people').document().set(data)
 
 #MERGING (AGGIUNGERE CAMPI AI DOCUMENTI)
 db.collection('people').document('paolone').set({'indirizzo':'Milano'}, merge = True) #senza merge=true tutti i campi sarebbero stati sovrascritti e sarebbe rimasto solo address
@@ -99,8 +99,8 @@ for doc in docs:
     key = doc.id
     db.collection('people').document(key).update({"age":firestore.DELETE_FIELD})
 
-# docs = db.collection('people').get()
-# for doc in docs:
-#     key = doc.id
-#     db.collection('people').document(key).delete()
+docs = db.collection('people').get()
+for doc in docs:
+    key = doc.id
+    db.collection('people').document(key).delete()
 
