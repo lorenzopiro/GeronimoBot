@@ -1,4 +1,5 @@
 import  requests
+import creds
 import webbrowser
 import telebot
 from telebot import types
@@ -15,7 +16,7 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 
-#API_KEY = os.getenv('API_KEY')
+API_KEY = creds.API_KEY
 
 bot = telebot.TeleBot(API_KEY)   
 
