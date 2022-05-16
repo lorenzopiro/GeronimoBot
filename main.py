@@ -171,7 +171,7 @@ def list(message):
 
     for doc in docs:
         if doc.get('sito') not in lista:
-            lista.append(doc.get('utente')) 
+            lista.append(doc.get('sito')) 
 
     print(lista)
 
