@@ -1,0 +1,2147 @@
+<!DOCTYPE html>
+<html class="no-js" lang="it">
+ <head itemscope="" itemtype="http://schema.org/WebSite">
+  <meta content="IONOS Digital Guide" itemprop="name"/>
+  <script async="" src="//cdn.ionos.de/dgsg/9c2134ba72b4/499e488bab80/launch-59f3a3c442fa.min.js">
+  </script>
+  <meta charset="utf-8"/>
+  <!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2019 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+  <base href="https://www.ionos.it/digitalguide/"/>
+  <link as="image" href="fileadmin/DigitalGuide/Teaser/403-forbidden-t.jpg" rel="preload"/>
+  <meta content="TYPO3 CMS" name="generator"/>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta content="Digitalguide" name="meta-category"/>
+  <meta content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+  <meta content="index,follow" name="robots"/>
+  <link href="typo3temp/assets/compressed/font-awesome.min-8e339212d7395f0d3996f365ba9db186.css.gzip?1651151463" media="all" rel="stylesheet" type="text/css"/>
+  <link href="typo3temp/assets/compressed/merged-f3c783ffafdd7d6e53a4cc91332fac16-2e4665f7aec0bc4bd1c9669bdea40065.css.gzip?1651151463" media="all" rel="stylesheet" type="text/css"/>
+  <script src="typo3temp/assets/compressed/merged-88cbc9fc0fa19a2e7aaff8f17a7c02b8-996a42b5be465ee1014ed8448c533683.js.gzip?1556264996" type="text/javascript">
+  </script>
+  <script src="typo3temp/assets/compressed/merged-0825b0879565b833d5524c3835c0f4e0-4a33940dbf65f721e7a296334c3e4d6a.js.gzip?1651151462" type="text/javascript">
+  </script>
+  <link href="https://www.ionos.it/digitalguide/typo3conf/ext/ratgeberportal/Resources/Public/Css/cookie-styling-dark-bottom.css" media="all" rel="stylesheet" type="text/css">
+   <link href="/favicon.ico" rel="shortcut icon">
+    <link href="https://www.ionos.it/digitalguide/hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/" rel="canonical"/>
+    <link href="https://www.ionos.it/digitalguide/hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/" hreflang="it-IT" rel="alternate"/>
+    <link href="https://www.ionos.co.uk/digitalguide/hosting/technical-matters/http-403-forbidden-what-is-error-403-and-how-do-i-fix-it/" hreflang="en-GB" rel="alternate"/>
+    <link href="https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/error-403-cuando-el-servidor-cierra-la-barrera/" hreflang="es" rel="alternate"/>
+    <link href="https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/error-403-cuando-el-servidor-cierra-la-barrera/" hreflang="es-ES" rel="alternate"/>
+    <link href="https://www.ionos.com/digitalguide/hosting/technical-matters/http-403-forbidden-what-is-error-403-and-how-do-i-fix-it/" hreflang="en" rel="alternate"/>
+    <link href="https://www.ionos.com/digitalguide/hosting/technical-matters/http-403-forbidden-what-is-error-403-and-how-do-i-fix-it/" hreflang="en-US" rel="alternate"/>
+    <link href="https://www.ionos.ca/digitalguide/hosting/technical-matters/http-403-forbidden-what-is-error-403-and-how-do-i-fix-it/" hreflang="en-CA" rel="alternate"/>
+    <link href="https://www.ionos.fr/digitalguide/hebergement/aspects-techniques/http-403-forbidden-la-resolution-dune-erreur-403/" hreflang="fr" rel="alternate"/>
+    <link href="https://www.ionos.fr/digitalguide/hebergement/aspects-techniques/http-403-forbidden-la-resolution-dune-erreur-403/" hreflang="fr-FR" rel="alternate"/>
+    <link href="https://www.ionos.mx/digitalguide/hosting/cuestiones-tecnicas/error-403-cuando-el-servidor-cierra-la-barrera/" hreflang="es-MX" rel="alternate"/>
+    <link href="https://www.ionos.at/digitalguide/hosting/hosting-technik/http-403-forbidden-was-hilft-bei-einem-error-403/" hreflang="de-AT" rel="alternate"/>
+    <link href="https://www.ionos.de/digitalguide/hosting/hosting-technik/http-403-forbidden-was-hilft-bei-einem-error-403/" hreflang="de" rel="alternate"/>
+    <link href="https://www.ionos.de/digitalguide/hosting/hosting-technik/http-403-forbidden-was-hilft-bei-einem-error-403/" hreflang="de-DE" rel="alternate"/>
+    <title>
+     HTTP Error 403 | Cosa significa l'errore 403 forbidden nginx? - IONOS
+    </title>
+    <meta content="L’errore HTTP 403 Forbidden si presenta quando a un browser viene negato l’accesso a un sito. Ma alcuni trucchi possono aiutare ad aprire comunque l’URL." name="description">
+     <meta content="HTTP 403 Forbidden: cosa significa questa notifica di errore e come la si può risolvere?" property="og:title"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://www.ionos.it/digitalguide/fileadmin/DigitalGuide/Teaser/403-forbidden-t.jpg" property="og:image"/>
+     <meta content="https://www.ionos.it/digitalguide/hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/" property="og:url"/>
+     <meta content="IONOS Digitalguide" property="og:site_name"/>
+     <meta content="L’errore HTTP 403 Forbidden si presenta quando a un browser viene negato l’accesso a un sito. Ma alcuni trucchi possono aiutare ad aprire comunque l’URL." property="og:description"/>
+     <meta content="it_IT" property="og:locale"/>
+     <script type="text/javascript">
+      var cookieContent = '';
+        var params = document.location.search;
+
+        if (params.indexOf('ac') != -1) {
+          var regExp = new RegExp(/ac=([a-z0-9.]*)/i);
+          var matches = params.match(regExp);
+
+          if (matches != null && matches.length > 0) {
+              cookieContent = matches[1];
+          }
+        }
+        else {
+            var referrer = document.referrer;
+            var cookieValueSearchEngine = 'OM.IA.IAo50K361691T7073a';
+            var cookieValueOther = 'OM.IA.IAe17K41410T7073a';
+
+            if (referrer != '') {
+                var re = new RegExp(/^http[s]?:\/\/(www\.)?(google|bing|yahoo|duckduckgo|ecosia|ask.com|t-online|myway|qwant|such.web.de|gmx.net|startpage.com|msn.com|yandex)/i);
+                var matches = referrer.match(re);
+
+                cookieContent = (matches != null && matches.length > 0) ? cookieValueSearchEngine : cookieValueOther;
+            }
+        }
+        var cookieName = 'ac-whorder-it';
+        if(document.cookie.indexOf(cookieName) == -1 && cookieContent != '') {
+            var thirtyDaysFromNow = Date.now() + (86400000 * 90);
+            var expiresDate = new Date(thirtyDaysFromNow).toUTCString(); 
+            var cookieSettings = '; expires=' + expiresDate + '; path=/';
+            document.cookie = cookieName + '=' + cookieContent + cookieSettings;
+        }
+     </script>
+    </meta>
+   </link>
+  </link>
+ </head>
+ <body class="see-drop page-1678">
+  <div id="wrapper">
+   <header id="header">
+    <span class="scroll-indicator">
+     <span>
+     </span>
+    </span>
+    <div class="header-holder">
+     <div class="container">
+      <div class="logo">
+       <a href="/digitalguide/">
+        <span class="text">
+         Digital Guide
+        </span>
+        <div class="img-logo rb">
+         <img alt="IONOS" src="fileadmin/templates/images/ionos_logo.svg"/>
+        </div>
+       </a>
+      </div>
+      <nav id="nav">
+       <a class="nav-opener" href="#">
+        <span>
+        </span>
+       </a>
+       <div class="nav-drop">
+        <div class="nav-wrap">
+         <ul class="navigation" id="navigation">
+          <li>
+           <a href="siti-web/">
+            Siti web
+           </a>
+           <div class="inner-drop hidden-drop">
+            <div class="container">
+             <ul>
+              <li>
+               <a href="siti-web/creare-siti/" title="Creare siti">
+                Creare siti
+               </a>
+              </li>
+              <li>
+               <a href="siti-web/web-design/" title="Web design">
+                Web design
+               </a>
+              </li>
+              <li>
+               <a href="siti-web/programmazione-del-sito-web/" title="Programmazione del sito web">
+                Programmazione del sito web
+               </a>
+              </li>
+              <li>
+               <a href="siti-web/diritto-informatico/" title="Diritto informatico">
+                Diritto informatico
+               </a>
+              </li>
+             </ul>
+            </div>
+           </div>
+          </li>
+          <li class="inner-drop-active">
+           <a href="hosting/">
+            Hosting
+           </a>
+           <div class="inner-drop">
+            <div class="container">
+             <ul>
+              <li>
+               <a href="hosting/cms/" title="CMS">
+                CMS
+               </a>
+              </li>
+              <li>
+               <a href="hosting/blog/" title="Blog">
+                Blog
+               </a>
+              </li>
+              <li>
+               <a href="hosting/tecniche-hosting/" title="Tecniche hosting">
+                Tecniche hosting
+               </a>
+              </li>
+             </ul>
+            </div>
+           </div>
+          </li>
+          <li>
+           <a href="server/">
+            Server
+           </a>
+           <div class="inner-drop hidden-drop">
+            <div class="container">
+             <ul>
+              <li>
+               <a href="server/know-how/" title="Know How">
+                Know How
+               </a>
+              </li>
+              <li>
+               <a href="server/configurazione/" title="Configurazione">
+                Configurazione
+               </a>
+              </li>
+              <li>
+               <a href="server/sicurezza/" title="Sicurezza">
+                Sicurezza
+               </a>
+              </li>
+              <li>
+               <a href="server/tools-o-strumenti/" title="Tools o Strumenti">
+                Tools o Strumenti
+               </a>
+              </li>
+             </ul>
+            </div>
+           </div>
+          </li>
+          <li>
+           <a href="domini/">
+            Domini
+           </a>
+           <div class="inner-drop hidden-drop">
+            <div class="container">
+             <ul>
+              <li>
+               <a href="domini/estensioni-di-dominio/" title="Estensioni di dominio">
+                Estensioni di dominio
+               </a>
+              </li>
+              <li>
+               <a href="domini/gestione-dei-domini/" title="Gestione dei domini">
+                Gestione dei domini
+               </a>
+              </li>
+              <li>
+               <a href="domini/novita-sui-domini/" title="Novità sui domini">
+                Novità sui domini
+               </a>
+              </li>
+              <li>
+               <a href="domini/suggerimenti-sui-domini/" title="Suggerimenti sui domini">
+                Suggerimenti sui domini
+               </a>
+              </li>
+             </ul>
+            </div>
+           </div>
+          </li>
+          <li>
+           <a href="online-marketing/">
+            Online-Marketing
+           </a>
+           <div class="inner-drop hidden-drop">
+            <div class="container">
+             <ul>
+              <li>
+               <a href="online-marketing/vendere-online/" title="Vendere online">
+                Vendere online
+               </a>
+              </li>
+              <li>
+               <a href="online-marketing/marketing-sui-motori-di-ricerca/" title="Marketing sui motori di ricerca">
+                Marketing sui motori di ricerca
+               </a>
+              </li>
+              <li>
+               <a href="online-marketing/social-media/" title="Social Media">
+                Social Media
+               </a>
+              </li>
+              <li>
+               <a href="online-marketing/analisi-web/" title="Analisi web">
+                Analisi web
+               </a>
+              </li>
+             </ul>
+            </div>
+           </div>
+          </li>
+          <li>
+           <a href="e-mail/">
+            E-Mail
+           </a>
+           <div class="inner-drop hidden-drop">
+            <div class="container">
+             <ul>
+              <li>
+               <a href="e-mail/e-mail-marketing/" title="E-Mail Marketing">
+                E-Mail Marketing
+               </a>
+              </li>
+              <li>
+               <a href="e-mail/sicurezza-e-mail/" title="Sicurezza e-mail">
+                Sicurezza e-mail
+               </a>
+              </li>
+              <li>
+               <a href="e-mail/tecnica-e-mail/" title="Tecnica e-mail">
+                Tecnica e-mail
+               </a>
+              </li>
+             </ul>
+            </div>
+           </div>
+          </li>
+          <li>
+           <a href="https://www.ionos.it">
+            Prodotti IONOS
+           </a>
+           <div class="inner-drop hidden-drop">
+            <div class="container">
+             <ul class="second-navigation" id="second-navigation">
+              <li class="has-drop-down level2">
+               <a title="dominio">
+                Dominio
+               </a>
+               <div class="level3">
+                <div class="container">
+                 <ul>
+                  <li>
+                   <a class="has-drop-down-c" href="https://www.ionos.it/dominio/registra-dominio">
+                    Registrazione di dominio
+                   </a>
+                  </li>
+                  <li class="level">
+                   <a class="has-drop-down-c" href="https://www.ionos.it/dominio/nuove-estensioni-di-dominio">
+                    Nuove estensioni di dominio
+                   </a>
+                  </li>
+                  <li class="level">
+                   <a class="has-drop-down-c" href="https://www.ionos.it/dominio/trasferisci-dominio">
+                    Trasferimento di dominio
+                   </a>
+                  </li>
+                  <li class="level">
+                   <a class="has-drop-down-c" href="https://www.ionos.it/tools/whois-domain">
+                    Ricerca Whois di un dominio
+                   </a>
+                  </li>
+                  <li class="level">
+                   <a class="has-drop-down-c" href="https://www.ionos.it/dominio/domain-check">
+                    Controllo Dominio
+                   </a>
+                  </li>
+                 </ul>
+                </div>
+               </div>
+              </li>
+              <li class="has-drop-down level2">
+               <a title="Mail">
+                E-Mail &amp; Office
+               </a>
+               <div class="level3">
+                <div class="container">
+                 <ul>
+                  <li>
+                   <a class="has-drop-down-c" href="https://www.ionos.it/soluzioni-ufficio/email-professionale">
+                    Soluzioni e-mail
+                   </a>
+                  </li>
+                 </ul>
+                </div>
+               </div>
+              </li>
+              <li class="has-drop-down level2">
+               <a title="server">
+                Server
+               </a>
+               <div class="level3">
+                <div class="container">
+                 <ul>
+                  <li>
+                   <a class="has-drop-down-c" href="https://www.ionos.it/cloud/cloud-server">
+                    Cloud Server
+                   </a>
+                  </li>
+                  <li class="level">
+                   <a class="has-drop-down-c" href="https://www.ionos.it/server/dedicated-server">
+                    Server Dedicati
+                   </a>
+                  </li>
+                  <li class="level">
+                   <a class="has-drop-down-c" href="https://www.ionos.it/server/vps">
+                    Server Virtuale Cloud
+                   </a>
+                  </li>
+                  <li class="level">
+                   <a class="has-drop-down-c" href="https://www.ionos.it/server/server">
+                    Server per ogni esigenza
+                   </a>
+                  </li>
+                  <li class="level">
+                   <a class="has-drop-down-c" href="https://cloud.ionos.it">
+                    IONOS Cloud
+                   </a>
+                  </li>
+                 </ul>
+                </div>
+               </div>
+              </li>
+              <li class="has-drop-down level2">
+               <a title="sicurezza">
+                Sicurezza
+               </a>
+               <div class="level3">
+                <div class="container">
+                 <ul>
+                  <li>
+                   <a class="has-drop-down-c" href="https://www.ionos.it/sicurezza/certificato-ssl">
+                    Certificati SSL
+                   </a>
+                  </li>
+                  <li class="level">
+                   <a class="has-drop-down-c" href="https://www.ionos.it/tools/ssl-checker">
+                    SSL Checker
+                   </a>
+                  </li>
+                 </ul>
+                </div>
+               </div>
+              </li>
+              <li class="has-drop-down level2">
+               <a title="sitowebhosting">
+                Sito Web &amp; Hosting
+               </a>
+               <div class="level3">
+                <div class="container">
+                 <ul>
+                  <li>
+                   <a class="has-drop-down-c" href="https://www.ionos.it/sito-web/creare-sito-web">
+                    Creare sito web
+                   </a>
+                  </li>
+                  <li class="level">
+                   <a class="has-drop-down-c" href="https://www.ionos.it/sito-web/templates">
+                    Template per siti web
+                   </a>
+                  </li>
+                  <li>
+                   <a class="has-drop-down-c" href="https://www.ionos.it/hosting/hosting-wordpress">
+                    WordPress Hosting
+                   </a>
+                  </li>
+                  <li class="level">
+                   <a class="has-drop-down-c" href="https://www.ionos.it/hosting/hosting-linux">
+                    Hosting Linux
+                   </a>
+                  </li>
+                 </ul>
+                </div>
+               </div>
+              </li>
+              <li class="has-drop-down level2">
+               <a title="tools">
+                Tools
+               </a>
+               <div class="level3">
+                <div class="container">
+                 <ul>
+                  <li>
+                   <a class="has-drop-down-c" href="https://www.ionos.it/tools/seo-check">
+                    SEO Check
+                   </a>
+                  </li>
+                  <li class="level">
+                   <a class="has-drop-down-c" href="https://www.ionos.it/tools/creare-favicon">
+                    Creare favicon
+                   </a>
+                  </li>
+                  <li class="level">
+                   <a class="has-drop-down-c" href="https://www.ionos.it/tools/analisi-sito-web">
+                    Analisi sito web
+                   </a>
+                  </li>
+                  <li class="level">
+                   <a class="has-drop-down-c" href="https://www.ionos.it/tools/creare-logo">
+                    Creare un logo
+                   </a>
+                  </li>
+                  <li class="level">
+                   <a class="has-drop-down-c" href="https://www.ionos.it/tools/indirizzo-ip">
+                    Qual è il mio indrizzio IP?
+                   </a>
+                  </li>
+                  <li class="level">
+                   <a class="has-drop-down-c" href="https://phishing-contact.ionos.it/it/">
+                    Servizio di verifica e-mail
+                   </a>
+                  </li>
+                 </ul>
+                </div>
+               </div>
+              </li>
+             </ul>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+      <div class="header-info">
+       <ul class="list-inline list-links">
+        <li>
+         <div class="dropdown search-box">
+          <a class="search-opener dropdown-toggle" data-toggle="dropdown" href="#">
+           <span class="icon-search">
+           </span>
+          </a>
+          <div class="search-drop dropdown-menu">
+           <form action="cerca/" class="search-form" method="post">
+            <fieldset>
+             <div class="form-group">
+              <input class="form-control" name="search" placeholder="Cerca" type="search"/>
+              <button type="submit">
+               <span class="icon-search">
+               </span>
+              </button>
+             </div>
+            </fieldset>
+           </form>
+          </div>
+         </div>
+        </li>
+        <li class="sub-drop-opener dropdown">
+         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          Prodotti IONOS
+         </a>
+         <div class="sub-drop-wrap dropdown-menu">
+          <div class="container">
+           <div class="row">
+            <div class="col-sm-3">
+             <strong class="sub-head">
+              Dominio
+             </strong>
+             <ul class="sub-menu-list list-unstyled">
+              <li>
+               <a href="https://www.ionos.it/dominio/registra-dominio?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Registrazione di dominio
+                </strong>
+                <p>
+                 Compra il tuo nome a dominio
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://www.ionos.it/dominio/nuove-estensioni-di-dominio?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Nuove estensioni di dominio
+                </strong>
+                <p>
+                 Registra le nuove estensioni domini sul sito
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://www.ionos.it/dominio/trasferisci-dominio?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Trasferimento di dominio
+                </strong>
+                <p>
+                 Trasferisci il tuo dominio in soli tre passi
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://www.ionos.it/tools/whois-domain?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Ricerca Whois di un dominio
+                </strong>
+                <p>
+                 Whois Domain Lookup disponibile
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://www.ionos.it/dominio/domain-check?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Controllo Dominio
+                </strong>
+                <p>
+                 Verifica domini disponibili
+                </p>
+               </a>
+              </li>
+             </ul>
+             <strong class="sub-head">
+              Sicurezza
+             </strong>
+             <ul class="sub-menu-list list-unstyled">
+              <li>
+               <a href="https://www.ionos.it/sicurezza/certificato-ssl?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Certificati SSL
+                </strong>
+                <p>
+                 Certificato SSL GeoTrust
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://www.ionos.it/tools/ssl-checker?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 SSL Checker
+                </strong>
+                <p>
+                 Verifica gratuito la validità del certificato SSL
+                </p>
+               </a>
+              </li>
+             </ul>
+            </div>
+            <div class="col-sm-3">
+             <strong class="sub-head">
+              Sito Web &amp; Hosting
+             </strong>
+             <ul class="sub-menu-list list-unstyled">
+              <li>
+               <a href="https://www.ionos.it/sito-web/creare-sito-web?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Creare sito web
+                </strong>
+                <p>
+                 Come fare siti web professionali
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://www.ionos.it/sito-web/templates?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Template per siti web
+                </strong>
+                <p>
+                 Esempi di siti web semplici
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://www.ionos.it/hosting/web-hosting?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Hosting
+                </strong>
+                <p>
+                 Servizi per siti web professionali
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://www.ionos.it/hosting/hosting-wordpress?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 WordPress Hosting
+                </strong>
+                <p>
+                 Crea un blog WordPress con i pacchetti di hosting
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://www.ionos.it/hosting/hosting-linux?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Hosting Linux
+                </strong>
+                <p>
+                 Pacchetti di web hosting
+                </p>
+               </a>
+              </li>
+             </ul>
+             <strong class="sub-head">
+              E-Mail &amp; Office
+             </strong>
+             <ul class="sub-menu-list list-unstyled">
+              <li>
+               <a href="https://www.ionos.it/soluzioni-ufficio/email-professionale?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Soluzioni e-mail
+                </strong>
+                <p>
+                 La tua e-mail professionale
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://www.ionos.it/soluzioni-ufficio/microsoft-office?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Microsoft 365
+                </strong>
+                <p>
+                 Aumenta la produttività
+                </p>
+               </a>
+              </li>
+             </ul>
+            </div>
+            <div class="col-sm-3">
+             <strong class="sub-head">
+              Server
+             </strong>
+             <ul class="sub-menu-list list-unstyled">
+              <li>
+               <a href="https://www.ionos.it/cloud/cloud-server?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Cloud Server
+                </strong>
+                <p>
+                 Ottime performance e controllo completo dei costi
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://www.ionos.it/server/dedicated-server?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Server Dedicati
+                </strong>
+                <p>
+                 Soluzioni di server dedicati con accesso di root
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://www.ionos.it/server/vps?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Server Virtuale Cloud
+                </strong>
+                <p>
+                 VPS performanti basati sulla tecnologia cloud
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://www.ionos.it/server/server?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Server
+                </strong>
+                <p>
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://cloud.ionos.it?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 IONOS Cloud
+                </strong>
+                <p>
+                 Soluzione IaaS in cloud, configurabile a piacere e altamente scalabile
+                </p>
+               </a>
+              </li>
+             </ul>
+            </div>
+            <div class="col-sm-3">
+             <strong class="sub-head">
+              Tools
+             </strong>
+             <ul class="sub-menu-list list-unstyled">
+              <li>
+               <a href="https://www.ionos.it/tools/seo-check?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 SEO Check
+                </strong>
+                <p>
+                 Verifica il posizionamento seo del tuo sito web
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://www.ionos.it/tools/creare-favicon?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Creare favicon
+                </strong>
+                <p>
+                 Crea il tuo favicon gratuitamente on-line
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://www.ionos.it/tools/analisi-sito-web?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Analisi sito web
+                </strong>
+                <p>
+                 Controllo gratuitamente delle prestazioni
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://www.ionos.it/tools/creare-logo?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Creare un logo
+                </strong>
+                <p>
+                 Creazione del logo per la tua attività
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://www.ionos.it/tools/indirizzo-ip?ac=OM.IA.IAo50K421453T7073a">
+                <strong class="sub-title">
+                 Qual è il mio indrizzio IP?
+                </strong>
+                <p>
+                 IONOS IP Checker
+                </p>
+               </a>
+              </li>
+              <li>
+               <a href="https://phishing-contact.ionos.it/it/">
+                <strong class="sub-title">
+                 Servizio di verifica e-mail
+                </strong>
+                <p>
+                 Verifica l'autenticità di un'e-mail IONOS
+                </p>
+               </a>
+              </li>
+             </ul>
+            </div>
+           </div>
+          </div>
+         </div>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </header>
+   <main id="main">
+    <script type="application/ld+json">
+     { "@context": "http://schema.org","@type": "BreadcrumbList", "itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.ionos.it","name":"IONOS"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/www.ionos.it\/digitalguide","name":"Digital Guide"}},{"@type":"ListItem","position":3,"item":{"@id":"hosting\/","name":"Hosting"}},{"@type":"ListItem","position":4,"item":{"@id":"hosting\/tecniche-hosting\/","name":"Tecniche hosting"}},{"@type":"ListItem","position":5,"item":{"@id":"hosting\/tecniche-hosting\/cosa-fare-quando-si-presenta-lerrore-403-forbidden\/","name":"Cosa fare quando si presenta l\u2019errore 403 Forbidden?"}}]}
+    </script>
+    <nav class="breadcrumbs">
+     <div class="container">
+      <ol class="list-inline">
+       <li>
+        <a href="/" itemprop="item" title="IONOS">
+         IONOS
+        </a>
+       </li>
+       <li>
+        <a href="" itemprop="item" title="Digitalguide">
+         <span itemprop="name">
+          Digitalguide
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="hosting/" itemprop="item" title="Hosting">
+         <span itemprop="name">
+          Hosting
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="hosting/tecniche-hosting/" itemprop="item" title="Tecniche hosting">
+         <span itemprop="name">
+          Tecniche hosting
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/" itemprop="item" title="Cosa fare quando si presenta l’errore 403 Forbidden?">
+         <span itemprop="name">
+          Cosa fare quando si presenta l’errore 403 Forbidden?
+         </span>
+        </a>
+       </li>
+      </ol>
+     </div>
+    </nav>
+    <div class="main-container">
+     <div class="container meta-holder">
+      <div class="row">
+       <div class="col-sm-8">
+        <div class="article-meta">
+         <ul class="list-inline meta">
+          <li>
+           <time datetime=" 2019-08-01">
+            <span class="icon-clock-o">
+            </span>
+            01.08.19
+           </time>
+          </li>
+          <li>
+           <a href="hosting/tecniche-hosting/">
+            Tecniche hosting
+           </a>
+          </li>
+         </ul>
+         <ul class="list-inline list-info">
+          <li>
+          </li>
+          <li>
+           <ul class="list-inline social-networks">
+            <li>
+             <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/" target="_blank">
+              <span class="icon-facebook">
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="twitter" href="https://twitter.com/intent/tweet?source=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/&amp;text=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/%20%23DigitalGuide" target="_blank">
+              <span class="icon-twitter">
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="xing" href="https://www.xing.com/spi/shares/new?url=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/" target="_blank">
+              <span class="icon-xing">
+              </span>
+             </a>
+            </li>
+            <li>
+             <a class="linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/" target="_blank">
+              <span class="icon-linkedin">
+              </span>
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="container two-columns">
+      <div class="row">
+       <!--TYPO3SEARCH_begin-->
+       <div class="col-sm-8" id="content">
+        <div class="content-block">
+         <div class="aligncenter visual-img hidden-xs">
+          <picture>
+           <!--[if IE 9]><video style="display: none;"><![endif]-->
+           <source media="(max-width: 767px)" srcset="fileadmin/_processed_/3/c/csm_403-forbidden-t_f6c9d20622.jpg"/>
+           <source media="(max-width: 1023px)" srcset="fileadmin/_processed_/3/c/csm_403-forbidden-t_f1b3a2b10e.jpg"/>
+           <source srcset="fileadmin/DigitalGuide/Teaser/403-forbidden-t.jpg"/>
+           <!--[if IE 9]></video><![endif]-->
+           <img alt="Cosa fare quando si presenta l’errore 403 Forbidden?" src="fileadmin/DigitalGuide/Teaser/403-forbidden-t.jpg" title="Cosa fare quando si presenta l’errore 403 Forbidden?"/>
+          </picture>
+         </div>
+         <div class="frame frame-default frame-type-header frame-layout-0" id="c88285">
+          <header>
+           <h1 class="blue">
+            HTTP 403 Forbidden: cosa significa questa notifica di errore e come la si può risolvere?
+           </h1>
+          </header>
+         </div>
+         <div id="c88286">
+          <div class="text-row ce-textpic ce-center ce-above">
+           <div class="ce-bodytext">
+            <p>
+             Il codice di stato HTTP 403 Forbidden è una notifica di errore che compare agli utenti di Internet sul proprio browser. L’errore 403 è uno dei tanti
+             <a href="hosting/tecniche-hosting/spiegazione-dei-piu-importanti-codici-di-stato-http/">
+              codici di risposta del Hypertext Transfer Protocol
+             </a>
+             che si può ricevere mentre si vuole visitare una pagina. Se al vostro browser si presenta l’informazione 403 al posto del sito web desiderato allora significa che non avete il permesso per richiamare l’URL inserito.
+            </p>
+            <p>
+             Ma per quale motivo viene negato l’accesso? E ancora: è possibile aprire comunque il sito web richiesto? La risposta varia da caso a caso, perché le cause per la comparsa di un codice HTTP 403 sono molteplici. Vi mostriamo quali sono le tracce da seguire per
+             <strong>
+              arrivare alla fonte dell’errore e risolverlo
+             </strong>
+             .
+            </p>
+           </div>
+          </div>
+         </div>
+         <div class="frame frame-default frame-type-list frame-layout-0" id="c88287">
+          <div class="tx-toc">
+           <div class="toc content-table smoothscroll numbers togglestyle" id="toc">
+            <div class="opener" id="toctitle">
+             <strong class="h3">
+              Indice
+             </strong>
+             <span class="toctoggle">
+              <a href="#" id="togglelinkStyle">
+              </a>
+             </span>
+            </div>
+            <ol class="ordered-list list-content toclist hierarchy">
+             <li class="toclevel-2">
+              <a href="hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/#c88288">
+               <span class="toctext" data-slug="come-si-viene-a-formare-l-rsquo-errore-http-403-">
+                Come si viene a formare l’errore HTTP 403?
+               </span>
+              </a>
+             </li>
+             <li class="toclevel-2">
+              <a href="hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/#c88289">
+               <span class="toctext" data-slug="possibili-fonti-di-errore-403-e-come-risolverle">
+                Possibili fonti di errore 403 e come risolverle
+               </span>
+              </a>
+              <ol class="ordered-list">
+               <li class="toclevel-3">
+                <a href="hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/#c88290">
+                 <span class="toctext" data-slug="disattivare-le-estensioni-del-browser">
+                  Disattivare le estensioni del browser
+                 </span>
+                </a>
+               </li>
+               <li class="toclevel-3">
+                <a href="hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/#c88291">
+                 <span class="toctext" data-slug="cancellare-la-cache-del-browser">
+                  Cancellare la cache del browser
+                 </span>
+                </a>
+               </li>
+               <li class="toclevel-3">
+                <a href="hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/#c88292">
+                 <span class="toctext" data-slug="impostazioni-del-firewall">
+                  Impostazioni del firewall
+                 </span>
+                </a>
+               </li>
+              </ol>
+             </li>
+             <li class="toclevel-2">
+              <a href="hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/#c88293">
+               <span class="toctext" data-slug="a-volte-un-codice-di-stato-http-403-e-facile-da-superare">
+                A volte un codice di stato HTTP 403 è facile da superare
+               </span>
+              </a>
+             </li>
+            </ol>
+           </div>
+          </div>
+         </div>
+         <div class="frame frame-default frame-type-shortcut frame-layout-0" id="c385757">
+          <div class="frame frame-default frame-type-fluidcontent_content frame-layout-0" id="c308341">
+           <div class="container cta-container" style="padding-left:none;padding-right:50px">
+            <div class="rosw">
+             <div class="col-sm-8 cta-over-box-dg" style="padding-bottom: 20px;margin-bottom: 20px;">
+              <p id="cta-headline-dg" style="font-size:20px; font-weight: bold; color:#003d8d; margin-top:20px;">
+               Registrazione dominio
+              </p>
+              <div class="col-sm-9 cta-content-box cta-wo-img">
+               <p>
+                <em>
+                 Più di un semplice nome.
+                </em>
+               </p>
+               <p>
+                <em>
+                 Registra il tuo dominio con IONOS e approfitta di tutte le nostre funzionalità.
+                </em>
+               </p>
+               <div class="col-sm-12 cta-checkmarks cta-checkmarks-wo-img">
+                <div class="col-sm-4 cta-mark cta-checkmarks-img">
+                 <img src="typo3conf/ext/cip_calltoaction/Resources/Public/Icons/Content/ionos-checkmark.png">
+                  <em>
+                   E-Mail
+                  </em>
+                 </img>
+                </div>
+                <div class="col-sm-4 cta-mark cta-checkmarks-img">
+                 <img src="typo3conf/ext/cip_calltoaction/Resources/Public/Icons/Content/ionos-checkmark.png">
+                  <em>
+                   SSL Wildcard
+                  </em>
+                 </img>
+                </div>
+                <div class="col-sm-4 cta-mark cta-checkmarks-img">
+                 <img src="typo3conf/ext/cip_calltoaction/Resources/Public/Icons/Content/ionos-checkmark.png"/>
+                 <em>
+                  Supporto 24/7
+                 </em>
+                </div>
+               </div>
+              </div>
+              <div class="col-sm-3 cta-row-button">
+               <form class="cta-form-button">
+                <button class="btn btn-primary btn-block button-dg" onclick="location.href='https://www.ionos.it/dominio/registra-dominio?ac=OM.IA.IAo50K361609T7073a';" role="button" type="button">
+                 Continua
+                </button>
+               </form>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div id="c88288">
+          <h2 class="blue">
+           Come si viene a formare l’errore HTTP 403?
+          </h2>
+          <div class="text-row ce-textpic ce-center ce-above">
+           <div class="ce-bodytext">
+            <p>
+             La notifica di errore HTTP 403 può avvenire durante la navigazione in Internet, nello specifico durante la
+             <strong>
+              comunicazione tra il client HTTP (web browser) e il
+             </strong>
+             <a class="internal-link" href="server/know-how/tutto-quello-che-ce-da-sapere-sui-web-server/">
+              <strong>
+               server HTTP (web server)
+              </strong>
+             </a>
+             . Per comprendere il background dell’errore 403, risulta utile immaginarsi come avviene il processo di apertura di un sito web.
+            </p>
+            <p>
+             Difatti quando volete aprire una pagina con il vostro browser e a questo scopo inserite il relativo URL, il vostro browser invia tramite il Hypertext Transfer Protocol (HTTP) una richiesta corrispondente al web server competente. Successivamente il
+             <strong>
+              server esamina la richiesta ricevuta
+             </strong>
+             . Se è tutto corretto allora invia al browser un codice di stato HTTP della classe “2xx – successo” (come possono essere ad esempio il “200 OK” o il “201 Created”), ricevuto il quale si procede al caricamento del sito web. In questo caso di solito gli utenti non vedono nemmeno il codice ma subito la pagina richiesta.
+            </p>
+            <p>
+             Per quanto riguarda le risposte di codice della classe
+             <strong>
+              “4xx – errore del client”
+             </strong>
+             , alla quale appartiene anche la notifica “403 Forbidden”, il procedimento è invece diverso: come di consueto, qui ogni codice di errore viene sostituito con una pagina di notifica in HTML generata automaticamente. La più conosciuta di questa classe è la
+             <a href="siti-web/creare-siti/cosa-significa-lerrore-404-not-found/">
+              notifica di errore 404
+             </a>
+             . Tutti i codici di stato HTTP 4xx sono risposte del server che comunicano al client che la richiesta non ha potuto essere elaborata con successo. Come già lo lascia intendere il nome della classe del codice di stato, la causa di ciò si presume debba essere cercata nel client ma in realtà non è detto che sia così.
+            </p>
+            <p>
+             Nello specifico il codice di stato HTTP 403 sta a significare che l’URL richiesto in effetti esiste, ma che la richiesta del client non è stata eseguita.
+             <strong>
+              Al client viene negato l’accesso al sito web
+             </strong>
+             poiché
+             <strong>
+              non possiede il permesso necessario
+             </strong>
+             . Per capire quali siano i permessi in questione, anche questo varia da caso a caso: i motivi per cui compare l’errore HTTP 403 sono infatti i più disparati.
+            </p>
+            <p>
+             In alcuni siti web la ricerca di specifici indici viene impedita attivamente attraverso lo stato 403: ad esempio ciò avviene per quanto riguarda siti web che contengono immagini le quali non devono né essere riprodotte singolarmente né essere copiabili con facilità. Siccome in questo caso si tratta di una decisione consapevole del gestore della pagina, l’utente non può fare molto non avendo accesso all’URL. Per quanto riguarda le fonti di errore presentate in seguito relative all’errore 403 Forbidden la spiegazione è però diversa, perché sono tutte collegate a determinate
+             <strong>
+              impostazioni del vostro computer
+             </strong>
+             .
+            </p>
+           </div>
+          </div>
+         </div>
+         <div id="c88289">
+          <h2 class="blue">
+           Possibili fonti di errore 403 e come risolverle
+          </h2>
+          <div class="text-row ce-textpic ce-center ce-above">
+           <div class="ce-bodytext">
+            <p>
+             Il 403 Forbidden può essere tradotto con “errore 403: accesso negato” o con “accesso vietato”. Con questa notifica di errore si potrebbe intendere che per via di una password (o simile) mancante non si riceva il permesso di accesso a una certa pagina. In generale l’errore HTTP 403 non c’entra nulla con una simile autorizzazione mancante: in questo caso al posto dell’errore 403 comparirebbe invece una notifica di errore 401. Piuttosto l’errore ha spesso a che fare con le
+             <strong>
+              impostazioni del client
+             </strong>
+             . Gli errori classici sono i seguenti:
+            </p>
+           </div>
+          </div>
+         </div>
+         <div id="c88290">
+          <h3>
+           Disattivare le estensioni del browser
+          </h3>
+          <div class="text-row ce-textpic ce-center ce-above">
+           <div class="ce-bodytext">
+            <p>
+             Può essere che il vostro browser sia stato bloccato dal web server per via di diversi plug-in e/o add-on attivi: magari perché utilizzate un adblocker o dei plug-in per la proxy. Perciò potete tentare di aprire l’URL desiderato dopo aver disattivato tutte le estensioni.
+            </p>
+           </div>
+          </div>
+         </div>
+         <div id="c88291">
+          <h3>
+           Cancellare la cache del browser
+          </h3>
+          <div class="text-row ce-textpic ce-center ce-above">
+           <div class="ce-bodytext">
+            <p>
+             Se, nonostante le estensioni siano state disattivate, il vostro browser continua a ricevere il codice di stato HTTP 403 come risposta alla richiesta, allora
+             <a href="server/configurazione/svuotare-la-cache/" title="Svuotare la cache">
+              svuotare la cache
+             </a>
+             potrebbe risolvere il problema.
+            </p>
+           </div>
+          </div>
+         </div>
+         <div id="c88292">
+          <h3>
+           Impostazioni del firewall
+          </h3>
+          <div class="text-row ce-textpic ce-center ce-above">
+           <div class="ce-bodytext">
+            <p>
+             Se però nemmeno svuotando la cache la notifica scompare, allora sussiste ancora la possibilità che il web server abbia un problema con il vostro
+             <a href="server/sicurezza/cose-un-firewall/" title="Cos’è un firewall?">
+              firewall
+             </a>
+             e che per questo motivo emetta l’errore HTTP 403 sul browser. Se vi fidate del gestore del sito web che volete visitare, potete
+             <a href="server/sicurezza/come-disattivare-il-firewall-di-windows/" title="Come disattivare il firewall di Windows">
+              disattivare il firewall
+             </a>
+             e tentare nuovamente di aprire la pagina. Se questa procedura risolve il problema allora potete inserire un’eccezione per quella pagina all’interno delle impostazioni del firewall.
+            </p>
+           </div>
+          </div>
+         </div>
+         <div id="c88293">
+          <h2 class="blue">
+           A volte un codice di stato HTTP 403 è facile da superare
+          </h2>
+          <div class="text-row ce-textpic ce-center ce-above">
+           <div class="ce-bodytext">
+            <p>
+             In generale l’errore 403 comunica che durante l’apertura di un URL il browser utilizzato è
+             <strong>
+              sprovvisto di un permesso per visualizzare il sito web richiesto
+             </strong>
+             . Con un po’ di fortuna potete però risolvere l’errore HTTP 403 grazie all’aiuto dei metodi di cui sopra. Chi riceve la notifica di errore mentre sta aprendo un sito web dovrebbe prendere in esame le
+             <strong>
+              impostazioni del proprio browser
+             </strong>
+             e/o quelle del proprio
+             <strong>
+              firewall
+             </strong>
+             .
+            </p>
+            <p>
+             Eppure ci sono anche gestori di siti web che tutelano determinati indici di un progetto online dal cosiddetto “Directory Browsing”. Ma può anche capitare che l’amministratore del sito abbia configurato male i permessi. In tal caso non vi rimane che contattare i gestori della pagina e chiedere il motivo dell’errore 403. Tuttavia in alcuni casi non resta altro che arrendersi al fatto che l’accesso a all’URL sia semplicemente negato.
+            </p>
+           </div>
+          </div>
+         </div>
+         <div class="article-meta">
+          <ul class="list-inline meta">
+           <li>
+            <time datetime=" 2019-08-01">
+             <span class="icon-clock-o">
+             </span>
+             01.08.19
+            </time>
+           </li>
+           <li>
+            <a href="hosting/tecniche-hosting/">
+             Tecniche hosting
+            </a>
+           </li>
+          </ul>
+          <ul class="list-inline list-info">
+           <li>
+           </li>
+           <li>
+            <ul class="list-inline social-networks">
+             <li>
+              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/" target="_blank">
+               <span class="icon-facebook">
+               </span>
+              </a>
+             </li>
+             <li>
+              <a class="twitter" href="https://twitter.com/intent/tweet?source=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/&amp;text=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/%20%23DigitalGuide" target="_blank">
+               <span class="icon-twitter">
+               </span>
+              </a>
+             </li>
+             <li>
+              <a class="xing" href="https://www.xing.com/spi/shares/new?url=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/" target="_blank">
+               <span class="icon-xing">
+               </span>
+              </a>
+             </li>
+             <li>
+              <a class="linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/cosa-fare-quando-si-presenta-lerrore-403-forbidden/" target="_blank">
+               <span class="icon-linkedin">
+               </span>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </div>
+         <ul class="metatags-list list-inline list-unstyled">
+          <li>
+           <a href="tags/http/" title="HTTP">
+            HTTP
+           </a>
+          </li>
+         </ul>
+        </div>
+        <section class="container related-articles">
+         <strong class="h3 text-center">
+          Articoli simili
+         </strong>
+         <div class="row post-holder">
+          <div class="col-sm-4">
+           <article class="info-post">
+            <div class="img-holder">
+             <a href="hosting/tecniche-hosting/spiegazione-dei-piu-importanti-codici-di-stato-http/" title="Spiegazione dei più importanti codici di stato HTTP">
+              <picture>
+               <!--[if IE 9]><video style="display: none;"><![endif]-->
+               <source media="(max-width: 767px)" srcset="fileadmin/_processed_/a/0/csm_was-ist-http-t_e7e49e6493.jpg"/>
+               <source media="(max-width: 1023px)" srcset="fileadmin/_processed_/a/0/csm_was-ist-http-t_84b8e20763.jpg"/>
+               <source srcset="fileadmin/DigitalGuide/Teaser/was-ist-http-t.jpg"/>
+               <!--[if IE 9]></video><![endif]-->
+               <img alt="Spiegazione dei più importanti codici di stato HTTP" loading="lazy" src="fileadmin/DigitalGuide/Teaser/was-ist-http-t.jpg" title="Spiegazione dei più importanti codici di stato HTTP"/>
+              </picture>
+             </a>
+            </div>
+            <h2 class="blue">
+             <a href="hosting/tecniche-hosting/spiegazione-dei-piu-importanti-codici-di-stato-http/" title="Significato dei codici di stato HTTP">
+              Significato dei codici di stato HTTP
+             </a>
+            </h2>
+            <ul class="list-inline meta">
+             <li>
+              <time datetime="2019-05-09">
+               <span class="icon-clock-o">
+               </span>
+               09.05.2019
+              </time>
+             </li>
+             <li>
+              <a href="hosting/tecniche-hosting/">
+               Tecniche hosting
+              </a>
+             </li>
+            </ul>
+            <p>
+             404, 302, 503: piccole combinazioni numeriche con un grande significato. Imbattersi nei codici di stato del server, è sempre più facile navigando in rete e solo chi sa interpretarli, può reagire velocemente. Ancora più rilevante è la conoscenza dei codici http per i gestori dei siti web. Sfruttando le giuste competenze, si migliorerà notevolmente la navigabilità di una pagina, cosa che influenzerà...
+            </p>
+            <div class="social-block">
+             <ul class="list-inline social-networks">
+              <li>
+               <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/spiegazione-dei-piu-importanti-codici-di-stato-http/" target="_blank">
+                <span class="icon-facebook">
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="twitter" href="https://twitter.com/intent/tweet?source=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/spiegazione-dei-piu-importanti-codici-di-stato-http/&amp;text=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/spiegazione-dei-piu-importanti-codici-di-stato-http/%20%23DigitalGuide" target="_blank">
+                <span class="icon-twitter">
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="xing" href="https://www.xing.com/spi/shares/new?url=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/spiegazione-dei-piu-importanti-codici-di-stato-http/" target="_blank">
+                <span class="icon-xing">
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/spiegazione-dei-piu-importanti-codici-di-stato-http/" target="_blank">
+                <span class="icon-linkedin">
+                </span>
+               </a>
+              </li>
+             </ul>
+            </div>
+           </article>
+          </div>
+          <div class="col-sm-4">
+           <article class="info-post">
+            <div class="img-holder">
+             <a href="siti-web/creare-siti/cosa-significa-lerrore-404-not-found/" title="Cosa significa l’errore “404 Not Found“?">
+              <picture>
+               <!--[if IE 9]><video style="display: none;"><![endif]-->
+               <source media="(max-width: 767px)" srcset="fileadmin/_processed_/e/a/csm_not-found-t_80b0f66183.jpg"/>
+               <source media="(max-width: 1023px)" srcset="fileadmin/_processed_/e/a/csm_not-found-t_b3343537ad.jpg"/>
+               <source srcset="fileadmin/DigitalGuide/Teaser/not-found-t.jpg"/>
+               <!--[if IE 9]></video><![endif]-->
+               <img alt="Cosa significa l’errore “404 Not Found“?" loading="lazy" src="fileadmin/DigitalGuide/Teaser/not-found-t.jpg" title="Cosa significa l’errore “404 Not Found“?"/>
+              </picture>
+             </a>
+            </div>
+            <h2 class="blue">
+             <a href="siti-web/creare-siti/cosa-significa-lerrore-404-not-found/" title="Errore 404: cosa significa questa pagina di errore">
+              Errore 404: cosa significa questa pagina di errore
+             </a>
+            </h2>
+            <ul class="list-inline meta">
+             <li>
+              <time datetime="2022-02-18">
+               <span class="icon-clock-o">
+               </span>
+               18.02.2022
+              </time>
+             </li>
+             <li>
+              <a href="siti-web/creare-siti/">
+               Creare siti
+              </a>
+             </li>
+            </ul>
+            <p>
+             Quante volte vi è capitato di finire in un vicolo cieco della rete? Non è raro imbattersi in pagine di errore 404, dove viene comunicato agli utenti che la pagina richiesta non è più disponibile. Non solo è irritante per gli utenti, ma anche per i proprietari dei siti, visto che un link morto può ripercuotersi negativamente sul ranking del vostro sito nei motori di ricerca. È possibile però...
+            </p>
+            <div class="social-block">
+             <ul class="list-inline social-networks">
+              <li>
+               <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.ionos.it/digitalguide/siti-web/creare-siti/cosa-significa-lerrore-404-not-found/" target="_blank">
+                <span class="icon-facebook">
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="twitter" href="https://twitter.com/intent/tweet?source=https://www.ionos.it/digitalguide/siti-web/creare-siti/cosa-significa-lerrore-404-not-found/&amp;text=https://www.ionos.it/digitalguide/siti-web/creare-siti/cosa-significa-lerrore-404-not-found/%20%23DigitalGuide" target="_blank">
+                <span class="icon-twitter">
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="xing" href="https://www.xing.com/spi/shares/new?url=https://www.ionos.it/digitalguide/siti-web/creare-siti/cosa-significa-lerrore-404-not-found/" target="_blank">
+                <span class="icon-xing">
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.ionos.it/digitalguide/siti-web/creare-siti/cosa-significa-lerrore-404-not-found/" target="_blank">
+                <span class="icon-linkedin">
+                </span>
+               </a>
+              </li>
+             </ul>
+            </div>
+           </article>
+          </div>
+          <div class="col-sm-4">
+           <article class="info-post">
+            <div class="img-holder">
+             <a href="siti-web/creare-siti/pagine-404-creative-e-originali-esempi-e-consigli/" title="Pagine 404 creative e originali: esempi e consigli">
+              <picture>
+               <!--[if IE 9]><video style="display: none;"><![endif]-->
+               <source media="(max-width: 767px)" srcset="fileadmin/_processed_/b/2/csm_404-not-found-t_f7a72e8ca2.jpg"/>
+               <source media="(max-width: 1023px)" srcset="fileadmin/_processed_/b/2/csm_404-not-found-t_6ac7c10eea.jpg"/>
+               <source srcset="fileadmin/DigitalGuide/Teaser/404-not-found-t.jpg"/>
+               <!--[if IE 9]></video><![endif]-->
+               <img alt="Pagine 404 creative e originali: esempi e consigli" loading="lazy" src="fileadmin/DigitalGuide/Teaser/404-not-found-t.jpg" title="Pagine 404 creative e originali: esempi e consigli"/>
+              </picture>
+             </a>
+            </div>
+            <h2 class="blue">
+             <a href="siti-web/creare-siti/pagine-404-creative-e-originali-esempi-e-consigli/" title="Esempi e consigli per pagine 404 creative e originali ">
+              Esempi e consigli per pagine 404 creative e originali
+             </a>
+            </h2>
+            <ul class="list-inline meta">
+             <li>
+              <time datetime="2019-08-16">
+               <span class="icon-clock-o">
+               </span>
+               16.08.2019
+              </time>
+             </li>
+             <li>
+              <a href="siti-web/creare-siti/">
+               Creare siti
+              </a>
+             </li>
+            </ul>
+            <p>
+             Navigando in rete non è raro imbattersi in pagine di errore 404, che informano gli utenti del fatto che la pagina richiesta non esista. Il più delle volte questi messaggi di errore sono standardizzati, ma si può anche decidere di creare delle pagine 404 personalizzate. Così facendo si riesce a compensare la mancanza del contenuto giusto, realizzando un errore 404 creativo e divertente, pronto a...
+            </p>
+            <div class="social-block">
+             <ul class="list-inline social-networks">
+              <li>
+               <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.ionos.it/digitalguide/siti-web/creare-siti/pagine-404-creative-e-originali-esempi-e-consigli/" target="_blank">
+                <span class="icon-facebook">
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="twitter" href="https://twitter.com/intent/tweet?source=https://www.ionos.it/digitalguide/siti-web/creare-siti/pagine-404-creative-e-originali-esempi-e-consigli/&amp;text=https://www.ionos.it/digitalguide/siti-web/creare-siti/pagine-404-creative-e-originali-esempi-e-consigli/%20%23DigitalGuide" target="_blank">
+                <span class="icon-twitter">
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="xing" href="https://www.xing.com/spi/shares/new?url=https://www.ionos.it/digitalguide/siti-web/creare-siti/pagine-404-creative-e-originali-esempi-e-consigli/" target="_blank">
+                <span class="icon-xing">
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.ionos.it/digitalguide/siti-web/creare-siti/pagine-404-creative-e-originali-esempi-e-consigli/" target="_blank">
+                <span class="icon-linkedin">
+                </span>
+               </a>
+              </li>
+             </ul>
+            </div>
+           </article>
+          </div>
+          <div class="col-sm-4">
+           <article class="info-post">
+            <div class="img-holder">
+             <a href="hosting/tecniche-hosting/messaggio-di-errore-http-400-alla-ricerca-delle-cause/" title="Messaggio di errore HTTP 400: alla ricerca delle cause">
+              <picture>
+               <!--[if IE 9]><video style="display: none;"><![endif]-->
+               <source media="(max-width: 767px)" srcset="fileadmin/_processed_/5/7/csm_400-Bad-Request-t_c82df58405.jpg"/>
+               <source media="(max-width: 1023px)" srcset="fileadmin/_processed_/5/7/csm_400-Bad-Request-t_1bac280e04.jpg"/>
+               <source srcset="fileadmin/DigitalGuide/Teaser/400-Bad-Request-t.jpg"/>
+               <!--[if IE 9]></video><![endif]-->
+               <img alt="Messaggio di errore HTTP 400: alla ricerca delle cause" loading="lazy" src="fileadmin/DigitalGuide/Teaser/400-Bad-Request-t.jpg" title="Messaggio di errore HTTP 400: alla ricerca delle cause"/>
+              </picture>
+             </a>
+            </div>
+            <h2 class="blue">
+             <a href="hosting/tecniche-hosting/messaggio-di-errore-http-400-alla-ricerca-delle-cause/" title="HTTP 400 Bad Request: spiegazione">
+              HTTP 400 Bad Request: spiegazione
+             </a>
+            </h2>
+            <ul class="list-inline meta">
+             <li>
+              <time datetime="2019-08-16">
+               <span class="icon-clock-o">
+               </span>
+               16.08.2019
+              </time>
+             </li>
+             <li>
+              <a href="hosting/tecniche-hosting/">
+               Tecniche hosting
+              </a>
+             </li>
+            </ul>
+            <p>
+             In quanto utenti vi capiterà sicuramente di imbattervi in messaggi di errore. Particolarmente fastidiosi possono essere i codici di stato, soprattutto nel caso in cui non riusciate a capire che cosa significhino. Anche la comunicazione “HTTP 400 Bad Request” rappresenta per molti utenti una sorta di indovinello. Ma fortunatamente si tratta di uno di quegli errori che risultano risolvibili nella...
+            </p>
+            <div class="social-block">
+             <ul class="list-inline social-networks">
+              <li>
+               <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/messaggio-di-errore-http-400-alla-ricerca-delle-cause/" target="_blank">
+                <span class="icon-facebook">
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="twitter" href="https://twitter.com/intent/tweet?source=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/messaggio-di-errore-http-400-alla-ricerca-delle-cause/&amp;text=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/messaggio-di-errore-http-400-alla-ricerca-delle-cause/%20%23DigitalGuide" target="_blank">
+                <span class="icon-twitter">
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="xing" href="https://www.xing.com/spi/shares/new?url=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/messaggio-di-errore-http-400-alla-ricerca-delle-cause/" target="_blank">
+                <span class="icon-xing">
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/messaggio-di-errore-http-400-alla-ricerca-delle-cause/" target="_blank">
+                <span class="icon-linkedin">
+                </span>
+               </a>
+              </li>
+             </ul>
+            </div>
+           </article>
+          </div>
+          <div class="col-sm-4">
+           <article class="info-post">
+            <div class="img-holder">
+             <a href="hosting/tecniche-hosting/errore-http-405/" title="Errore HTTP 405">
+              <picture>
+               <!--[if IE 9]><video style="display: none;"><![endif]-->
+               <source media="(max-width: 767px)" srcset="fileadmin/_processed_/4/b/csm_405-Method-Not-Allowed-t_2008e02335.jpg"/>
+               <source media="(max-width: 1023px)" srcset="fileadmin/_processed_/4/b/csm_405-Method-Not-Allowed-t_82053274cf.jpg"/>
+               <source srcset="fileadmin/DigitalGuide/Teaser/405-Method-Not-Allowed-t.jpg"/>
+               <!--[if IE 9]></video><![endif]-->
+               <img alt="Errore HTTP 405" loading="lazy" src="fileadmin/DigitalGuide/Teaser/405-Method-Not-Allowed-t.jpg" title="Errore HTTP 405"/>
+              </picture>
+             </a>
+            </div>
+            <h2 class="blue">
+             <a href="hosting/tecniche-hosting/errore-http-405/" title="Come risolvere l'errore 405 – Method not allowed">
+              Come risolvere l'errore 405 – Method not allowed
+             </a>
+            </h2>
+            <ul class="list-inline meta">
+             <li>
+              <time datetime="2019-09-06">
+               <span class="icon-clock-o">
+               </span>
+               06.09.2019
+              </time>
+             </li>
+             <li>
+              <a href="hosting/tecniche-hosting/">
+               Tecniche hosting
+              </a>
+             </li>
+            </ul>
+            <p>
+             L'Hypertext Transfer Protocol (HTTP) è l'intermediario indispensabile tra il browser e il web server: la comunicazione tra le due parti avviene attraverso il protocollo di trasmissione tramite messaggi di diverso tipo. Il browser può usare un metodo HTTP per richiedere una risorsa o trasmettere i propri dati al server. Nel caso in cui uno di questi metodi non funzioni, si verifica un errore del...
+            </p>
+            <div class="social-block">
+             <ul class="list-inline social-networks">
+              <li>
+               <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/errore-http-405/" target="_blank">
+                <span class="icon-facebook">
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="twitter" href="https://twitter.com/intent/tweet?source=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/errore-http-405/&amp;text=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/errore-http-405/%20%23DigitalGuide" target="_blank">
+                <span class="icon-twitter">
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="xing" href="https://www.xing.com/spi/shares/new?url=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/errore-http-405/" target="_blank">
+                <span class="icon-xing">
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.ionos.it/digitalguide/hosting/tecniche-hosting/errore-http-405/" target="_blank">
+                <span class="icon-linkedin">
+                </span>
+               </a>
+              </li>
+             </ul>
+            </div>
+           </article>
+          </div>
+         </div>
+        </section>
+        <div class="category-description">
+        </div>
+       </div>
+       <!--TYPO3SEARCH_end-->
+       <div class="col-sm-4" id="sidebar">
+        <div class="frame frame-default frame-type-html frame-layout-0" id="c188854">
+         <div class="sidebar-sticky-box">
+          <h3>
+           Prodotti correlati
+          </h3>
+          <div class="row">
+           <div class="col-xs-12 sidebar-sticky-box-inhalt">
+            <div class="col-xs-4">
+             <img alt="IONOS Web Hosting" src="https://www.ionos.it/digitalguide/fileadmin/DigitalGuide/Product_Icons/webhosting.svg"/>
+            </div>
+            <div class="col-xs-8">
+             Web Hosting
+            </div>
+           </div>
+          </div>
+          <button class="btn btn-primary btn-block button-dg" onclick="websiteSBSitecat();window.open('https://www.ionos.it/hosting/web-hosting?ac=OM.IA.IAo50K361645T7073a')" role="button" target="_blank" type="button">
+           Scopri i pacchetti
+           <span class="icon-triangle-right">
+           </span>
+          </button>
+         </div>
+         <script type="text/javascript">
+          function websiteSBSitecat(){
+    if (typeof window.s === "object" && typeof window.s.apl === 'function' && typeof window.s.t === 'function') {
+       s.events2=s.apl(s.events2, "event114", ",", 1);
+       s.t(s);
+   }
+}
+         </script>
+        </div>
+        <div class="frame frame-default frame-type-html frame-layout-0" id="c188892">
+         <div class="reseller-box">
+          <h3>
+           Web hosting per agenzie
+          </h3>
+          <p class="">
+           Offri ai tuoi clienti servizi professionali e affidabili con l'hosting di IONOS.
+          </p>
+          <button class="btn btn-primary btn-block button-dg" onclick="globalSBSitecat();window.open('https://www.ionos.it/partner/hosting-per-agenzie?ac=OM.IA.IAo50K361691T7073a#packages')" role="button" target="_blank" type="button">
+           Scopri i pacchetti
+           <span class="icon-triangle-right">
+           </span>
+          </button>
+         </div>
+         <script type="text/javascript">
+          function globalSBSitecat(){
+    if (typeof window.s === "object" && typeof window.s.apl === 'function' && typeof window.s.t === 'function') {
+       s.events2=s.apl(s.events2, "event113", ",", 1);
+       s.t(s);
+   }
+}
+         </script>
+        </div>
+        <div class="side-block open-close" id="popular-articles">
+         <h3 class="opener" data-responsive-accordion="1023">
+          Articoli Popolari
+          <span class="iconCloseOpen">
+          </span>
+         </h3>
+         <div class="container-info-blog slide">
+          <div class="info-blog">
+           <h4 class="h5 blue">
+            <a href="hosting/blog/wordpress-svuotare-la-cache/" title="WordPress: svuotare la cache">
+             WordPress: svuotare la cache
+             <p class="shabstract">
+              Il caching permette di caricare più rapidamente il vostro sito web, con un relativo effetto positivo sulla user experience...
+             </p>
+            </a>
+           </h4>
+          </div>
+          <div class="info-blog">
+           <h4 class="h5 blue">
+            <a href="hosting/blog/creare-un-sito-con-wordpress/" title="Creare un sito con WordPress">
+             Creare un sito con WordPress
+             <p class="shabstract">
+              La nostra guida di WordPress vi guida passo per passo nella creazione del vostro sito...
+             </p>
+            </a>
+           </h4>
+          </div>
+          <div class="info-blog">
+           <h4 class="h5 blue">
+            <a href="hosting/blog/cookie-plug-in-per-wordpress/" title="Cookie plug-in per WordPress">
+             Cookie plug-in per WordPress
+             <p class="shabstract">
+              Vi presentiamo i migliori plug-in per creare un’informativa per i cookie di WordPress...
+             </p>
+            </a>
+           </h4>
+          </div>
+          <div class="info-blog">
+           <h4 class="h5 blue">
+            <a href="hosting/blog/wordpress-integrare-google-analytics/" title="WordPress: integrare Google Analytics">
+             WordPress: integrare Google Analytics
+             <p class="shabstract">
+              Vi spiegheremo come collegare questo strumento a un sito WP tenendo conto della protezione dei dati...
+             </p>
+            </a>
+           </h4>
+          </div>
+          <div class="info-blog">
+           <h4 class="h5 blue">
+            <a href="hosting/blog/wordpress-duplicare-pagine/" title="WordPress: duplicare pagine">
+             WordPress: duplicare pagine
+             <p class="shabstract">
+              Su WordPress è possibile copiare pagine e articoli. Ma come? Semplice: usando un plug-in, l’editor Gutenberg o l’editor di codice...
+             </p>
+            </a>
+           </h4>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="mobile-box">
+     </div>
+     <div class="container info-aside">
+     </div>
+    </div>
+   </main>
+   <footer id="footer">
+    <div class="container footer-frame">
+     <ul class="list-inline social-networks contact">
+      <li>
+       <a class="facebook" href="http://ionos.ly/IONOS_FB_IT" target="_blank">
+        <span class="icon-facebook">
+        </span>
+       </a>
+      </li>
+      <li>
+       <a class="twitter" href="http://ionos.ly/IONOS_TW_IT" target="_blank">
+        <span class="icon-twitter">
+        </span>
+       </a>
+      </li>
+      <li>
+       <a class="youtube" href="http://ionos.ly/IONOS_YT_IT" target="_blank">
+        <img alt="youtube" height="28" src="fileadmin/templates/images/youtube.png" width="28"/>
+       </a>
+      </li>
+      <li>
+       <a class="rss-feed" href="rss-feeds/rss-digitalguide/feed.rss" style="background:#ffffff" target="_blank">
+        <img alt="rss-feed" height="28" src="fileadmin/rss-feed.png" width="28"/>
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="footer-holder">
+     <div class="container">
+      <ul class="list-inline list-footer">
+       <li class="footer-nav-item">
+        <a class="footer-nav-link" href="https://www.ionos.it/terms-gtc/condizioni-generali-per-litalia/" target="_blank">
+         Termini e condizioni
+        </a>
+       </li>
+       <li class="footer-nav-item">
+        <a class="footer-nav-link" href="https://www.ionos.it/aiuto" target="_blank">
+         Centro Assistenza
+        </a>
+       </li>
+       <li class="footer-nav-item">
+        <a class="footer-nav-link" href="https://www.ionos.it/terms-gtc/terms-privacy/" target="_blank">
+         Privacy
+        </a>
+       </li>
+       <li class="footer-nav-item">
+        <a class="footer-nav-link" href="https://www.ionos.it/newsroom" target="_blank">
+         Newsroom
+        </a>
+       </li>
+       <li class="footer-nav-item">
+        <a class="footer-nav-link" href="https://www.ionos.it/azienda" target="_blank">
+         Chi siamo
+        </a>
+       </li>
+       <li class="footer-nav-item">
+        <span class="footer-nav-copyright">
+         © 2022
+         <a href="https://www.ionos.it" target="_blank" title="IONOS SE">
+          IONOS SE
+         </a>
+        </span>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <a class="btn btn-top" href="#wrapper" style="display: block; opacity: 1;">
+     <span class="icon-angle-up">
+     </span>
+    </a>
+   </footer>
+  </div>
+  <script>
+   window.cookieconsent_options = {
+      learnMore: 'il consenso.',
+      dismiss: 'OK',
+      message: 'Per offrirti una migliore esperienza di navigazione online questo sito web usa dei cookie, propri e di terze parti. Continuando a navigare sul sito acconsenti all’utilizzo dei cookie. Scopri di più sull’uso dei cookie e sulla possibilità di modificarne le impostazioni o negare',
+      link: 'https://www.ionos.it/cookies',
+      
+    };
+  </script>
+  <div id="bio_ep">
+   <div class="frame frame-default frame-type-html frame-layout-0" id="c188965">
+    <div class="popup-header">
+     <img alt="IONOS" height="50" src="fileadmin/templates/images/ionos_logo.svg" width="50"/>
+    </div>
+    <br/>
+    <h2 class="exit-intent" style="padding-right:0px; font-size: 24px;">
+     Abbiamo una proposta per te:
+     <br/>
+     <span style="color:#11c7e6 ;">
+      Web hosting a partire da 1 €/mese!
+     </span>
+    </h2>
+    <div style="color:#efefef; font-size: 16px; margin:0px 200px 0px 50px;">
+     <div style="padding:5px;">
+      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iNDIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE3LjIgMS44NTRBMy4xMSAzLjExIDAgMCAxIDIxLjM2My4yOTFhMy4xMSAzLjExIDAgMCAxIDEuNTY0IDQuMTYzbC4wMDUtLjAwMUw2LjAyNSAzOS41MDdsLjAwMi4wMDVhMy4xMTEgMy4xMTEgMCAwIDEtNC4xNzYgMS41MjggMy4xMTEgMy4xMTEgMCAwIDEtMS41MjgtNC4xNzZsLS4wMjMuMDQ0UzE2LjczNSAyLjgxMiAxNy4xOTYgMS44NTNsLjAwNC4wMDF6TTAgMzMuMTczVjE1LjY4N2EzLjExIDMuMTEgMCAwIDEgMy4xNDQtMy4xNDQgMy4xMSAzLjExIDAgMCAxIDMuMTQ0IDMuMTQ0djQuNDM2TDAgMzMuMTczeiIgZmlsbD0iIzAwQzVFNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PC9zdmc+" style="height: 20px;"/>
+      Dominio gratis
+     </div>
+     <div style="padding:5px;">
+      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iNDIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE3LjIgMS44NTRBMy4xMSAzLjExIDAgMCAxIDIxLjM2My4yOTFhMy4xMSAzLjExIDAgMCAxIDEuNTY0IDQuMTYzbC4wMDUtLjAwMUw2LjAyNSAzOS41MDdsLjAwMi4wMDVhMy4xMTEgMy4xMTEgMCAwIDEtNC4xNzYgMS41MjggMy4xMTEgMy4xMTEgMCAwIDEtMS41MjgtNC4xNzZsLS4wMjMuMDQ0UzE2LjczNSAyLjgxMiAxNy4xOTYgMS44NTNsLjAwNC4wMDF6TTAgMzMuMTczVjE1LjY4N2EzLjExIDMuMTEgMCAwIDEgMy4xNDQtMy4xNDQgMy4xMSAzLjExIDAgMCAxIDMuMTQ0IDMuMTQ0djQuNDM2TDAgMzMuMTczeiIgZmlsbD0iIzAwQzVFNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PC9zdmc+" style="height: 20px;"/>
+      Certificato SSL Wildcard incluso
+     </div>
+     <div style="padding:5px;">
+      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iNDIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE3LjIgMS44NTRBMy4xMSAzLjExIDAgMCAxIDIxLjM2My4yOTFhMy4xMSAzLjExIDAgMCAxIDEuNTY0IDQuMTYzbC4wMDUtLjAwMUw2LjAyNSAzOS41MDdsLjAwMi4wMDVhMy4xMTEgMy4xMTEgMCAwIDEtNC4xNzYgMS41MjggMy4xMTEgMy4xMTEgMCAwIDEtMS41MjgtNC4xNzZsLS4wMjMuMDQ0UzE2LjczNSAyLjgxMiAxNy4xOTYgMS44NTNsLjAwNC4wMDF6TTAgMzMuMTczVjE1LjY4N2EzLjExIDMuMTEgMCAwIDEgMy4xNDQtMy4xNDQgMy4xMSAzLjExIDAgMCAxIDMuMTQ0IDMuMTQ0djQuNDM2TDAgMzMuMTczeiIgZmlsbD0iIzAwQzVFNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PC9zdmc+" style="height: 20px;"/>
+      Assistenza clienti 24/7
+     </div>
+    </div>
+    <div class="exit-sub exit-sub-offer">
+     A partire da 1 €/mese IVA escl. per un anno,
+    </div>
+    <div class="exit-sub sub-sub">
+     poi 8 €/ mese IVA escl.
+    </div>
+    <div style="padding:20px 0px 0px 50px;">
+     <div class="domaincheck-wrap" style="margin-bottom: 35px;">
+      <form class="direct-link-form" onclick="shopSitecat();window.open('https://www.ionos.it/hosting/web-hosting?ac=OM.IA.IAo50K361600T7073','_blank')" style="padding-top:7px;">
+       <button class="btn btn-primary" style="text-transform: none;" type="submit">
+        Vai all'offerta
+       </button>
+      </form>
+     </div>
+    </div>
+    <style>
+     #bio_ep {
+
+      background:url(./fileadmin/user_upload/whitepaper-t.jpg);
+     }
+    </style>
+    <script type="text/javascript">
+     function shopSitecat(){
+    if (typeof window.s === "object" && typeof window.s.apl === 'function' && typeof window.s.t === 'function') {
+       s.events2=s.apl(s.events2, "event121", ",", 1);
+       s.t(s);
+        }
+  }
+    </script>
+   </div>
+  </div>
+  <script src="typo3temp/assets/compressed/merged-21841063900c56df202ce88d7b11c3fc-4a69b24935e168b795fd1c4e119253f3.js.gzip?1651151462" type="text/javascript">
+  </script>
+  <script src="typo3temp/assets/compressed/merged-79689a034e96ed82fa89989cc2ea906b-b9521c27d5b1f0d607eaa98621c346c2.js.gzip?1651151462" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   _satellite.pageBottom();
+  </script>
+  <div class="tx-cisositecatalyst">
+   <!-- SiteCatalyst code version: H.20.3. Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->
+   <script type="text/javascript">
+    var s_account="iaglive";
+   </script>
+   <script src="typo3conf/ext/ciso_sitecatalyst/Resources/Public/JavaScript/s_code.js" type="text/javascript">
+   </script>
+   <script src="typo3conf/ext/ciso_sitecatalyst/Resources/Public/JavaScript/utm.js" type="text/javascript">
+   </script>
+   <script language="JavaScript" type="text/javascript">
+    function onRequest(data) {
+                            s.server = "";
+s.visitorNamespace = "1und1internetag";
+s.thisHost = window.location.host;
+s.currencyCode = "EUR";
+s.charSet = "UTF-8";
+s.trackDownloadLinks = true;
+s.trackExternalLinks = true;
+s.trackInlineStats = true;
+s.linkDownloadFileTypes = "exe,zip,wav,mp3,mov,mpg,avi,wmv,pdf,doc,docx,xls,xlsx,ppt,pptx";
+s.linkInternalFilters = "javascript:,.1und1.de,.1und1.at,.1and1.com,.1and1.ca,.1and1.co.uk,.1and1.es,.1and1.fr,.1and1.pl,.1and1.it,.1und1.info,.1and1.mx,.gmx.de,.web.de,united.domain,cinetic.de,schlund.de,.ionos.ca,.ionos.de,.ionos.at,.ionos.es,.ionos.fr,.ionos.it,.ionos.mx,.ionos.co.uk,.ionos.com,"+s.thisHost;
+s.linkLeaveQueryString = false;
+s.linkTrackVars = "None";
+s.linkTrackEvents = "None";
+s.usePlugins = true;
+s.prop11 = "New contract shop";
+s.eVar13 = "New contract shop";
+s.channel = "digitalguide";
+var cookieName = "ac-whorder-it";
+var searchString = document.location.search;
+// removing the '?' at the beginning
+if (searchString.length > 0) {
+  searchString = searchString.substring(1);
+}
+var searchStringParts = searchString.split('&');
+var actionCode = '';
+for (var i=0, j=searchStringParts.length; i<j; i++) {
+  if (searchStringParts[i].search('ac') != -1) {
+    // getting the value by removing the 'ac=' at the beginning
+    actionCode = searchStringParts[i].substring(3);
+  }
+}
+
+// if the actionCode is not in the URL check for the cookie
+if (typeof $.cookie != "undefined" && actionCode == '' && typeof $.cookie(cookieName) != "undefined") {
+  actionCode = $.cookie(cookieName);
+}
+
+if (actionCode != '') {
+  s.campaign = s.eVar23 = actionCode;
+}
+s.prop1 = "hosting_tecniche-hosting_cosa-fare-quando-si-presenta-lerrore-403-forbidden";
+s.prop5 = "dg-hosting";
+s.prop6 = "dg-it";
+s.prop7 = "www.ionos.it";
+s.prop17 = "it";
+s.prop23 = window.navigator.userAgent;
+s.eVar1 = "digitalguide";
+s.eVar2 = "hosting_tecniche-hosting_cosa-fare-quando-si-presenta-lerrore-403-forbidden";
+var currentDate = new Date();
+var day = currentDate.getDate();
+var formattedDay = day <= 9 ? "0" + day : day;
+var month = currentDate.getMonth();
+var formattedMonth = month <= 8 ? "0" + (month + 1) : (month + 1);
+var year = currentDate.getFullYear();
+var hours = currentDate.getHours();
+var formattedHours = hours <= 9 ? "0" + (hours) : hours;
+var minutes = currentDate.getMinutes();
+var formattedMinutes = minutes <= 9 ? "0" + (minutes) : minutes;
+
+var timeStamp = formattedDay + "/" + formattedMonth + "/" + year + "-" + formattedHours + ":" + formattedMinutes;
+s.eVar3 = timeStamp;
+s.eVar6 = "dg-hosting";
+s.eVar7 = "dg-it";
+s.eVar45 = "it";
+                        }
+                        $(window).ready(function() {
+
+                          window.setTimeout(function(){ 
+                              if (typeof window.PrivacyConsent !== "undefined")
+                              {
+                                  // we use the available variable defined by Adpbe DTM script
+                                  if (typeof window.privacyConsentInstance === "undefined") {
+                                    window.privacyConsentInstance = new PrivacyConsent({ whitelist: true });
+                                  }
+                                  
+                                  window.privacyConsentInstance.invoke(
+                                    function() {
+                                        var existingScriptElement = document.getElementsByTagName("script")[0];
+                                        var scriptElement = document.createElement("script");
+                                        scriptElement.type = "text/javascript";
+                                        scriptElement.src = "typo3conf/ext/ciso_sitecatalyst/Resources/Public/JavaScript/s_code.js";
+                                        scriptElement.onload = function() {
+                                            onRequest();
+                                            
+                                            var s_code=s.t();
+                                            if (s_code) document.write(s_code);
+                                        };
+                                        existingScriptElement.parentNode.insertBefore(scriptElement, existingScriptElement);
+                                    },
+                                    PrivacyConsentEnum.STATISTICS,
+                                    this,
+                                    true
+                                  );
+                                  
+                                  window.privacyConsentInstance.initialize();
+                              } else {
+                                // send the tracking for the page
+                                onRequest();
+    
+                                var s_code=s.t();
+                                if (s_code) document.write(s_code);
+                              }
+                          
+                          }, 2000);                         
+                
+                        });
+   </script>
+   <script type="text/javascript">
+    <!--; if (navigator.appVersion.indexOf("MSIE")>=0) document.write(unescape("%3C")+"\!-"+"-"); //-->
+   </script>
+   <noscript>
+    <p>
+     <a href="http://www.omniture.com" title="Web Analytics">
+      <img alt="" height="1" src="" width="1"/>
+     </a>
+    </p>
+   </noscript>
+   <!--/DO NOT REMOVE/-->
+   <!-- End SiteCatalyst code version: H.20.3. -->
+  </div>
+  <script type="text/javascript">
+   var page = 'Cosa fare quando si presenta l’errore 403 Forbidden?';
+   var pageId = '3';
+   var application = 'T3.DG.IT';
+  </script>
+  <script src="typo3conf/ext/ciso_tracking/Resources/Public/Scripts/performance/browser.js" type="text/javascript">
+  </script>
+  <script src="typo3conf/ext/ciso_tracking/Resources/Public/Scripts/performance/rum.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   UNOUNO = window.UNOUNO || {};
+UNOUNO.tracking = UNOUNO.tracking || {};
+
+
+UNOUNO.tracking.genericTracking = function(siteCatalystParams, type, name, optFullSet) {
+  /*
+    use this API to track specific events independend from page related tracking
+    uses cases for this can be tracking a survey, a clicked link or search related tracking
+  */
+
+  /*
+    here is one code example of how to track events with SiteCatalyst
+    UNOUNO.tracking.genericTracking makes it possible to use a standardized API for all kinds of such tracking codes
+
+    Example (original code):
+
+    var s=s_gi('iagdev');
+    s.linkTrackVars='events,products';
+    s.linkTrackEvents='event7,event8,event9,event10,event11,event12';
+    s.events='event7,event8,event9,event10,event11,event12';
+    s.products=";;;;event7=25|event8=75|event9=100|event10=0|event11=1";
+    s.tl(this,'o','Linkname');
+
+    Standardized UNOUNO.tracking.genericTracking example:
+
+    UNOUNO.tracking.genericTracking({
+
+      events: 'event7,event8,event9,event10,event11,event12',
+
+      products: ';;;;event7=25|event8=75|event9=100|event10=0|event11=1'
+
+    });
+
+    See wiki for complete API: http://wiki.intranet.1and1.com/bin/view/UE/SitecatalystTracking#Tracking_Events
+
+  */
+
+  var s, key, linkTrackVars, linkTrackEvents;
+
+  if (typeof s_gi !== 'undefined' && typeof s_account !== 'undefined') {
+
+    // s_account is triggered by tag manager script and has values iagdev or iaglive
+
+    s = s_gi(s_account);
+
+    // generate linkTrackVars based on siteCatalystParams
+
+    linkTrackVars = '';
+    /* transactionId  */
+    
+    if ((typeof siteCatalystParams["list2"] != "undefined" && siteCatalystParams["list2"].indexOf("chat-angenommen") == 0  || typeof siteCatalystParams["prop60"] != "undefined" && siteCatalystParams["prop60"].indexOf("ct.btn.MobileZubehoerShop") > -1) && typeof siteCatalystParams["eVar35"] == "undefined"){
+      siteCatalystParams["eVar35"] = UNOUNO.tracking.transactionId;
+    }
+
+    for (key in siteCatalystParams) {
+
+      if (siteCatalystParams.hasOwnProperty(key)) {
+
+        linkTrackVars = linkTrackVars + key + ',';
+
+        if (key === 'events') {
+
+          // if the special param events is used, generate an additionally linkTrackEvents property
+
+          linkTrackEvents = siteCatalystParams[key];
+
+        }
+
+      }
+
+    }
+
+    if (linkTrackVars !== '') {
+
+      // remove trailing comma
+
+      linkTrackVars = linkTrackVars.substr(0, linkTrackVars.length - 1);
+
+      // server time in every request
+      linkTrackVars += ",eVar3";
+      
+      // copy generated linkTrackVars and optional linkTrackEvents to the s object
+      s.linkTrackVars = linkTrackVars;
+
+      if (linkTrackEvents) {
+
+        s.linkTrackEvents = linkTrackEvents;
+
+      }
+
+      // clone all siteCatalystParams to s object
+
+      for (key in siteCatalystParams) {
+
+        if (siteCatalystParams.hasOwnProperty(key)) {
+
+          s[key] = siteCatalystParams[key];
+
+        }
+
+      }
+
+      // finally send SiteCatalyst tracking request with type and name or their defaults
+
+      if(optFullSet == true){
+         s.t(this, type || 'o', name || 'generic-tracking');
+      }
+      else{
+         s.tl(this, type || 'o', name || 'generic-tracking');
+      }
+
+
+
+
+    }
+
+  }
+
+};
+  </script>
+ </body>
+</html>
+<!-- cached statically on: 16-05-22 04:35 -->
+<!-- expires on: 16-05-22 06:35 -->

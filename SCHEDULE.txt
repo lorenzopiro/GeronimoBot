@@ -1,8 +1,7 @@
 SCHEDULE
 
 -Comando aggiungiSito:
-    -farmi restituire il token dei file per inserirlo nel database e collegare lo storage
-    -riuscire a caricare la soup delle pagine senza salvare il file localmente
+    -controllare che il sito non sia già presente nello storage prima di inserirlo
 
 -Comando rimuoviSito
 
@@ -24,3 +23,5 @@ SCHEDULE
 -Aggiungere email utente
 
 -Hostare servere con node o flask
+
+

@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="en-US">
+ <head>
+  <meta charset="utf-8"/>
+  <script nonce="BGtOhD8dKFHfvr3Q7/N+Tg">
+   var DOCS_timing={}; DOCS_timing['sl']=new Date().getTime();
+  </script>
+  <script nonce="BGtOhD8dKFHfvr3Q7/N+Tg">
+   function _DumpException(e) {throw e;}
+  </script>
+  <script nonce="BGtOhD8dKFHfvr3Q7/N+Tg">
+   _docs_flag_initialData={"atari-emtpr":false,"atari-efpe":false,"atari-etsm":true,"atari-etss":true,"atari-etsswfm":false,"atari-ebidm":false,"atari-ebids":false,"atari-emasgcfrg":false,"docs-text-elei":false,"docs-text-usc":true,"atari-esp":false,"docs-sup":"","docs-eldi":false,"docs-eiq":false,"docs-ecci":false,"docs-eeii":false,"docs-ipmmp":true,"docs-esi":false,"docs-liap":"/logImpressions","ilcm":{"eui":"AHKXmL0590syw0rgzrIiQu-PRFFMPGcHwt9S2WUzE4M8tL3gKahu1GsTf2m5-fDuOqustWIiiS_9","je":1,"sstu":1652711417509054,"si":"CMTp0-ed5PcCFcpJqwIdTh4GoA","gsc":null,"ei":[5703839,5704621,5706832,5706836,5707711,5708870,5713207,5714550,5714628,5720060,5720925,5729664,5732942,5734571,5734896,5734954,5735806,5737337,5737441,5738509,5738529,5740814,5741775,5742462,5743124,5745622,5747265,5747741,5748029,5749679,5752694,5753006,5753329,5754229,5754788,5756315,5757140,5757192,5758193,5761251,5761523,5763092,5764268,5766777,14101306,14101502,14101510,14101530,14101534,49376768,49377640,49378889,49424900,49429964],"crc":0,"cvi":[]},"docs-ccdil":false,"docs-eil":true,"docs-eoi":false,"info_params":{},"atari-jefp":"/_/view/jserror","docs-jern":"view","atari-rhpp":"/_/view"}; _docs_flag_cek= null ; if (window['DOCS_timing']) {DOCS_timing['ifdld']=new Date().getTime();}
+  </script>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="strict-origin-when-cross-origin" name="referrer"/>
+  <link href="https://lh6.googleusercontent.com/sQr_UfozG8EsP4oT6QFhoNquy9ztnd9ZP-iE--6Xwu4jNLykQbDBCr03qLGeWTKgDNpg8KDbi6DnUdBq6-ZQw28hOvU6" rel="icon"/>
+  <meta content="CdS Informatica" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://informatica.unical.it/" property="og:url"/>
+  <meta content="
+News" property="og:description"/>
+  <meta content="CdS Informatica" itemprop="name"/>
+  <meta content="
+News" itemprop="description"/>
+  <meta content="https://informatica.unical.it/" itemprop="url"/>
+  <meta content="https://lh4.googleusercontent.com/04M9mvlCY1Lk-1L-nnVStEWc8EvfzAJl5hE8tTn3KaRLfmmPHiBQsNzJW-a6m86hs7LD4oeikmLzhFRi0jfuHRI=w16383" itemprop="thumbnailUrl"/>
+  <meta content="https://lh4.googleusercontent.com/04M9mvlCY1Lk-1L-nnVStEWc8EvfzAJl5hE8tTn3KaRLfmmPHiBQsNzJW-a6m86hs7LD4oeikmLzhFRi0jfuHRI=w16383" itemprop="image"/>
+  <meta content="https://lh4.googleusercontent.com/04M9mvlCY1Lk-1L-nnVStEWc8EvfzAJl5hE8tTn3KaRLfmmPHiBQsNzJW-a6m86hs7LD4oeikmLzhFRi0jfuHRI=w16383" itemprop="imageUrl"/>
+  <meta content="https://lh4.googleusercontent.com/04M9mvlCY1Lk-1L-nnVStEWc8EvfzAJl5hE8tTn3KaRLfmmPHiBQsNzJW-a6m86hs7LD4oeikmLzhFRi0jfuHRI=w16383" property="og:image"/>
+  <link href="https://fonts.googleapis.com/css?family=Oswald%3A400%2C600%2C700%7COpen%20Sans%3A400%2C600%2C700&amp;display=swap" nonce="NP/sGoZOKpVD7QkDZhR2CA" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:300,400,500,700|Source+Code+Pro:400,700&amp;display=swap" nonce="NP/sGoZOKpVD7QkDZhR2CA" rel="stylesheet"/>
+  <link data-id="_cl" href="https://www.gstatic.com/_/atari/_/ss/k=atari.vw.0Ao8mKygS78.L.W.O/d=1/rs=AGEqA5kNP1SMbtZxVIvsInNj6BBhkNwSvw" nonce="NP/sGoZOKpVD7QkDZhR2CA" rel="stylesheet"/>
+  <title>
+   CdS Informatica
+  </title>
+  <style jsname="ptDGoc" nonce="NP/sGoZOKpVD7QkDZhR2CA">
+   .ImnMyf{background-color: rgba(255,255,255,1); color: rgba(33,33,33,1);}.Vs12Bd{background-color: rgba(244,244,244,1); color: rgba(185,0,0,1);}.S5d9Rd{background-color: rgba(185,0,0,1); color: rgba(255,255,255,1);}.O13XJf{height: 340px; padding-bottom: 56px; padding-top: 56px;}.O13XJf .IFuOkc{background-image: url(https://ssl.gstatic.com/atari/images/impression-header.png);}.O13XJf .IFuOkc:before{background-color: rgba(33,33,33,1); opacity: 0.5; display: block;}.O13XJf .zfr3Q{color: rgba(255,255,255,1);}.O13XJf .qnVSj{color: rgba(255,255,255,1);}.O13XJf .Glwbz{color: rgba(255,255,255,1);}.O13XJf .qLrapd{color: rgba(255,255,255,1);}.O13XJf .aHM7ed{color: rgba(255,255,255,1);}.O13XJf .NHD4Gf{color: rgba(255,255,255,1);}.O13XJf .QmpIrf{background-color: rgba(255,255,255,1); border-color: rgba(185,0,0,1); color: rgba(185,0,0,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}@media only screen and (max-width: 479px){.O13XJf .QmpIrf{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.O13XJf .QmpIrf{font-size: 13pt;}}@media only screen and (max-width: 479px){.O13XJf{height: 250px;}}.SBrW1{height: 430px; padding-bottom: 120px; padding-top: 120px;}.Wew9ke{fill: rgba(255,255,255,1);}.YTv4We.chg4Jd:focus:before{border-color: rgba(31,31,31,1); display: block;}.KJll8d{background-color: rgba(255,255,255,1);}.fOU46b .YSH9J{color: rgba(255,255,255,1);}.fOU46b .Mz8gvb{color: rgba(255,255,255,1);}.fOU46b .Mz8gvb.chg4Jd:focus:before{border-color: rgba(255,255,255,1); display: block;}.fOU46b .G8QRnc .Mz8gvb{color: rgba(31,31,31,1);}.fOU46b .G8QRnc .Mz8gvb.chg4Jd:focus:before{border-color: rgba(31,31,31,1); display: block;}.fOU46b .G8QRnc .YSH9J{color: rgba(31,31,31,1);}.fOU46b .G8QRnc .KJll8d{background-color: rgba(31,31,31,1);}.fOU46b .usN8rf .YSH9J{color: rgba(31,31,31,1);}.fOU46b .usN8rf .KJll8d{background-color: rgba(31,31,31,1);}.fOU46b .usN8rf .Mz8gvb{color: rgba(31,31,31,1);}.fOU46b .aCIEDd .YSH9J{color: rgba(185,0,0,1);}.fOU46b .aCIEDd .KJll8d{background-color: rgba(185,0,0,1);}.fOU46b .aCIEDd .Mz8gvb{color: rgba(185,0,0,1);}.fOU46b .a3ETed .YSH9J{color: rgba(255,255,255,1);}.fOU46b .a3ETed .KJll8d{background-color: rgba(255,255,255,1);}.fOU46b .a3ETed .Mz8gvb{color: rgba(255,255,255,1);}.fOU46b .zDUgLc{opacity: 0;}.fOU46b .LBrwzc .zDUgLc{opacity: 1; border-bottom-style: none;}.fOU46b .GBy4H .zDUgLc{opacity: 1;}@media only screen and (min-width: 1280px){.XeSM4.b2Iqye.fOU46b .LBrwzc .iWs3gf{color: rgba(255,255,255,1);}}@media only screen and (min-width: 1280px){.KuNac.b2Iqye.fOU46b .GBy4H .iWs3gf{color: rgba(31,31,31,1);}}@media only screen and (min-width: 1280px){.KuNac.yMcSQd.fOU46b .GBy4H .iWs3gf{color: rgba(255,255,255,1);}}@media only screen and (min-width: 1280px){.XeSM4.yMcSQd.fOU46b .LBrwzc .iWs3gf{color: rgba(31,31,31,1);}}.LBrwzc .oNsfjf{color: rgba(31,31,31,1);}.LBrwzc .YSH9J{color: rgba(31,31,31,1);}.LBrwzc .YTv4We.chg4Jd:focus:before{border-color: rgba(31,31,31,1); display: block;}.LBrwzc .oNsfjf.Zjiec{color: rgba(31,31,31,1);}.LBrwzc .zDUgLc{border-bottom-color: rgba(204,204,204,1); border-bottom-width: 1px; border-bottom-style: solid;}.GBy4H .oNsfjf{color: rgba(255,255,255,1);}.GBy4H .YSH9J{color: rgba(255,255,255,1);}.GBy4H .YTv4We.chg4Jd:focus:before{border-color: rgba(255,255,255,1); display: block;}.GBy4H .wgxiMe{background-color: rgba(0,0,0,1);}.GBy4H .oNsfjf.Zjiec{color: rgba(255,255,255,1);}.JzO0Vc{background-color: rgba(247,247,247,1);}.M63kCb{background-color: rgba(255,255,255,1);}.zfr3Q{font-family: 'Open Sans'; color: rgba(33,33,33,1); font-size: 13pt; line-height: 1.6; margin-top: 15px;}.qnVSj{color: rgba(33,33,33,1);}.Glwbz{color: rgba(33,33,33,1);}.dhtgD{text-decoration: underline;}.dhtgD:hover{color: rgba(185,0,0,1);}.dhtgD:active{color: rgba(185,0,0,1);}.duRjpb{font-family: Oswald; font-size: 38pt; line-height: 1.23; font-weight: 400; color: rgba(31,31,31,1); margin-top: 20px; text-transform: uppercase;}.Ap4VC{margin-bottom: -20px;}.qLrapd{color: rgba(31,31,31,1);}.JYVBee{font-family: Oswald; font-size: 29pt; line-height: 1.42; font-weight: 400; color: rgba(31,31,31,1); margin-top: 20px; text-transform: uppercase;}.CobnVe{margin-bottom: -20px;}.aHM7ed{color: rgba(31,31,31,1);}.OmQG5e{font-family: 'Open Sans'; font-size: 18pt; line-height: 1.3; margin-top: 20px; font-weight: 400; color: rgba(185,0,0,1);}.GV3q8e{margin-bottom: -20px;}.NHD4Gf{color: rgba(185,0,0,1);}.duRjpb .OUGEr{color: rgba(31,31,31,1);}.JYVBee .OUGEr{color: rgba(31,31,31,1);}.OmQG5e .OUGEr{color: rgba(185,0,0,1);}.TMjjoe{font-family: Oswald; font-size: 9pt; line-height: 1.2; margin-top: 0px;}.rysYnb{background-color: rgba(247,247,247,1); padding-left: 50px; width: 256px;}.Zjiec{font-family: Oswald; font-weight: 400; font-size: 20pt; line-height: 1.2; margin-top: 48px; margin-left: 48px; margin-bottom: 62px; margin-right: 32px;}.oNsfjf.Zjiec{color: rgba(185,0,0,1);}.XMyrgf{margin-top: 48px; margin-left: 48px; margin-bottom: 0px; margin-right: 32px;}.PsKE7e{font-family: 'Open Sans'; font-weight: 400; font-size: 12pt; padding-left: 6px; padding-right: 6px;}.rysYnb .mohMlc:hover{background-color: rgba(0,0,0,1);}.lhZOrc .aJHbb{background-color: rgba(31,31,31,1); color: rgba(255,255,255,1);}.oNsfjf{color: rgba(31,31,31,1);}.YSH9J{color: rgba(31,31,31,1);}.zDUgLc{background-color: rgba(255,255,255,1); opacity: 1;}.TlfmSc{font-family: Oswald; font-weight: 400; font-size: 16pt; line-height: 1.26;}.u5fiyc{line-height: 1.88;}.jgXgSe{font-family: 'Open Sans'; font-weight: 400; font-size: 12pt; line-height: 1.88; padding-left: 10px; padding-right: 10px;}.lhZOrc{font-weight: 600;}.M9vuGd .jgXgSe{background-color: rgba(31,31,31,1); color: rgba(255,255,255,1);}.eWDljc{background-color: rgba(247,247,247,1); padding-bottom: 28px;}.IKA38e{padding-left: 36px; margin-top: 20px;}.hDrhEe{font-family: 'Open Sans'; margin-left: 12px; margin-right: 12px; padding-right: 6px; padding-left: 6px; display: inline-block; max-width: 90%;}.baH5ib .hDrhEe{margin-left: 4px; padding-left: 6px;}.iwQgFb{background-color: rgba(185,0,0,1); opacity: 0.8; height: 3px; margin-top: 8px;}.ySLm4c{font-family: 'Open Sans';}.CbiMKe{background-color: rgba(185,0,0,1);}.QmpIrf{background-color: rgba(185,0,0,1); border-color: rgba(255,255,255,1); color: rgba(255,255,255,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}.qeLZfd:before{background-color: rgba(239,239,239,1); display: block;}.qeLZfd .iwQgFb{background-color: rgba(185,0,0,1); opacity: 1;}.qeLZfd .dhtgD:hover{color: rgba(185,0,0,1);}.qeLZfd .duRjpb{color: rgba(185,0,0,1);}.qeLZfd .qLrapd{color: rgba(185,0,0,1);}.qeLZfd .JYVBee{color: rgba(185,0,0,1);}.qeLZfd .aHM7ed{color: rgba(185,0,0,1);}.qeLZfd .OmQG5e{color: rgba(185,0,0,1);}.qeLZfd .NHD4Gf{color: rgba(185,0,0,1);}.qeLZfd .duRjpb .OUGEr{color: rgba(185,0,0,1);}.qeLZfd .JYVBee .OUGEr{color: rgba(185,0,0,1);}.qeLZfd .OmQG5e .OUGEr{color: rgba(185,0,0,1);}.lQAHbd:before{background-color: rgba(185,0,0,1); display: block;}.lQAHbd .iwQgFb{background-color: rgba(255,255,255,1); opacity: 1;}.lQAHbd .QmpIrf{background-color: rgba(255,255,255,1); border-color: rgba(185,0,0,1); color: rgba(185,0,0,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}.lQAHbd .CbiMKe{background-color: rgba(255,255,255,1);}@media only screen and (max-width: 479px){.lQAHbd .QmpIrf{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.lQAHbd .QmpIrf{font-size: 13pt;}}.lQAHbd .zfr3Q{color: rgba(255,255,255,1);}.lQAHbd .qnVSj{color: rgba(255,255,255,1);}.lQAHbd .Glwbz{color: rgba(255,255,255,1);}.lQAHbd .dhtgD:hover{color: rgba(255,255,255,1); opacity: 0.7;}.lQAHbd .duRjpb{color: rgba(255,255,255,1);}.lQAHbd .qLrapd{color: rgba(255,255,255,1);}.lQAHbd .JYVBee{color: rgba(255,255,255,1);}.lQAHbd .aHM7ed{color: rgba(255,255,255,1);}.lQAHbd .OmQG5e{color: rgba(255,255,255,1);}.lQAHbd .NHD4Gf{color: rgba(255,255,255,1);}.lQAHbd .duRjpb .OUGEr{color: rgba(255,255,255,1);}.lQAHbd .JYVBee .OUGEr{color: rgba(255,255,255,1);}.lQAHbd .OmQG5e .OUGEr{color: rgba(255,255,255,1);}.IFuOkc .dhtgD:hover{color: rgba(185,0,0,1);}.LB7kq .dhtgD:hover{color: rgba(185,0,0,1);}.LB7kq .baZpAe .duRjpb{padding-bottom: 20px;}.LB7kq .duRjpb:not(.TYR86d):first-child:before{border-bottom-width: 12px; border-bottom-style: solid; border-bottom-color: rgba(185,0,0,1); display: block;}.LB7kq .duRjpb{font-size: 60pt; line-height: 1.2; font-weight: 400; padding-bottom: 20px;}@media only screen and (max-width: 479px){.LB7kq .duRjpb{font-size: 39pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.LB7kq .duRjpb{font-size: 51pt;}}.LB7kq .JYVBee{font-size: 29pt; line-height: 1.18;}@media only screen and (max-width: 479px){.LB7kq .JYVBee{font-size: 22pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.LB7kq .JYVBee{font-size: 26pt;}}.gk8rDe .duRjpb{font-size: 48pt;}@media only screen and (max-width: 479px){.gk8rDe .duRjpb{font-size: 32pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.gk8rDe .duRjpb{font-size: 41pt;}}.cJgDec .zfr3Q{color: rgba(255,255,255,1);}.cJgDec .zfr3Q .OUGEr{color: rgba(255,255,255,1);}.cJgDec .qnVSj{color: rgba(255,255,255,1);}.cJgDec .Glwbz{color: rgba(255,255,255,1);}.cJgDec .qLrapd{color: rgba(255,255,255,1);}.cJgDec .aHM7ed{color: rgba(255,255,255,1);}.cJgDec .NHD4Gf{color: rgba(255,255,255,1);}.cJgDec .IFuOkc:before{background-color: rgba(33,33,33,1); opacity: 0.5; display: block;}.cJgDec .QmpIrf{background-color: rgba(255,255,255,1); border-color: rgba(185,0,0,1); color: rgba(185,0,0,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}@media only screen and (max-width: 479px){.cJgDec .QmpIrf{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.cJgDec .QmpIrf{font-size: 13pt;}}.tpmmCb .zfr3Q{color: rgba(31,31,31,1);}.tpmmCb .zfr3Q .OUGEr{color: rgba(31,31,31,1);}.tpmmCb .qnVSj{color: rgba(31,31,31,1);}.tpmmCb .Glwbz{color: rgba(31,31,31,1);}.tpmmCb .qLrapd{color: rgba(31,31,31,1);}.tpmmCb .aHM7ed{color: rgba(31,31,31,1);}.tpmmCb .NHD4Gf{color: rgba(31,31,31,1);}.tpmmCb .IFuOkc:before{background-color: rgba(255,255,255,1); display: block;}.tpmmCb .Wew9ke{fill: rgba(31,31,31,1);}.tpmmCb .QmpIrf{background-color: rgba(255,255,255,1); border-color: rgba(185,0,0,1); color: rgba(185,0,0,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}@media only screen and (max-width: 479px){.tpmmCb .QmpIrf{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.tpmmCb .QmpIrf{font-size: 13pt;}}.gk8rDe{padding-top: 60px;}.gk8rDe .zfr3Q{color: rgba(31,31,31,1);}.gk8rDe .OmQG5e{color: rgba(31,31,31,1);}.gk8rDe .NHD4Gf{color: rgba(31,31,31,1);}.gk8rDe .QmpIrf{background-color: rgba(185,0,0,1); border-color: rgba(255,255,255,1); color: rgba(255,255,255,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}@media only screen and (max-width: 479px){.gk8rDe .QmpIrf{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.gk8rDe .QmpIrf{font-size: 13pt;}}@media only screen and (max-width: 479px){.gk8rDe{padding-top: 32px; padding-bottom: 32px;}}.PsKE7e:hover{opacity: 0.7;}.BFDQOb:hover{opacity: 0.7;}.wgxiMe{background-color: rgba(247,247,247,1);}.xkUom{border-color: rgba(185,0,0,1); color: rgba(185,0,0,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}.xkUom:hover{background-color: rgba(31,31,31,0.1000000015);}.KjwKmc{color: rgba(185,0,0,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}.KjwKmc:hover{background-color: rgba(31,31,31,0.1000000015);}.lQAHbd .xkUom{border-color: rgba(255,255,255,1); color: rgba(255,255,255,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}.lQAHbd .xkUom:hover{background-color: rgba(255,255,255,0.1000000015);}.lQAHbd .KjwKmc{color: rgba(255,255,255,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}.lQAHbd .KjwKmc:hover{background-color: rgba(255,255,255,0.1000000015);}@media only screen and (max-width: 479px){.lQAHbd .xkUom{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.lQAHbd .xkUom{font-size: 13pt;}}@media only screen and (max-width: 479px){.lQAHbd .KjwKmc{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.lQAHbd .KjwKmc{font-size: 13pt;}}.cJgDec .xkUom{border-color: rgba(255,255,255,1); color: rgba(255,255,255,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}.cJgDec .xkUom:hover{background-color: rgba(255,255,255,0.1000000015);}.cJgDec .KjwKmc{color: rgba(255,255,255,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}.cJgDec .KjwKmc:hover{background-color: rgba(255,255,255,0.1000000015);}@media only screen and (max-width: 479px){.cJgDec .xkUom{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.cJgDec .xkUom{font-size: 13pt;}}@media only screen and (max-width: 479px){.cJgDec .KjwKmc{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.cJgDec .KjwKmc{font-size: 13pt;}}.tpmmCb .xkUom{border-color: rgba(31,31,31,1); color: rgba(31,31,31,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}.tpmmCb .xkUom:hover{background-color: rgba(31,31,31,0.1000000015);}.tpmmCb .KjwKmc{color: rgba(31,31,31,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}.tpmmCb .KjwKmc:hover{background-color: rgba(31,31,31,0.1000000015);}@media only screen and (max-width: 479px){.tpmmCb .xkUom{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.tpmmCb .xkUom{font-size: 13pt;}}@media only screen and (max-width: 479px){.tpmmCb .KjwKmc{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.tpmmCb .KjwKmc{font-size: 13pt;}}.gk8rDe .xkUom{border-color: rgba(185,0,0,1); color: rgba(185,0,0,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}.gk8rDe .xkUom:hover{background-color: rgba(31,31,31,0.1000000015);}.gk8rDe .KjwKmc{color: rgba(185,0,0,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}.gk8rDe .KjwKmc:hover{background-color: rgba(31,31,31,0.1000000015);}@media only screen and (max-width: 479px){.gk8rDe .xkUom{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.gk8rDe .xkUom{font-size: 13pt;}}@media only screen and (max-width: 479px){.gk8rDe .KjwKmc{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.gk8rDe .KjwKmc{font-size: 13pt;}}.O13XJf .xkUom{border-color: rgba(255,255,255,1); color: rgba(255,255,255,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}.O13XJf .xkUom:hover{background-color: rgba(255,255,255,0.1000000015);}.O13XJf .KjwKmc{color: rgba(255,255,255,1); font-family: 'Open Sans'; font-size: 13pt; line-height: 22px;}.O13XJf .KjwKmc:hover{background-color: rgba(255,255,255,0.1000000015);}@media only screen and (max-width: 479px){.O13XJf .xkUom{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.O13XJf .xkUom{font-size: 13pt;}}@media only screen and (max-width: 479px){.O13XJf .KjwKmc{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.O13XJf .KjwKmc{font-size: 13pt;}}.Y4CpGd{font-family: 'Open Sans'; font-size: 13pt;}.CMArNe{background-color: rgba(239,239,239,1);}@media only screen and (max-width: 479px){.duRjpb{font-size: 27pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.duRjpb{font-size: 33pt;}}@media only screen and (max-width: 479px){.JYVBee{font-size: 22pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.JYVBee{font-size: 26pt;}}@media only screen and (max-width: 479px){.OmQG5e{font-size: 16pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.OmQG5e{font-size: 17pt;}}@media only screen and (max-width: 479px){.TMjjoe{font-size: 9pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.TMjjoe{font-size: 9pt;}}@media only screen and (max-width: 479px){.Zjiec{font-size: 17pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.Zjiec{font-size: 19pt;}}@media only screen and (max-width: 479px){.PsKE7e{font-size: 12pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.PsKE7e{font-size: 12pt;}}@media only screen and (max-width: 479px){.TlfmSc{font-size: 15pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.TlfmSc{font-size: 15pt;}}@media only screen and (max-width: 479px){.jgXgSe{font-size: 12pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.jgXgSe{font-size: 12pt;}}@media only screen and (max-width: 479px){.QmpIrf{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.QmpIrf{font-size: 13pt;}}@media only screen and (max-width: 479px){.xkUom{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.xkUom{font-size: 13pt;}}@media only screen and (max-width: 479px){.KjwKmc{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.KjwKmc{font-size: 13pt;}}section[id="h.INITIAL_GRID.3nfe5qb5spgr"] .IFuOkc:before{opacity: 0.5;}
+  </style>
+  <script nonce="BGtOhD8dKFHfvr3Q7/N+Tg">
+   _at_config = [null,"AIzaSyChg3MFqzdi1P5J-YvEyakkSA1yU7HRcDI","897606708560-a63d8ia0t9dhtpdt4i3djab2m42see7o.apps.googleusercontent.com",null,null,null,null,null,null,null,null,null,null,null,"SITES_%s",null,null,null,null,null,null,null,null,null,["AHKXmL0590syw0rgzrIiQu-PRFFMPGcHwt9S2WUzE4M8tL3gKahu1GsTf2m5-fDuOqustWIiiS_9",1,"CMTp0-ed5PcCFcpJqwIdTh4GoA",1652711417509054,[5703839,5704621,5706832,5706836,5707711,5708870,5713207,5714550,5714628,5720060,5720925,5729664,5732942,5734571,5734896,5734954,5735806,5737337,5737441,5738509,5738529,5740814,5741775,5742462,5743124,5745622,5747265,5747741,5748029,5749679,5752694,5753006,5753329,5754229,5754788,5756315,5757140,5757192,5758193,5761251,5761523,5763092,5764268,5766777,14101306,14101502,14101510,14101530,14101534,49376768,49377640,49378889,49424900,49429964]],null,null,null,null,0,null,null,null,null,null,null,null,null,null,"https://drive.google.com",null,null,null,null,null,null,null,null,null,0,1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"v2internal","https://docs.google.com",null,null,null,null,null,null,"https://sites.google.com/new/",null,null,null,null,null,0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1,"",null,null,null,null,null,null,null,null,null,null,null,null,6,null,null,"https://accounts.google.com/o/oauth2/auth","https://accounts.google.com/o/oauth2/postmessageRelay",null,null,null,null,78,"https://sites.google.com/new/?usp\u003dviewer_footer",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"https://www.gstatic.com/atari/embeds/7925c5f8e01bacb9b4b0a3783ae0b867/intermediate-frame-minified.html",1,null,"v2beta",null,null,null,null,null,null,4,"https://accounts.google.com/o/oauth2/iframe",null,null,null,null,null,null,"https://298196073-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,0,null,null,null,null,null,null,0,null,"",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,0,null,null,null,null,null,null,null,null,null,null,null,null,null,1,null,1,null,null,[1652711417517,"atari_2022.18-Tue-0500_RC02","446776882",null,1,1,""],null,null,null,null,0,null,null,0,null,null,0,null,null,null,null,null,20,500,"https://domains.google.com",null,0,null,null,null,null,null,0,null,null,null,null,null,0,0,null,0,0,0,1,null,1,0,0,0,0,0]; window.globals = {"enableAnalytics":true,"webPropertyId":"G-MG8Y8RK5X4","showDebug":false,"hashedSiteId":"80232cda75e6ae397f37e3aafec58daff34dc4814d9e0e7b07cbad012ecad03d","normalizedPath":"unical.it/informatica/home-page","pageTitle":"Home"}; function gapiLoaded() {if (globals.gapiLoaded == undefined) {globals.gapiLoaded = true;} else {globals.gapiLoaded();}}window.messages = []; window.addEventListener && window.addEventListener('message', function(e) {if (window.messages && e.data && e.data.magic == 'SHIC') {window.messages.push(e);}});
+  </script>
+  <script nonce="BGtOhD8dKFHfvr3Q7/N+Tg" src="https://apis.google.com/js/client.js?onload=gapiLoaded">
+  </script>
+  <script nonce="BGtOhD8dKFHfvr3Q7/N+Tg">
+   (function(){/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+
+ Copyright 2011 Google LLC.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+
+ Copyright 2013 Google LLC.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+
+ Copyright 2020 Google LLC.
+ SPDX-License-Identifier: Apache-2.0
+*/
+var a=(this||self)._jsa||{};a._cfc=void 0;a._aeh=void 0;/*
+
+ Copyright 2005 Google LLC.
+ SPDX-License-Identifier: Apache-2.0
+*/
+}).call(this);
+  </script>
+  <script async="" nonce="BGtOhD8dKFHfvr3Q7/N+Tg" src="https://www.googletagmanager.com/gtag/js?id=G-MG8Y8RK5X4">
+  </script>
+  <script nonce="BGtOhD8dKFHfvr3Q7/N+Tg">
+   window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date()); gtag('set', 'developer_id.dZWRiYj', true); gtag('config', 'G-MG8Y8RK5X4');
+  </script>
+  <script nonce="BGtOhD8dKFHfvr3Q7/N+Tg">
+   const imageUrl = 'https:\/\/lh5.googleusercontent.com\/YGkuX-qvuZ-wpEogw1PShAf0GNPYlEDcwRGo3j1vstzHnzi05yJmhK4-yE6NlkW1IHOsdNiR0WVAmZawvbhcl0M\x3dw16383';
+      function bgImgLoaded() {
+        if (!globals.headerBgImgLoaded) {
+          globals.headerBgImgLoaded = new Date().getTime();
+        } else {
+          globals.headerBgImgLoaded();
+        }
+      }
+      if (imageUrl) {
+        const img = new Image();
+        img.src = imageUrl;
+        img.onload = bgImgLoaded;
+        globals.headerBgImgExists = true;
+      } else {
+        globals.headerBgImgExists = false;
+      }
+  </script>
+ </head>
+ <body css="yDmH0d" dir="ltr" id="yDmH0d" itemscope="" itemtype="http://schema.org/WebPage">
+  <div jsaction="rcuQ6b:WYd;GvneHb:og1FDd;vbaUQc:uAM5ec;" jscontroller="pc62j" jsmodel="iTeaXe">
+   <div jsaction="rcuQ6b:WYd;o6xM5b:Pg9eo;HuL2Hd:mHeCvf;VMhF5:FFYy5e;sk3Qmb:HI1Mdd;JIbuQc:rSzFEd(z2EeY),aSaF6e(ilzYPe);" jscontroller="X4BaPc">
+    <div data-domain="unical.it" data-sitename="informatica" data-universe="1" jsaction="Pe9H6d:cZFEp;WMZaJ:VsGN3;hJluRd:UADL7b;zuqEgd:HI9w0;tr6QDd:Y8aXB;MxH79b:xDkBfb;JIbuQc:SPXMTb(uxAMZ);" jscontroller="o1L5Wb" jsmodel="fNFZH" jsname="G0jgYd">
+     <div class="p9b27" jsname="gYwusb">
+     </div>
+     <div jsaction="keydown:uiKYid(OH0EC);rcuQ6b:WYd;zuqEgd:ufqpf;JIbuQc:XfTnxb(lfEfFf),AlTiYc(GeGHKb),AlTiYc(m1xNUe),zZlNMe(pZn8Oc);YqO5N:ELcyfe;" jscontroller="RrXLpc" jsname="XeeWQc" role="banner">
+      <div class="BuY5Fd" jsaction="click:xVuwSc;" jsname="bF1uUb">
+      </div>
+      <div class="TbNlJb" jsname="MVsrn">
+       <div aria-disabled="false" aria-label="Back to site" class="U26fgb mUbCce fKz7Od h3nfre M9Bg4d" data-tooltip="Back to site" data-tooltip-horizontal-offset="0" data-tooltip-vertical-offset="-12" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jscontroller="VXdfxd" jsname="GeGHKb" jsshadow="" role="button" tabindex="0">
+        <div class="VTBa7b MbhUzd" jsname="ksKsZd">
+        </div>
+        <span class="xjKiLb" jsslot="">
+         <span class="Ce1Y1c" style="top: -12px">
+          <svg class="V4YR2c" focusable="false" viewbox="0 0 24 24">
+           <path d="M0 0h24v24H0z" fill="none">
+           </path>
+           <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z">
+           </path>
+          </svg>
+         </span>
+        </span>
+       </div>
+       <div class="E2UJ5" jsname="M6JdT">
+        <div aria-expanded="true" class="rFrNMe b7AJhc zKHdkd" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV" jscontroller="pxq3x" jsname="OH0EC" jsshadow="">
+         <div class="aCsJod oJeWuf">
+          <div class="aXBtI I0VJ4d Wic03c">
+           <span class="A37UZe qgcB3c iHd5yb" jsslot="">
+            <div aria-disabled="false" aria-label="Search" class="U26fgb mUbCce fKz7Od i3PoXe M9Bg4d" data-tooltip="Search" data-tooltip-horizontal-offset="0" data-tooltip-vertical-offset="-12" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jscontroller="VXdfxd" jsname="lfEfFf" jsshadow="" role="button" tabindex="0">
+             <div class="VTBa7b MbhUzd" jsname="ksKsZd">
+             </div>
+             <span class="xjKiLb" jsslot="">
+              <span class="Ce1Y1c" style="top: -12px">
+               <svg class="vu8Pwe" focusable="false" viewbox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                </path>
+                <path d="M0 0h24v24H0z" fill="none">
+                </path>
+               </svg>
+              </span>
+             </span>
+            </div>
+            <div class="EmVfjc SKShhf" data-loadingmessage="Loading…" jsaction="animationend:kWijWc;dyRcpb:dyRcpb" jscontroller="qAKInc" jsname="aZ2wEe">
+             <div aria-live="assertive" class="Cg7hO" jsname="vyyg5">
+             </div>
+             <div class="xu46lf" jsname="Hxlbvc">
+              <div class="ir3uv uWlRce co39ub">
+               <div class="xq3j6 ERcjC">
+                <div class="X6jHbb GOJTSe">
+                </div>
+               </div>
+               <div class="HBnAAc">
+                <div class="X6jHbb GOJTSe">
+                </div>
+               </div>
+               <div class="xq3j6 dj3yTd">
+                <div class="X6jHbb GOJTSe">
+                </div>
+               </div>
+              </div>
+              <div class="ir3uv GFoASc Cn087">
+               <div class="xq3j6 ERcjC">
+                <div class="X6jHbb GOJTSe">
+                </div>
+               </div>
+               <div class="HBnAAc">
+                <div class="X6jHbb GOJTSe">
+                </div>
+               </div>
+               <div class="xq3j6 dj3yTd">
+                <div class="X6jHbb GOJTSe">
+                </div>
+               </div>
+              </div>
+              <div class="ir3uv WpeOqd hfsr6b">
+               <div class="xq3j6 ERcjC">
+                <div class="X6jHbb GOJTSe">
+                </div>
+               </div>
+               <div class="HBnAAc">
+                <div class="X6jHbb GOJTSe">
+                </div>
+               </div>
+               <div class="xq3j6 dj3yTd">
+                <div class="X6jHbb GOJTSe">
+                </div>
+               </div>
+              </div>
+              <div class="ir3uv rHV3jf EjXFBf">
+               <div class="xq3j6 ERcjC">
+                <div class="X6jHbb GOJTSe">
+                </div>
+               </div>
+               <div class="HBnAAc">
+                <div class="X6jHbb GOJTSe">
+                </div>
+               </div>
+               <div class="xq3j6 dj3yTd">
+                <div class="X6jHbb GOJTSe">
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div aria-disabled="false" aria-label="Back to site" class="U26fgb mUbCce fKz7Od JyJRXe M9Bg4d" data-tooltip="Back to site" data-tooltip-horizontal-offset="0" data-tooltip-vertical-offset="-12" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jscontroller="VXdfxd" jsname="m1xNUe" jsshadow="" role="button" tabindex="0">
+             <div class="VTBa7b MbhUzd" jsname="ksKsZd">
+             </div>
+             <span class="xjKiLb" jsslot="">
+              <span class="Ce1Y1c" style="top: -12px">
+               <svg class="V4YR2c" focusable="false" viewbox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none">
+                </path>
+                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z">
+                </path>
+               </svg>
+              </span>
+             </span>
+            </div>
+           </span>
+           <div class="Xb9hP">
+            <input aria-label="Search this site" autocomplete="off" autofocus="" class="whsOnd zHQkBf" data-initial-value="" jsname="YPqjbf" role="combobox" tabindex="0" type="search" value=""/>
+            <div aria-hidden="true" class="ndJi5d snByac" jsname="LwH6nd">
+             Search this site
+            </div>
+           </div>
+           <span class="A37UZe sxyYjd MQL3Ob" jsslot="">
+            <div aria-disabled="false" aria-label="Clear search" class="U26fgb mUbCce fKz7Od Kk06A M9Bg4d" data-tooltip="Clear search" data-tooltip-horizontal-offset="0" data-tooltip-vertical-offset="-12" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jscontroller="VXdfxd" jsname="pZn8Oc" jsshadow="" role="button" tabindex="0">
+             <div class="VTBa7b MbhUzd" jsname="ksKsZd">
+             </div>
+             <span class="xjKiLb" jsslot="">
+              <span class="Ce1Y1c" style="top: -12px">
+               <svg class="fAUEUd" focusable="false" viewbox="0 0 24 24">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                </path>
+                <path d="M0 0h24v24H0z" fill="none">
+                </path>
+               </svg>
+              </span>
+             </span>
+            </div>
+           </span>
+           <div class="i9lrp mIZh1c">
+           </div>
+           <div class="OabDMe cXrdqd" jsname="XmnwAc">
+           </div>
+          </div>
+         </div>
+         <div class="LXRPh">
+          <div class="ovnfwe Is7Fhb" jsname="ty6ygf">
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div jsname="tiN4bf">
+     <style nonce="NP/sGoZOKpVD7QkDZhR2CA">
+      .rrJNTc{opacity: 0;}.bKy5e{pointer-events: none; position: absolute; top: 0;}
+     </style>
+     <div class="bKy5e">
+      <div class="rrJNTc" tabindex="-1">
+       <div class="VfPpkd-dgl2Hf-ppHlrf-sM5MNb" data-is-touch-wrapper="true">
+        <button class="VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-dgl2Hf LjDxcd XhPA0b qfvgSe WsSUlf jz7fPb" data-idom-class="LjDxcd XhPA0b qfvgSe WsSUlf jz7fPb" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc; touchcancel:JMtRjd; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;mlnRJb:fLiPzd;" jscontroller="soHxf" jsname="z2EeY" tabindex="0">
+         <div class="VfPpkd-Jh9lGc">
+         </div>
+         <div class="VfPpkd-J1Ukfc-LhBDec">
+         </div>
+         <div class="VfPpkd-RLmnJb">
+         </div>
+         <span class="VfPpkd-vQzf8d" jsname="V67aGc">
+          Skip to main content
+         </span>
+        </button>
+       </div>
+       <div class="VfPpkd-dgl2Hf-ppHlrf-sM5MNb" data-is-touch-wrapper="true">
+        <button class="VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-dgl2Hf LjDxcd XhPA0b qfvgSe WsSUlf br90J" data-idom-class="LjDxcd XhPA0b qfvgSe WsSUlf br90J" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc; touchcancel:JMtRjd; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;mlnRJb:fLiPzd;" jscontroller="soHxf" jsname="ilzYPe" tabindex="0">
+         <div class="VfPpkd-Jh9lGc">
+         </div>
+         <div class="VfPpkd-J1Ukfc-LhBDec">
+         </div>
+         <div class="VfPpkd-RLmnJb">
+         </div>
+         <span class="VfPpkd-vQzf8d" jsname="V67aGc">
+          Skip to navigation
+         </span>
+        </button>
+       </div>
+      </div>
+     </div>
+     <div class="M63kCb N63NQ">
+     </div>
+     <div class="QZ3zWd">
+      <div class="fktJzd AKpWA vS6Uxe fOU46b Ly6Unf b2Iqye XeSM4" data-uses-custom-theme="false" jsaction="gsiSmd:Ffcznf;yj5fUd:cpPetb;HNXL3:q0Vyke;e2SXKd:IPDu5e;BdXpgd:nhk7K;rcuQ6b:WYd;" jscontroller="Md9ENb" jsname="UzWXSb">
+       <header id="atIdViewHeader">
+        <div class="BbxBP LBrwzc" data-is-preview="false" data-top-navigation="false" jsaction="rcuQ6b:JdcaS;MxH79b:JdcaS;VbOlFf:ywL4Jf;FaOgy:ywL4Jf; keydown:Hq2uPe; wheel:Ut4Ahc;" jscontroller="RQOkef" jsname="WA9qLc">
+         <div aria-controls="yuynLe" aria-expanded="false" aria-haspopup="true" class="DXsoRd YTv4We oNsfjf" id="s9iPrd" jsaction="click:LUvzV" jsname="z4Tpl" role="button" style="background-color:rgb(255, 255, 255);" tabindex="0">
+          <svg class="wFCWne" focusable="false" jsname="B1n9ub" stroke="currentColor" viewbox="0 0 24 24">
+           <g transform="translate(12,12)">
+            <path class="hlJH0" d="M-9 -5 L9 -5" fill="none" stroke-width="2">
+            </path>
+            <path class="HBu6N" d="M-9 0 L9 0" fill="none" stroke-width="2">
+            </path>
+            <path class="cLAGQe" d="M-9 5 L9 5" fill="none" stroke-width="2">
+            </path>
+           </g>
+          </svg>
+         </div>
+         <nav class="JzO0Vc" id="yuynLe" jsaction="transitionend:UD2r5" jsname="ihoMLd" role="navigation" style="background-color:rgb(255, 255, 255);" tabindex="-1">
+          <a class="XMyrgf" href="/home-page">
+           <img aria-label="Site home" class="r9CsCb" role="img" src="https://lh4.googleusercontent.com/04M9mvlCY1Lk-1L-nnVStEWc8EvfzAJl5hE8tTn3KaRLfmmPHiBQsNzJW-a6m86hs7LD4oeikmLzhFRi0jfuHRI=w16383"/>
+          </a>
+          <a class="Zjiec oNsfjf" href="/home-page">
+           <span>
+            CdS Informatica
+           </span>
+          </a>
+          <ul class="jYxBte Fpy8Db" role="navigation" tabindex="-1">
+           <li data-nav-level="1" jsname="ibnC6b">
+            <div aria-current="true" class="PsKE7e r8s4j-R6PoUb IKA38e baH5ib oNsfjf lhZOrc">
+             <div class="I35ICb" jsaction="keydown:mPuKz(QwLHlb); click:vHQTA(QwLHlb);">
+              <a aria-selected="true" class="aJHbb dk90Ob hDrhEe HlqNPb" data-level="1" data-navtype="1" data-type="1" data-url="/home-page" href="/home-page" jsname="QwLHlb" role="link" tabindex="0">
+               Home
+              </a>
+             </div>
+            </div>
+           </li>
+           <li data-nav-level="1" jsname="ibnC6b">
+            <div class="PsKE7e r8s4j-R6PoUb IKA38e baH5ib oNsfjf">
+             <div class="I35ICb" jsaction="keydown:mPuKz(QwLHlb); click:vHQTA(QwLHlb);">
+              <div class="j10yRb" jsaction="click:Ptdedd" jsname="ix0Hvc" role="presentation" title="Expand/Collapse">
+               <svg class="dvmRw" focusable="false" jsname="HIH2V" stroke="currentColor" viewbox="0 0 24 24">
+                <g transform="translate(9.7,12) rotate(45)">
+                 <path class="K4B8Y" d="M-4.2 0 L4.2 0" stroke-width="2">
+                 </path>
+                </g>
+                <g transform="translate(14.3,12) rotate(-45)">
+                 <path class="MrYMx" d="M-4.2 0 L4.2 0" stroke-width="2">
+                 </path>
+                </g>
+               </svg>
+              </div>
+              <a aria-expanded="false" aria-haspopup="true" class="aJHbb dk90Ob hDrhEe HlqNPb" data-level="1" data-navtype="1" data-type="1" data-url="/iscrizione" href="/iscrizione" jsname="QwLHlb" role="link" tabindex="0">
+               Iscrizione/Admission
+              </a>
+             </div>
+            </div>
+            <div class="oGuwee Mkt3Tc" jsaction="transitionend:SJBdh" jsname="QXE97" role="group" style="background-color:rgb(255, 255, 255); display:none;">
+             <ul class="VcS63b">
+              <li data-nav-level="2" jsname="ibnC6b">
+               <div class="PsKE7e r8s4j-ibL1re IKA38e baH5ib oNsfjf">
+                <div class="I35ICb" jsaction="keydown:mPuKz(QwLHlb); click:vHQTA(QwLHlb);">
+                 <a class="aJHbb hDrhEe HlqNPb" data-level="2" data-navtype="1" data-type="1" data-url="/iscrizione/orientamentoiningresso" href="/iscrizione/orientamentoiningresso" jsname="QwLHlb" role="link" tabindex="0">
+                  OrientamentoInIngresso
+                 </a>
+                </div>
+               </div>
+              </li>
+             </ul>
+            </div>
+           </li>
+           <li data-nav-level="1" jsname="ibnC6b">
+            <div class="PsKE7e r8s4j-R6PoUb IKA38e baH5ib oNsfjf">
+             <div class="I35ICb" jsaction="keydown:mPuKz(QwLHlb); click:vHQTA(QwLHlb);">
+              <a class="aJHbb dk90Ob hDrhEe HlqNPb" data-level="1" data-navtype="1" data-type="1" data-url="/insegnamenti" href="/insegnamenti" jsname="QwLHlb" role="link" tabindex="0">
+               Insegnamenti/Courses
+              </a>
+             </div>
+            </div>
+           </li>
+           <li data-nav-level="1" jsname="ibnC6b">
+            <div class="PsKE7e r8s4j-R6PoUb IKA38e baH5ib oNsfjf">
+             <div class="I35ICb" jsaction="keydown:mPuKz(QwLHlb); click:vHQTA(QwLHlb);">
+              <a class="aJHbb dk90Ob hDrhEe HlqNPb" data-level="1" data-navtype="1" data-type="1" data-url="/orario" href="/orario" jsname="QwLHlb" role="link" tabindex="0">
+               Orario/Timetable
+              </a>
+             </div>
+            </div>
+           </li>
+           <li data-nav-level="1" jsname="ibnC6b">
+            <div class="PsKE7e r8s4j-R6PoUb IKA38e baH5ib oNsfjf">
+             <div class="I35ICb" jsaction="keydown:mPuKz(QwLHlb); click:vHQTA(QwLHlb);">
+              <a class="aJHbb dk90Ob hDrhEe HlqNPb" data-level="1" data-navtype="1" data-type="1" data-url="/calendarioesami" href="/calendarioesami" jsname="QwLHlb" role="link" tabindex="0">
+               Esami/Exams
+              </a>
+             </div>
+            </div>
+           </li>
+           <li data-nav-level="1" jsname="ibnC6b">
+            <div class="PsKE7e r8s4j-R6PoUb IKA38e baH5ib oNsfjf">
+             <div class="I35ICb" jsaction="keydown:mPuKz(QwLHlb); click:vHQTA(QwLHlb);">
+              <a class="aJHbb dk90Ob hDrhEe HlqNPb" data-level="1" data-navtype="1" data-type="1" data-url="/programmidimobilitainternazionale" href="/programmidimobilitainternazionale" jsname="QwLHlb" role="link" tabindex="0">
+               Mobilità/Mobility
+              </a>
+             </div>
+            </div>
+           </li>
+           <li data-nav-level="1" jsname="ibnC6b">
+            <div class="PsKE7e r8s4j-R6PoUb IKA38e baH5ib oNsfjf">
+             <div class="I35ICb" jsaction="keydown:mPuKz(QwLHlb); click:vHQTA(QwLHlb);">
+              <a class="aJHbb dk90Ob hDrhEe HlqNPb" data-level="1" data-navtype="1" data-type="1" data-url="/tutoraggio" href="/tutoraggio" jsname="QwLHlb" role="link" tabindex="0">
+               Tutoraggio/Tutoring
+              </a>
+             </div>
+            </div>
+           </li>
+           <li data-nav-level="1" jsname="ibnC6b">
+            <div class="PsKE7e r8s4j-R6PoUb IKA38e baH5ib oNsfjf">
+             <div class="I35ICb" jsaction="keydown:mPuKz(QwLHlb); click:vHQTA(QwLHlb);">
+              <a class="aJHbb dk90Ob hDrhEe HlqNPb" data-level="1" data-navtype="1" data-type="1" data-url="/tirocinio" href="/tirocinio" jsname="QwLHlb" role="link" tabindex="0">
+               Tirocinio/Internship
+              </a>
+             </div>
+            </div>
+           </li>
+           <li data-nav-level="1" jsname="ibnC6b">
+            <div class="PsKE7e r8s4j-R6PoUb IKA38e baH5ib oNsfjf">
+             <div class="I35ICb" jsaction="keydown:mPuKz(QwLHlb); click:vHQTA(QwLHlb);">
+              <a class="aJHbb dk90Ob hDrhEe HlqNPb" data-level="1" data-navtype="1" data-type="1" data-url="/laurearsi" href="/laurearsi" jsname="QwLHlb" role="link" tabindex="0">
+               Laurearsi/Graduating
+              </a>
+             </div>
+            </div>
+           </li>
+           <li data-nav-level="1" jsname="ibnC6b">
+            <div class="PsKE7e r8s4j-R6PoUb IKA38e baH5ib oNsfjf">
+             <div class="I35ICb" jsaction="keydown:mPuKz(QwLHlb); click:vHQTA(QwLHlb);">
+              <a class="aJHbb dk90Ob hDrhEe HlqNPb" data-level="1" data-navtype="1" data-type="1" data-url="/contattaci" href="/contattaci" jsname="QwLHlb" role="link" tabindex="0">
+               Contattaci/Contact us
+              </a>
+             </div>
+            </div>
+           </li>
+           <li data-nav-level="1" jsname="ibnC6b">
+            <div class="PsKE7e r8s4j-R6PoUb IKA38e baH5ib oNsfjf">
+             <div class="I35ICb" jsaction="keydown:mPuKz(QwLHlb); click:vHQTA(QwLHlb);">
+              <a class="aJHbb dk90Ob hDrhEe HlqNPb" data-level="1" data-navtype="1" data-type="1" data-url="/regolamenti" href="/regolamenti" jsname="QwLHlb" role="link" tabindex="0">
+               Regolamenti
+              </a>
+             </div>
+            </div>
+           </li>
+           <li data-nav-level="1" jsname="ibnC6b">
+            <div class="PsKE7e r8s4j-R6PoUb IKA38e baH5ib oNsfjf">
+             <div class="I35ICb" jsaction="keydown:mPuKz(QwLHlb); click:vHQTA(QwLHlb);">
+              <a class="aJHbb dk90Ob hDrhEe HlqNPb" data-level="1" data-navtype="1" data-type="1" data-url="/calendarioaccademico" href="/calendarioaccademico" jsname="QwLHlb" role="link" tabindex="0">
+               CalendarioAccademico
+              </a>
+             </div>
+            </div>
+           </li>
+          </ul>
+         </nav>
+         <div class="VLoccc QDWEj U8eYrb" jsname="rtFGi" style="background-color:rgb(255, 255, 255);">
+          <div class="Pvc6xe">
+           <div class="TlfmSc YSH9J" jsname="I8J07e">
+            <a class="GAuSPc" href="/home-page" jsname="jIujaf">
+             <img aria-label="Site home" class="lzy1Td" jsname="SwcDWb" role="img" src="https://lh4.googleusercontent.com/04M9mvlCY1Lk-1L-nnVStEWc8EvfzAJl5hE8tTn3KaRLfmmPHiBQsNzJW-a6m86hs7LD4oeikmLzhFRi0jfuHRI=w16383"/>
+             <span class="QTKDff p46B7e">
+              CdS Informatica
+             </span>
+            </a>
+           </div>
+          </div>
+          <div class="zDUgLc" jsname="mADGA" style="background-color:rgb(255, 255, 255);">
+          </div>
+         </div>
+         <div class="TxnWlb" jsaction="click:LUvzV" jsname="BDdyze">
+         </div>
+         <div class="RBEWZc" data-side-navigation="true" jsaction="rcuQ6b:WYd;JIbuQc:AT95Ub;VbOlFf:HgE5D;FaOgy:HgE5D;MxH79b:JdcaS;" jscontroller="gK4msf" jsname="h04Zod">
+          <div aria-disabled="false" aria-expanded="false" aria-label="Open search bar" class="U26fgb mUbCce fKz7Od Wdnjke M9Bg4d" data-tooltip="Open search bar" data-tooltip-horizontal-offset="0" data-tooltip-vertical-offset="-12" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jscontroller="VXdfxd" jsname="R9oOZd" jsshadow="" role="button" tabindex="0">
+           <div class="VTBa7b MbhUzd" jsname="ksKsZd">
+           </div>
+           <span class="xjKiLb" jsslot="">
+            <span class="Ce1Y1c" style="top: -12px">
+             <svg class="vu8Pwe iWs3gf YSH9J" focusable="false" viewbox="0 0 24 24">
+              <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+              </path>
+              <path d="M0 0h24v24H0z" fill="none">
+              </path>
+             </svg>
+            </span>
+           </span>
+          </div>
+          <div class="vsGQBe wgxiMe" jsname="AznF2e">
+          </div>
+         </div>
+        </div>
+        <script nonce="BGtOhD8dKFHfvr3Q7/N+Tg">
+         DOCS_timing['navv'] = new Date().getTime();
+        </script>
+       </header>
+       <div class="UtePc RCETm yxgWrb" dir="ltr" role="main" tabindex="-1">
+        <section class="yaqOZd LB7kq cJgDec nyKByd O13XJf KEFykf" id="h.INITIAL_GRID.3nfe5qb5spgr" style="">
+         <div class="Nu95r">
+          <div class="IFuOkc" jsname="LQX2Vd" style="background-size: cover; background-position: center center; background-image: url(https://lh5.googleusercontent.com/YGkuX-qvuZ-wpEogw1PShAf0GNPYlEDcwRGo3j1vstzHnzi05yJmhK4-yE6NlkW1IHOsdNiR0WVAmZawvbhcl0M=w16383);">
+          </div>
+         </div>
+         <div class="mYVXT">
+          <div class="LS81yb VICjCf" tabindex="-1">
+           <div class="hJDwNd-AhqUyc-R6PoUb JNdkSc L6cTce-purZT L6cTce-pSzOP">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+             </div>
+            </div>
+           </div>
+           <div class="hJDwNd-AhqUyc-EehZO purZT-AhqUyc-II5mzb pSzOP-AhqUyc-qWD73c JNdkSc">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-EehZO jXK9ad D2fZ2 OjCsFc wHaque GNzUNc" id="h.INITIAL_GRID.39cupeyqvek9">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd mGzaTb baZpAe lkHyyc">
+                  <h1 class="CDt4Ke zfr3Q duRjpb" dir="ltr" id="h.pd424i8jfk98" style="text-align: center;">
+                   CORSo DI LAUREA IN INFORMATICA e intelligenza artificiale
+                  </h1>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="hJDwNd-AhqUyc-R6PoUb JNdkSc L6cTce-purZT L6cTce-pSzOP">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="DnLU4" jsaction="JIbuQc:v5IJLd(ipHvib);">
+          <div aria-disabled="false" aria-label="Scroll down" class="U26fgb mUbCce fKz7Od HqAAld Wew9ke M9Bg4d" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jscontroller="VXdfxd" jsname="ipHvib" jsshadow="" role="button" tabindex="0">
+           <div class="VTBa7b MbhUzd" jsname="ksKsZd">
+           </div>
+           <span class="xjKiLb" jsslot="">
+            <span class="Ce1Y1c" style="top: -12px">
+             <svg class="XE8yyf" focusable="false" viewbox="0 0 24 24">
+              <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z">
+              </path>
+              <path d="M0-.75h24v24H0z" fill="none">
+              </path>
+             </svg>
+            </span>
+           </span>
+          </div>
+         </div>
+        </section>
+        <section class="yaqOZd lQAHbd" id="h.440436cc31ae164_147" style="">
+         <div class="IFuOkc">
+         </div>
+         <div class="mYVXT">
+          <div class="LS81yb VICjCf" tabindex="-1">
+           <div class="hJDwNd-AhqUyc-uQSCkd purZT-AhqUyc-II5mzb pSzOP-AhqUyc-qWD73c JNdkSc">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-uQSCkd jXK9ad D2fZ2 OjCsFc wHaque GNzUNc" id="h.4844bf4407d607be_42">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd mGzaTb baZpAe">
+                  <div class="Ap4VC aP9Z7e" id="h.w6i7lno2ou9t">
+                  </div>
+                  <h1 class="CDt4Ke zfr3Q duRjpb" dir="ltr" id="h.w6i7lno2ou9t_l" tabindex="-1">
+                   <div class="CjVfdc" jsaction="touchstart:UrsOsc; click:KjsqPd; focusout:QZoaZ; mouseover:y0pDld; mouseout:dq0hvd;fv1Rjc:jbFSOd;CrfLRd:SzACGe;" jscontroller="Ae65rd">
+                    <div class="PPhIP rviiZ" jsname="haAclf">
+                     <div aria-describedby="h.w6i7lno2ou9t_l" aria-disabled="false" aria-hidden="true" aria-label="Copy heading link" class="U26fgb mUbCce fKz7Od LRAOtb Znu9nd M9Bg4d" data-tooltip="Copy heading link" data-tooltip-horizontal-offset="0" data-tooltip-position="top" data-tooltip-vertical-offset="12" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;" jscontroller="mxS5xe" jsshadow="" role="presentation">
+                      <a aria-describedby="h.w6i7lno2ou9t_l" aria-label="Copy heading link" class="FKF6mc TpQm9d" href="#h.w6i7lno2ou9t" jsname="hiK3ld" role="button">
+                       <div class="VTBa7b MbhUzd" jsname="ksKsZd">
+                       </div>
+                       <span class="xjKiLb" jsslot="">
+                        <span class="Ce1Y1c" style="top: -11px">
+                         <svg class="OUGEr QdAdhf" fill="currentColor" focusable="false" height="22px" viewbox="0 0 24 24" width="22px">
+                          <path d="M0 0h24v24H0z" fill="none">
+                          </path>
+                          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+                          </path>
+                         </svg>
+                        </span>
+                       </span>
+                      </a>
+                     </div>
+                    </div>
+                    News
+                   </div>
+                  </h1>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </section>
+        <section class="yaqOZd qeLZfd" id="h.3b43ae2ac5033c49_8" style="">
+         <div class="IFuOkc">
+         </div>
+         <div class="mYVXT">
+          <div class="LS81yb VICjCf" tabindex="-1">
+           <div class="hJDwNd-AhqUyc-R6PoUb purZT-AhqUyc-R6PoUb pSzOP-AhqUyc-R6PoUb JNdkSc">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-R6PoUb purZT-AhqUyc-R6PoUb pSzOP-AhqUyc-R6PoUb jXK9ad D2fZ2 OjCsFc wHaque" id="h.3b43ae2ac5033c49_11">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd baZpAe">
+                  <div class="t3iYD">
+                   <img class="CENy8b" role="img" src="https://lh3.googleusercontent.com/yN9Je43ELeXhKHpmteVwfIKC0xAmVw_X4Te3Fo2U2rmoepMGF_S2DudOPmz6NkWuulylNp3bRrHu4_nKRDbU-i2xShV0zurssrqNw5-R_rPb2vgM=w1280"/>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="hJDwNd-AhqUyc-wNfPc purZT-AhqUyc-II5mzb pSzOP-AhqUyc-qWD73c JNdkSc">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-wNfPc pSzOP-AhqUyc-qWD73c jXK9ad D2fZ2 OjCsFc wHaque GNzUNc" id="h.3b43ae2ac5033c49_14">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd mGzaTb baZpAe">
+                  <ul class="n8H08c UVNKR" style="list-style-type: square; margin-left: 0; margin-right: 0; padding: 0;">
+                   <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                    <p class="CDt4Ke zfr3Q" dir="ltr" style="background-color: transparent; border-bottom: none; border-left: none; border-right: none; border-top: none; line-height: 1.38; margin-bottom: 0; margin-left: 0; margin-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                     <span style="font-family: 'Open Sans';">
+                      <strong>
+                       Incontro di orientamento per la scelta della laurea magistrale
+                      </strong>
+                     </span>
+                    </p>
+                    <ul class="n8H08c UVNKR" style="list-style-type: square; margin-left: 0; margin-right: 0; padding: 0;">
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="background-color: transparent; border-bottom: none; border-left: none; border-right: none; border-top: none; line-height: 1.38; margin-bottom: 0; margin-left: 0; margin-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; text-indent: 0;">
+                       <span style="color: #000000; font-family: 'Arial'; font-size: 13.5pt; font-weight: normal; vertical-align: baseline;">
+                        30 Maggio 2022 - 15:00
+                       </span>
+                      </p>
+                     </li>
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="background-color: transparent; border-bottom: none; border-left: none; border-right: none; border-top: none; line-height: 1.38; margin-bottom: 0; margin-left: 0; margin-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                       <span class="aw5Odc" style="text-decoration: underline;">
+                        <a class="XqQF9c" href="https://www.google.com/url?q=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253a9b83a755eee84debb17eb11d0448a0e9%2540thread.tacv2%2F1652374457678%3Fcontext%3D%257b%2522Tid%2522%253a%25227519d0cd-2106-47d9-adcb-320023abff57%2522%252c%2522Oid%2522%253a%2522f5e90778-809b-4d59-9024-3fd2eec0ae6a%2522%257d&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw3JXLGrJm7uAvpYf85NAI9n" target="_blank">
+                         Partecipa
+                        </a>
+                       </span>
+                       .
+                      </p>
+                     </li>
+                    </ul>
+                   </li>
+                   <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                    <p class="CDt4Ke zfr3Q" dir="ltr" style="background-color: transparent; border-bottom: none; border-left: none; border-right: none; border-top: none; line-height: 1.38; margin-bottom: 0; margin-left: 0; margin-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                     <span style="font-family: 'Open Sans';">
+                      <strong>
+                       Iniziative di orientamento in ingresso
+                      </strong>
+                     </span>
+                    </p>
+                    <ul class="n8H08c UVNKR" style="list-style-type: square; margin-left: 0; margin-right: 0; padding: 0;">
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="background-color: transparent; border-bottom: none; border-left: none; border-right: none; border-top: none; line-height: 1.38; margin-bottom: 0; margin-left: 0; margin-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                       Consulta il sito
+                       <span class="aw5Odc" style="text-decoration: underline;">
+                        <a class="XqQF9c" href="https://www.google.com/url?q=https%3A%2F%2Fscuolealdemacs.unical.it%2F&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw1FK5_61u38mfr-R0poTUuV" target="_blank">
+                         Scuole Al DEMACS
+                        </a>
+                       </span>
+                      </p>
+                     </li>
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="background-color: transparent; border-bottom: none; border-left: none; border-right: none; border-top: none; line-height: 1.38; margin-bottom: 0; margin-left: 0; margin-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                       <span class="aw5Odc" style="text-decoration: underline;">
+                        <a class="XqQF9c" href="https://www.google.com/url?q=https%3A%2F%2Fwww.mat.unical.it%2Fdemacs%2FTOLC&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw2RY5pgDvfp8yJ8D3s57Dcp" target="_blank">
+                         <em>
+                          Bando Ammissione 2022-2023
+                         </em>
+                        </a>
+                       </span>
+                      </p>
+                     </li>
+                    </ul>
+                   </li>
+                   <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                    <p class="CDt4Ke zfr3Q" dir="ltr" style="background-color: transparent; border-bottom: none; border-left: none; border-right: none; border-top: none; line-height: 1.38; margin-bottom: 0; margin-left: 0; margin-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                     <span style="font-family: 'Open Sans';">
+                      <em>
+                       <strong>
+                        Corso di recupero Programmazione e Fondamenti per vecchia offerta.
+                       </strong>
+                      </em>
+                     </span>
+                     <br/>
+                     <span class="aw5Odc" style="text-decoration: underline;">
+                      <a class="XqQF9c" href="https://www.google.com/url?q=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fteam%2F19%253ad9d2df90aec04fa480bab083dde21074%2540thread.tacv2%2Fconversations%3FgroupId%3D002ed2d3-ee6a-4625-b0d0-aa08794c1c04%26tenantId%3D7519d0cd-2106-47d9-adcb-320023abff57&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw3WfuE5tNmtc1NpzH1GZeeZ" target="_blank">
+                       <em>
+                        Team del tutoraggio
+                       </em>
+                      </a>
+                     </span>
+                     <em>
+                      dal 13-05-2022 al 17-06/2022.
+                     </em>
+                    </p>
+                   </li>
+                   <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                    <p class="CDt4Ke zfr3Q" dir="ltr" style="background-color: transparent; border-bottom: none; border-left: none; border-right: none; border-top: none; line-height: 1.38; margin-bottom: 0; margin-left: 0; margin-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                     <span style="font-family: 'Open Sans';">
+                      <em>
+                       <strong>
+                        WORKSHOP “Tips for Oral Presentations”
+                       </strong>
+                      </em>
+                     </span>
+                     <br/>
+                     <em>
+                      18/05/2022 (14:30-17:30)
+                      <br/>
+                      "Aula Gialla": Cubo 17C, 7th floor ("ponte carrabile").
+                      <br/>
+                     </em>
+                     <span class="aw5Odc" style="text-decoration: underline;">
+                      <a class="XqQF9c" href="https://docs.google.com/forms/d/e/1FAIpQLScuPGTTA7ySaLu3uqS2K1pmSE3FiHRpcF0p-42sC3dqn7go8w/viewform?usp=sf_link" target="_blank">
+                       <em>
+                        Prenota
+                       </em>
+                      </a>
+                     </span>
+                     <em>
+                      entro il 14 Maggio.
+                     </em>
+                    </p>
+                   </li>
+                   <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                    <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; margin-right: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                     <span style="font-family: 'Open Sans';">
+                      <strong>
+                       Iscriviti al team di tutti gli studenti su MS Team per ricevere
+                      </strong>
+                     </span>
+                     <span style="font-family: 'Open Sans'; font-size: 13pt; font-style: normal; text-decoration: normal; vertical-align: baseline;">
+                      <strong>
+                       avvisi importanti e partecipa alle riunioni di orientamento
+                      </strong>
+                     </span>
+                     <span style="font-family: 'Open Sans';">
+                      <strong>
+                       :
+                      </strong>
+                     </span>
+                    </p>
+                    <ul class="n8H08c UVNKR" style="list-style-type: square; margin-left: 0; margin-right: 0; padding: 0;">
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                       <span class="aw5Odc" style="text-decoration: underline;">
+                        <a class="XqQF9c" href="https://www.google.com/url?q=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fteam%2F19%253a653743619a644a78b4f91b38b801d898%2540thread.tacv2%2Fconversations%3FgroupId%3D3614af94-43a2-4278-b01a-89085ae52c48%26tenantId%3D7519d0cd-2106-47d9-adcb-320023abff57&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw1LckNBchbjohj9LV0nS-JR" target="_blank">
+                         Link
+                        </a>
+                       </span>
+                      </p>
+                     </li>
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; padding-left: 0; text-indent: 0;">
+                       <span style="font-family: 'Open Sans'; font-size: 13pt; font-style: normal; font-weight: normal; text-decoration: normal; vertical-align: baseline;">
+                        xq48jlw
+                       </span>
+                      </p>
+                     </li>
+                    </ul>
+                   </li>
+                   <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                    <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; margin-right: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                     <span style="font-family: 'Open Sans';">
+                      <strong>
+                       Supporto pratiche.
+                      </strong>
+                     </span>
+                     Per informazioni su pratiche di natura didattica e/o amministrativa entra nel team "hdz2yfl" tutti i giovedì dalle 9:00 alle12:00.
+                    </p>
+                   </li>
+                   <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                    <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; margin-right: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                     <span style="font-family: 'Open Sans';">
+                      <strong>
+                       Indagine TECO-T
+                      </strong>
+                     </span>
+                    </p>
+                    <ul class="n8H08c UVNKR" style="list-style-type: square; margin-left: 0; margin-right: 0; padding: 0;">
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; margin-right: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                       AULA 1 INF  ore 17:15 di lunedì, 31 maggio  (1° anno)
+                      </p>
+                     </li>
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; margin-right: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                       AULA 3 INF  ore 18:20 di lunedì, 31 maggio  (3° anno)
+                      </p>
+                     </li>
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; margin-right: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                       <span class="aw5Odc" style="text-decoration: underline;">
+                        <a class="XqQF9c" href="https://www.google.com/url?q=https%3A%2F%2Fwiki.u-gov.it%2Fconfluence%2Fx%2FoYCWFg&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw1Ww1WQ2zR0C4BpE7XwtD7o" target="_blank">
+                         Guida operativa
+                        </a>
+                       </span>
+                      </p>
+                     </li>
+                    </ul>
+                   </li>
+                  </ul>
+                  <p class="CDt4Ke zfr3Q" dir="ltr" id="h.lh8hafk7l2b" style="background-color: transparent; border-bottom: none; border-left: none; border-right: none; border-top: none; line-height: 1.5; margin-bottom: 0; margin-left: 15pt; margin-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                   <br/>
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="hJDwNd-AhqUyc-R6PoUb purZT-AhqUyc-R6PoUb pSzOP-AhqUyc-R6PoUb JNdkSc">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-R6PoUb purZT-AhqUyc-R6PoUb pSzOP-AhqUyc-R6PoUb jXK9ad D2fZ2 OjCsFc wHaque" id="h.3b43ae2ac5033c49_17">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd baZpAe">
+                  <div class="t3iYD">
+                   <img class="CENy8b" role="img" src="https://lh6.googleusercontent.com/Jgnh6O-u1vO-dBzm1o9PrZvbDOnEW840X1sCy0vslnB72pIItuJ11MCCi6vaOMHjN7ztoFKrAZdDGRRTE_936ywsQ3HYBwpfumNotgY_Pmgw9PUn=w1280"/>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="hJDwNd-AhqUyc-wNfPc purZT-AhqUyc-II5mzb pSzOP-AhqUyc-qWD73c JNdkSc">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-wNfPc pSzOP-AhqUyc-qWD73c jXK9ad D2fZ2 OjCsFc wHaque GNzUNc" id="h.3b43ae2ac5033c49_20">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd mGzaTb baZpAe">
+                  <ul class="n8H08c UVNKR" style="list-style-type: square; margin-left: 0; margin-right: 0; padding: 0;">
+                   <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                    <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                     <span style="font-family: 'Open Sans';">
+                      <strong>
+                       Orientation meeting for choosing a master's degree
+                      </strong>
+                     </span>
+                    </p>
+                    <ul class="n8H08c UVNKR" style="list-style-type: square; margin-left: 0; margin-right: 0; padding: 0;">
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                       May 30, 2022 - 3:00 pm
+                      </p>
+                     </li>
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                       <span class="aw5Odc" style="text-decoration: underline;">
+                        <a class="XqQF9c" href="https://www.google.com/url?q=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253a9b83a755eee84debb17eb11d0448a0e9%2540thread.tacv2%2F1652374457678%3Fcontext%3D%257b%2522Tid%2522%253a%25227519d0cd-2106-47d9-adcb-320023abff57%2522%252c%2522Oid%2522%253a%2522f5e90778-809b-4d59-9024-3fd2eec0ae6a%2522%257d&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw3JXLGrJm7uAvpYf85NAI9n" target="_blank">
+                         Join the meeting.
+                        </a>
+                       </span>
+                      </p>
+                     </li>
+                    </ul>
+                   </li>
+                   <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                    <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                     <span style="font-family: 'Open Sans';">
+                      <strong>
+                       Orientation initiatives for incoming students
+                      </strong>
+                     </span>
+                    </p>
+                    <ul class="n8H08c UVNKR" style="list-style-type: square; margin-left: 0; margin-right: 0; padding: 0;">
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                       Please check the
+                       <span class="aw5Odc" style="font-variant: normal; text-decoration: underline;">
+                        <a class="XqQF9c" href="https://www.google.com/url?q=https%3A%2F%2Fscuolealdemacs.unical.it%2F&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw1FK5_61u38mfr-R0poTUuV" target="_blank">
+                         Scuole Al DEMACS
+                        </a>
+                       </span>
+                       website
+                      </p>
+                     </li>
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="background-color: transparent; border-bottom: none; border-left: none; border-right: none; border-top: none; line-height: 1.38; margin-bottom: 0; margin-left: 0; margin-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                       <span class="aw5Odc" style="font-variant: normal; text-decoration: underline;">
+                        <a class="XqQF9c" href="https://www.google.com/url?q=https%3A%2F%2Fwww.mat.unical.it%2Fdemacs%2FTOLC&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw2RY5pgDvfp8yJ8D3s57Dcp" target="_blank">
+                         <em>
+                          Admission Call 2022-2023
+                         </em>
+                        </a>
+                       </span>
+                       (only in Italian)
+                      </p>
+                     </li>
+                    </ul>
+                   </li>
+                   <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                    <p class="CDt4Ke zfr3Q" dir="ltr" style="background-color: transparent; border-bottom: none; border-left: none; border-right: none; border-top: none; line-height: 1.38; margin-bottom: 0; margin-left: 0; margin-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                     <span style="font-family: 'Open Sans';">
+                      <strong>
+                       Recovery course OO. Programming and Fundamentals
+                      </strong>
+                     </span>
+                     from 13-05-2022 to 17-06-2022
+                     <span class="aw5Odc" style="text-decoration: underline;">
+                      <a class="XqQF9c" href="https://www.google.com/url?q=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fteam%2F19%253ad9d2df90aec04fa480bab083dde21074%2540thread.tacv2%2Fconversations%3FgroupId%3D002ed2d3-ee6a-4625-b0d0-aa08794c1c04%26tenantId%3D7519d0cd-2106-47d9-adcb-320023abff57&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw3WfuE5tNmtc1NpzH1GZeeZ" target="_blank">
+                       in the Tutor's team.
+                      </a>
+                     </span>
+                     .
+                    </p>
+                   </li>
+                   <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                    <p class="CDt4Ke zfr3Q" dir="ltr" style="background-color: transparent; border-bottom: none; border-left: none; border-right: none; border-top: none; line-height: 1.38; margin-bottom: 0; margin-left: 0; margin-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                     <span style="font-family: 'Open Sans'; font-variant: normal;">
+                      <em>
+                       <strong>
+                        WORKSHOP “Tips for Oral Presentations”
+                       </strong>
+                      </em>
+                     </span>
+                     <span style="font-variant: normal;">
+                      <br/>
+                      <em>
+                       18/05/2022 (14:30-17:30)
+                       <br/>
+                       "Aula Gialla": Cubo 17C, 7th floor ("ponte carrabile").
+                       <br/>
+                       B
+                      </em>
+                     </span>
+                     <span class="aw5Odc" style="font-variant: normal; text-decoration: underline;">
+                      <a class="XqQF9c" href="https://docs.google.com/forms/d/e/1FAIpQLScuPGTTA7ySaLu3uqS2K1pmSE3FiHRpcF0p-42sC3dqn7go8w/viewform?usp=sf_link" target="_blank">
+                       <em>
+                        ook
+                       </em>
+                      </a>
+                     </span>
+                     <span style="font-variant: normal;">
+                      <em>
+                       by May 14th
+                      </em>
+                     </span>
+                    </p>
+                   </li>
+                   <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                    <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                     <span style="font-family: 'Open Sans';">
+                      <strong>
+                       Join all students' team on MS Team to receive important alerts and attend orientation meetings:
+                      </strong>
+                     </span>
+                    </p>
+                    <ul class="n8H08c UVNKR" style="list-style-type: square; margin-left: 0; margin-right: 0; padding: 0;">
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                       <span class="aw5Odc" style="text-decoration: underline;">
+                        <a class="XqQF9c" href="https://www.google.com/url?q=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fteam%2F19%253a653743619a644a78b4f91b38b801d898%2540thread.tacv2%2Fconversations%3FgroupId%3D3614af94-43a2-4278-b01a-89085ae52c48%26tenantId%3D7519d0cd-2106-47d9-adcb-320023abff57&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw1LckNBchbjohj9LV0nS-JR" target="_blank">
+                         Link
+                        </a>
+                       </span>
+                      </p>
+                     </li>
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                       <span style="font-family: 'Open Sans'; font-size: 13pt; font-style: normal; font-weight: normal; text-decoration: normal; vertical-align: baseline;">
+                        xq48jlw
+                       </span>
+                      </p>
+                     </li>
+                    </ul>
+                   </li>
+                   <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                    <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                     <span style="font-family: 'Open Sans';">
+                      <strong>
+                       Office support.
+                      </strong>
+                     </span>
+                     For information on educational and / or administrative practices join the "hdz2yfl" team every Thursday from 9:00 to 12:00.
+                    </p>
+                   </li>
+                   <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                    <p class="CDt4Ke zfr3Q" dir="ltr" style="background-color: transparent; border-bottom: none; border-left: none; border-right: none; border-top: none; line-height: 1.38; margin-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; text-align: left; text-indent: 0;">
+                     <span style="font-family: 'Open Sans';">
+                      <strong>
+                       TECO-T survey
+                      </strong>
+                     </span>
+                    </p>
+                    <ul class="n8H08c UVNKR" style="list-style-type: square; margin-left: 0; margin-right: 0; padding: 0;">
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                       AULA 1 INF  Monday May 31st at 17:15 (1st year)
+                      </p>
+                     </li>
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                       AULA 3 INF  Monday May 31st at 18:20 (3rd year)
+                      </p>
+                     </li>
+                     <li class="TYR86d wXCUfe zfr3Q" dir="ltr" style="margin-left: 15pt;">
+                      <p class="CDt4Ke zfr3Q" dir="ltr" style="line-height: 1.38; margin-left: 0; padding-left: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                       <span class="aw5Odc" style="text-decoration: underline;">
+                        <a class="XqQF9c" href="https://www.google.com/url?q=https%3A%2F%2Fwiki.u-gov.it%2Fconfluence%2Fx%2FoYCWFg&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw1Ww1WQ2zR0C4BpE7XwtD7o" target="_blank">
+                         Guide
+                        </a>
+                       </span>
+                       (Italian only)
+                      </p>
+                     </li>
+                    </ul>
+                   </li>
+                  </ul>
+                  <p class="CDt4Ke zfr3Q" dir="ltr" style="background-color: transparent; border-bottom: none; border-left: none; border-right: none; border-top: none; margin-bottom: 0; margin-left: 0; margin-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; text-align: justify; text-indent: 0; white-space: normal;">
+                   <br/>
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </section>
+        <section class="yaqOZd" id="h.4844bf4407d607be_21" style="">
+         <div class="IFuOkc">
+         </div>
+         <div class="mYVXT">
+          <div class="LS81yb VICjCf" tabindex="-1">
+           <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf JNdkSc yYI8W">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 OjCsFc" id="h.4844bf4407d607be_24">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd baZpAe">
+                  <div class="t3iYD">
+                   <a href="/insegnamenti">
+                    <img class="CENy8b" src="https://lh3.googleusercontent.com/irlQURngCJQ5siL48HX5lB_HnvMLDQTlvanHUnrT68V5vKKESoMS73GkrOgVz8RMrGlfqyvknu-9KpERrkAJOw=w1280" style="width: 100%; margin: 0% 0 0% 0%"/>
+                   </a>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="oKdM2c">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 wHaque GNzUNc" id="h.4844bf4407d607be_26">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd mGzaTb baZpAe">
+                  <p class="CDt4Ke zfr3Q" dir="ltr" style="text-align: center;">
+                   Insegnamenti
+                   <br/>
+                   Courses
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf JNdkSc yYI8W">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 OjCsFc" id="h.4844bf4407d607be_29">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd baZpAe">
+                  <div class="t3iYD">
+                   <a href="/orario">
+                    <img class="CENy8b" src="https://lh5.googleusercontent.com/JUjcqZkx16WdG6VZ-7ltdIQ5H4eyvarQFzs5qlqsrJMNa12ek4OyEfZZJAhQnEhAxdynitb8BsrbHsQhipGagM4=w1280" style="width: 100%; margin: 0% 0 0% 0%"/>
+                   </a>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="oKdM2c">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 wHaque GNzUNc" id="h.4844bf4407d607be_31">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd mGzaTb baZpAe">
+                  <p class="CDt4Ke zfr3Q" dir="ltr" style="text-align: center;">
+                   Orario
+                   <br/>
+                   Timetable
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf JNdkSc yYI8W">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 OjCsFc" id="h.4844bf4407d607be_34">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd baZpAe">
+                  <div class="t3iYD">
+                   <a href="/calendarioesami">
+                    <img class="CENy8b" src="https://lh6.googleusercontent.com/MU_m2vFclQGzh2KUSX7S4WrbsmjgLMfvWQOMWr7CdGu7quxZSKffwfnhnezIGupxeF0qYhUQsUuWjNVCXyEj3Y4=w1280" style="width: 100%; margin: 0% 0 0% 0%"/>
+                   </a>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="oKdM2c">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 wHaque GNzUNc" id="h.4844bf4407d607be_36">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd mGzaTb baZpAe">
+                  <p class="CDt4Ke zfr3Q" dir="ltr" style="text-align: center;">
+                   Calendario Esami
+                   <br/>
+                   Exam Schedule
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf JNdkSc yYI8W">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 OjCsFc" id="h.4844bf4407d607be_39">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd baZpAe">
+                  <div class="t3iYD">
+                   <a href="/tutoraggio">
+                    <img class="CENy8b" src="https://lh5.googleusercontent.com/Zmxp7KypmQ4HZ6mBbV3EJi2u5PPjU6h1zsTvPBPze9SgZ4xWi5gNWJTqFS1LQF9X5zxgE1FILnC1cUOtMUpepyk=w1280" style="width: 100%; margin: 0% 0 0% 0%"/>
+                   </a>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="oKdM2c">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 wHaque GNzUNc" id="h.4844bf4407d607be_41">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd mGzaTb baZpAe">
+                  <p class="CDt4Ke zfr3Q" dir="ltr" style="text-align: center;">
+                   Tutoraggio
+                   <br/>
+                   Tutoring
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </section>
+        <section class="yaqOZd WxWicb" id="h.3b5a7bff419d463e_38" style="">
+         <div class="IFuOkc">
+         </div>
+         <div class="mYVXT">
+          <div class="LS81yb VICjCf" tabindex="-1">
+           <div class="hJDwNd-AhqUyc-uQSCkd purZT-AhqUyc-II5mzb pSzOP-AhqUyc-qWD73c JNdkSc">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-uQSCkd jXK9ad D2fZ2 OjCsFc wHaque" id="h.3b5a7bff419d463e_41">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd baZpAe">
+                  <div class="iwQgFb" role="presentation">
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </section>
+        <section class="yaqOZd" id="h.3b5a7bff419d463e_0" style="">
+         <div class="IFuOkc">
+         </div>
+         <div class="mYVXT">
+          <div class="LS81yb VICjCf" tabindex="-1">
+           <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf JNdkSc yYI8W">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 OjCsFc" id="h.3b5a7bff419d463e_8">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd baZpAe">
+                  <div class="t3iYD">
+                   <a href="/programmidimobilitainternazionale">
+                    <img class="CENy8b" src="https://lh6.googleusercontent.com/yUgl6QPMZ9ahQjyToeo70a5gCWmZCdiU_Ezp_OmlUdw3OpZGOZ6FnT2DUt1YlVT737VQr4mcPxdjlLZAsajVlFs=w1280" style="width: 100%; margin: 0% 0 0% 0%"/>
+                   </a>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="oKdM2c">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 wHaque GNzUNc" id="h.3b5a7bff419d463e_10">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd mGzaTb baZpAe">
+                  <p class="CDt4Ke zfr3Q" dir="ltr" style="text-align: center;">
+                   Mobilità Internazionale
+                   <br/>
+                   International Mobility
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf JNdkSc yYI8W">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 OjCsFc" id="h.3b5a7bff419d463e_13">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd baZpAe">
+                  <div class="t3iYD">
+                   <a href="/tirocinio">
+                    <img class="CENy8b" src="https://lh6.googleusercontent.com/3LipeBj7A4Dw1uR55X4hKzUFERy0XuITJwOIvcGKEsTCOkpsnB3rIJ336Nvfy9YzDFbBe_2f1bF1Zrb44d6jfbI=w1280" style="width: 100%; margin: 0% 0 0% 0%"/>
+                   </a>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="oKdM2c">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 wHaque GNzUNc" id="h.3b5a7bff419d463e_15">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd mGzaTb baZpAe">
+                  <p class="CDt4Ke zfr3Q" dir="ltr" style="text-align: center;">
+                   Tirocini
+                   <br/>
+                   Internships
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf JNdkSc yYI8W">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 OjCsFc" id="h.440436cc31ae164_171">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd baZpAe">
+                  <div class="t3iYD">
+                   <a href="/laurearsi">
+                    <img class="CENy8b" src="https://lh4.googleusercontent.com/MsTv22nq7th61srpXX2rfsrrU16cwj2IOklklbcznxwkk1FKv-Qq4a96fzsdZ7d138A2V0aCBnIIAokDL4Q0sy8=w1280" style="width: 100%; margin: 0% 0 0% 0%"/>
+                   </a>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="oKdM2c">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 wHaque GNzUNc" id="h.440436cc31ae164_167">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd mGzaTb baZpAe">
+                  <p class="CDt4Ke zfr3Q" dir="ltr" style="text-align: center;">
+                   Laurearsi
+                   <br/>
+                   Graduating
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf JNdkSc yYI8W">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 OjCsFc" id="h.45ade429c6913f0_18">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd baZpAe">
+                  <div class="t3iYD">
+                   <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.facebook.com%2Foffertelavoroeannuncicdsinformaticaunical&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw2dt5DNW_ru_uvx3rTUMVO4" target="_blank">
+                    <img class="CENy8b" src="https://lh4.googleusercontent.com/HLP-i3nAqMDMmC_fc_YprinNYQzw91FFJeF9TJBQ8C52eJfTLddP3Ec7MZ72MRDOClHHSQ9xaYpmxq7HMJTn5y4=w1280" style="width: 100%; margin: 0% 0 0% 0%"/>
+                   </a>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="oKdM2c">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 wHaque GNzUNc" id="h.45ade429c6913f0_20">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd mGzaTb baZpAe">
+                  <p class="CDt4Ke zfr3Q" dir="ltr" style="text-align: center;">
+                   Offerte di Lavoro
+                   <br/>
+                   Job Offers
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </section>
+        <section class="yaqOZd WxWicb" id="h.440436cc31ae164_177" style="">
+         <div class="IFuOkc">
+         </div>
+         <div class="mYVXT">
+          <div class="LS81yb VICjCf" tabindex="-1">
+           <div class="hJDwNd-AhqUyc-uQSCkd purZT-AhqUyc-II5mzb pSzOP-AhqUyc-qWD73c JNdkSc">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-uQSCkd jXK9ad D2fZ2 OjCsFc wHaque" id="h.440436cc31ae164_180">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd baZpAe">
+                  <div class="iwQgFb" role="presentation">
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </section>
+        <section class="yaqOZd" id="h.45ade429c6913f0_0" style="">
+         <div class="IFuOkc">
+         </div>
+         <div class="mYVXT">
+          <div class="LS81yb VICjCf" tabindex="-1">
+           <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf JNdkSc yYI8W">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 OjCsFc" id="h.45ade429c6913f0_3">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd baZpAe">
+                  <div class="t3iYD">
+                   <a href="/iscrizione">
+                    <img class="CENy8b" src="https://lh3.googleusercontent.com/aGC1QqxP8txROuEgMGlNH0cDTtbofBgcpKAFpnxvOuWnQGW6c9jCtAv28iwVIoXCINcdKXdvsqGMRrlZQ_CbTgI=w1280" style="width: 100%; margin: 0% 0 0% 0%"/>
+                   </a>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="oKdM2c">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 wHaque GNzUNc" id="h.45ade429c6913f0_5">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd mGzaTb baZpAe">
+                  <p class="CDt4Ke zfr3Q" dir="ltr" style="text-align: center;">
+                   Informazioni Iscrizione
+                   <br/>
+                   Infomation to apply
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf JNdkSc yYI8W">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 OjCsFc" id="h.45ade429c6913f0_13">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd baZpAe">
+                  <div class="t3iYD">
+                   <a href="/calendarioaccademico">
+                    <img class="CENy8b" src="https://lh4.googleusercontent.com/LP8DA1Sqbgx6MZrPAx_RjDEX5YYFY1Odu0Gsusuq0J98aRQKAShPNYYftZEq3hICpsvuP7XxVWXLXa1jFcd771Y=w1280" style="width: 100%; margin: 0% 0 0% 0%"/>
+                   </a>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="oKdM2c">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 wHaque GNzUNc" id="h.45ade429c6913f0_15">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd mGzaTb baZpAe">
+                  <p class="CDt4Ke zfr3Q" dir="ltr" style="text-align: center;">
+                   Calendario Accademico
+                   <br/>
+                   Academic Calendar
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf JNdkSc yYI8W">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 OjCsFc" id="h.3b5a7bff419d463e_3">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd baZpAe">
+                  <div class="t3iYD">
+                   <a href="/regolamenti">
+                    <img class="CENy8b" src="https://lh5.googleusercontent.com/tIRlLm4hxifYwLDlS3GbuGC7Qwro72VKBgmZZpMwpkSenYUxk88ZTmTUca4_WoJ3OptipNZdyvi022-DSTU9Bvk=w1280" style="width: 100%; margin: 0% 0 0% 0%"/>
+                   </a>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="oKdM2c">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 wHaque GNzUNc" id="h.3b5a7bff419d463e_5">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd mGzaTb baZpAe">
+                  <p class="CDt4Ke zfr3Q" dir="ltr" style="text-align: center;">
+                   Regolamenti
+                   <br/>
+                   Regulations
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf JNdkSc yYI8W">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 OjCsFc" id="h.45ade429c6913f0_8">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd baZpAe">
+                  <div class="t3iYD">
+                   <a href="/contattaci">
+                    <img class="CENy8b" src="https://lh3.googleusercontent.com/FTVoWsfjNfbMBm0A18BNmevreFH-RiOqU2Htd25WZx1n8PhRhhOxpzan_ZlaSv218nEG3g=w1280" style="width: 100%; margin: 0% 0 0% 0%"/>
+                   </a>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="oKdM2c">
+               <div class="hJDwNd-AhqUyc-c5RTEf purZT-AhqUyc-c5RTEf pSzOP-AhqUyc-c5RTEf jXK9ad D2fZ2 wHaque GNzUNc" id="h.45ade429c6913f0_10">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd mGzaTb baZpAe">
+                  <p class="CDt4Ke zfr3Q" dir="ltr" style="text-align: center;">
+                   Contattaci
+                   <br/>
+                   Contact Us
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </section>
+       </div>
+       <div class="Xpil1b xgQ6eb">
+       </div>
+       <footer class="yxgWrb" jsname="yePe5c">
+        <section class="yaqOZd" id="h.762f82679aaafe3c_14" style="">
+         <div class="IFuOkc">
+         </div>
+         <div class="mYVXT">
+          <div class="LS81yb VICjCf" tabindex="-1">
+           <div class="hJDwNd-AhqUyc-uQSCkd purZT-AhqUyc-II5mzb pSzOP-AhqUyc-qWD73c JNdkSc">
+            <div class="JNdkSc-SmKAyb">
+             <div class="" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jscontroller="sGwD4d" jsname="F57UId">
+              <div class="oKdM2c Kzv0Me">
+               <div class="hJDwNd-AhqUyc-uQSCkd jXK9ad D2fZ2 OjCsFc wHaque GNzUNc" id="h.762f82679aaafe3c_11">
+                <div class="jXK9ad-SmKAyb">
+                 <div class="tyJCtd mGzaTb baZpAe">
+                  <small class="CDt4Ke zfr3Q TMjjoe" dir="ltr" id="h.2b0w4pwuz556" style="display: block; text-align: center;">
+                   Header Image
+                   <span style="font-family: 'Oswald'; font-size: 9pt; font-style: normal; font-weight: normal; text-decoration: normal; vertical-align: baseline;">
+                    "Artificial Intelligence &amp; AI &amp; Machine Learning" by mikemacmarketing is licensed with CC BY 2.0. To view a copy of this license, visit
+                   </span>
+                   <span class="aw5Odc" style="font-family: 'Oswald'; font-size: 9pt; font-style: normal; font-weight: normal; text-decoration: underline; vertical-align: baseline;">
+                    <a class="XqQF9c" href="https://www.google.com/url?q=https%3A%2F%2Fcreativecommons.org%2Flicenses%2Fby%2F2.0%2F&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw329wqjATI24wJBrdK1LTQw" target="_blank">
+                     https://creativecommons.org/licenses/by/2.0/
+                    </a>
+                   </span>
+                   <span style="font-family: 'Oswald'; font-size: 9pt; font-style: normal; font-weight: normal; text-decoration: normal; vertical-align: baseline;">
+                    .
+                   </span>
+                   Icons by
+                   <span class="aw5Odc" style="text-decoration: underline;">
+                    <a class="XqQF9c" href="https://www.google.com/url?q=https%3A%2F%2Fadioma.com&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw3L99j41_1nopKJ13VOh2Dk" target="_blank">
+                     Adioma
+                    </a>
+                   </span>
+                   .
+                  </small>
+                  <small class="CDt4Ke zfr3Q TMjjoe" dir="ltr" id="h.gg73t0onsjbv" style="display: block;">
+                   <br/>
+                  </small>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </section>
+       </footer>
+       <div class="dZA9kd ynRLnc" data-last-updated-at-time="1652375175484" jsaction="rcuQ6b:rcuQ6b;MxH79b:JdcaS;FaOgy:XuHpsb;" jscontroller="j1RDQb">
+        <div aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Site actions" class="U26fgb JRtysb WzwrXb I12f0b K2mXPb zXBiaf ynRLnc" data-anchor-corner="top-start" data-menu-corner="bottom-start" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;;keydown:I481le;" jscontroller="iSvg6e" jsname="Bg3gkf" jsshadow="" role="button" tabindex="0">
+         <div class="NWlf3e MbhUzd" jsname="ksKsZd">
+         </div>
+         <span class="MhXXcc oJeWuf" jsslot="">
+          <span class="Lw7GHd snByac">
+           <svg class="NMm5M" focusable="false" height="24" viewbox="0 0 24 24" width="24">
+            <path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+            </path>
+           </svg>
+          </span>
+         </span>
+         <div aria-hidden="true" jsname="xl07Ob" style="display:none">
+          <div class="JPdR6b hVNH5c" jsaction="IpSVtb:TvD9Pc;fEN2Ze:xzS4ub;frq95c:LNeFm;cFpp9e:J9oOtd; click:H8nU8b; mouseup:H8nU8b; keydown:I481le; keypress:Kr2w4b; blur:O22p3e; focus:H8nU8b" jscontroller="uY3Nvd" role="menu" style="position:fixed" tabindex="0">
+           <div class="XvhY1d" jsaction="mousedown:p8EH2c; touchstart:p8EH2c;">
+            <div class="JAPqpe K0NPx">
+             <span aria-label="Report abuse" class="z80M1 FeRvI" data-disabled-tooltip="Report abuse is not available in preview mode" jsaction="click:o6ZaF(preventDefault=true); mousedown:lAhnzb; mouseup:Osgxgf; mouseenter:SKyDAe; mouseleave:xq3APb;touchstart:jJiBRc; touchmove:kZeBdd; touchend:VfAz8(preventMouseEvents=true)" jsname="j7LFlb" jsslot="" role="menuitem" tabindex="-1">
+              <div class="aBBjbd MbhUzd" jsname="ksKsZd">
+              </div>
+              <div class="uyYuVb oJeWuf" data-abuse-proto='%.@.null,null,"https://sites.google.com/unical.it/informatica",null,null,[],[]]' jsaction="JIbuQc:dQ6O0c;" jscontroller="HYv29e" jsname="xx9PJb">
+               <div class="jO7h3c">
+                Report abuse
+               </div>
+              </div>
+             </span>
+             <span aria-label="Page details" class="z80M1 FeRvI" jsaction="click:o6ZaF(preventDefault=true); mousedown:lAhnzb; mouseup:Osgxgf; mouseenter:SKyDAe; mouseleave:xq3APb;touchstart:jJiBRc; touchmove:kZeBdd; touchend:VfAz8(preventMouseEvents=true)" jsname="j7LFlb" jsslot="" role="menuitem" tabindex="-1">
+              <div class="aBBjbd MbhUzd" jsname="ksKsZd">
+              </div>
+              <div class="uyYuVb oJeWuf" jsaction="JIbuQc:hriXLd;" jsname="Rg8K2c">
+               <div class="jO7h3c">
+                Page details
+               </div>
+              </div>
+             </span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="LqzjUe ynRLnc" data-last-updated-at-time="1652375175484" jsaction="focusin:gBxDVb(srlkmf); focusout:zvXhGb(srlkmf); click:ro2KTd(psdQ5e),Toy3n(V2zOu);JIbuQc:DSypkd(Bg3gkf);MxH79b:JdcaS;rcuQ6b:rcuQ6b;" jscontroller="j1RDQb">
+        <div class="Q0cSn" jsname="psdQ5e">
+        </div>
+        <div class="hBW7Hb" jsname="bN97Pc">
+         <div aria-disabled="false" aria-hidden="true" aria-label="Site actions" class="U26fgb mUbCce fKz7Od kpPxtd QMuaBc M9Bg4d" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jscontroller="VXdfxd" jsname="Bg3gkf" jsshadow="" role="button" tabindex="-1">
+          <div class="VTBa7b MbhUzd" jsname="ksKsZd">
+          </div>
+          <span class="xjKiLb" jsslot="">
+           <span class="Ce1Y1c" style="top: -12px">
+            <svg class="NMm5M" focusable="false" height="24" viewbox="0 0 24 24" width="24">
+             <path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+             </path>
+            </svg>
+           </span>
+          </span>
+         </div>
+         <div class="hUphyc" jsname="srlkmf">
+          <div class="YkaBSd">
+           <div class="iBkmkf">
+            <span>
+             Page updated
+            </span>
+            <span class="dji00c" jsaction="AHmuwe:eGiyHb; mouseover:eGiyHb;" jsname="CFIm1b" role="contentinfo" tabindex="0">
+            </span>
+           </div>
+          </div>
+          <div class="YkaBSd" data-abuse-proto='%.@.null,null,"https://sites.google.com/unical.it/informatica",null,null,[],[]]' jsaction="click:dQ6O0c;" jscontroller="HYv29e">
+           <div aria-disabled="false" aria-label="Report abuse" class="U26fgb kpPxtd J7BuEb" jsshadow="" role="button" tabindex="0">
+            Report abuse
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div jsmodel="QxOCld">
+     <div class="lhbLEe LSElHe dnjcK" data-cookie-path="/" jsaction="rcuQ6b:WYd;FaOgy:nkegzf;vD0JD:Mq3Rnf;MxH79b:Mq3Rnf" jscontroller="zPx2U">
+      <div class="QjDm3">
+       This site uses cookies from Google to deliver its services and to analyze traffic. Information about your use of this site is shared with Google. By using this site, you agree to its use of cookies.
+      </div>
+      <div class="hsMuBe">
+       <a class="vzKQHb" href="https://www.google.com/policies/technologies/cookies/" target="_blank">
+        <span>
+         Learn more
+        </span>
+       </a>
+       <div class="vzKQHb K2OSr" jsaction="click:IYtByb;" role="button" tabindex="0">
+        <span>
+         Got it
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <script nonce="BGtOhD8dKFHfvr3Q7/N+Tg">
+     DOCS_timing['cov']=new Date().getTime();
+    </script>
+    <script id="base-js" nonce="BGtOhD8dKFHfvr3Q7/N+Tg" src="https://www.gstatic.com/_/atari/_/js/k=atari.vw.en_US.dG0M-tYIz_A.O/d=1/rs=AGEqA5kgUt6O7nibLPtTzttvRTiBgs4Zuw/m=view">
+    </script>
+   </div>
+  </div>
+  <div jsaction="rcuQ6b:npT2md" jscontroller="YV8yqd">
+   <div aria-atomic="true" aria-hidden="false" aria-live="assertive" aria-relevant="additions" class="IWfHH" id="docs-aria-speakable" role="region">
+   </div>
+  </div>
+ </body>
+</html>

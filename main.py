@@ -1,4 +1,5 @@
 import  requests
+import uuid
 import creds
 import webbrowser
 import telebot
@@ -12,7 +13,7 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 
-debug = True
+debug = False
 
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred)
@@ -48,18 +49,20 @@ HEADERS = ({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit
 def get_soup(url):
     response = requests.get(url, headers=HEADERS)
 
-    if response.ok:
-        soup = BeautifulSoup(response.content, 'html.parser')
-        return soup
+    try:
+        if response.ok:
+            soup = BeautifulSoup(response.content, 'html.parser')
+            return soup
     
-    else:
+    except:
         print(response.status_code)
         
 def urlCheck(message):
     pattern1 = r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.\w+\/?"
     pattern2 = r"[-a-zA-Z0-9]{1,256}\.[a-zA-Z0-9()]{1,6}"
     if re.match(pattern1, message.text) or re.match(pattern2, message.text):
-        bot.send_message(message.chat.id, "link")
+        if debug:
+            bot.send_message(message.chat.id, "link")
         return True
 
     return False
@@ -73,6 +76,32 @@ def truncate_url(url):
         print("URL TRONCATO : " + t)
     return t
 
+
+def uploadHtml(url):  
+    if urlCheck(url):
+        # try:
+        urlSito = url.text
+        utente = url.chat.id
+        html = get_soup(urlSito).prettify()
+        #troncato = truncate_url(urlSito)
+        nomeFile = uuid.uuid4().hex
+
+        fh = open(nomeFile, "w", encoding="utf-8")
+        fh.write(str(html))
+        fh.close
+        storage.child(storagePath + nomeFile).put(nomeFile)
+
+        #TODO: CONTROLLARE CHE L'URL NON SIA GIA' PRESENTE NELLO STORAGE
+
+
+        db.collection('Sito').add({'url': urlSito, 'storageid': nomeFile})
+        db.collection('Utente-Sito').add({'utente':utente, 'sito':urlSito})
+
+        remove(nomeFile)
+
+
+        # except Exception as e:
+        #     bot.reply_to(message, str(e)) 
 
 @bot.message_handler(commands=['start'])#Registra l'utente nel database
 def start(message):
@@ -93,20 +122,25 @@ def mioSend(message):
     patternEbay = "ebay\.\w+\/\w+"
 
     if re.search(patternAmazon, str(message)):
-        bot.send_message(message.chat.id, "amazon")
+        if debug:
+            bot.send_message(message.chat.id, "amazon")
+
         price = soup.find('span', class_="a-offscreen").get_text()
         bot.send_message(message.chat.id, "prezzo: " + price)
 
 
     elif re.search(patternEbay, str(message)): 
-        print("ebay")
-        bot.send_message(message.chat.id, "ebay")
+        if debug:
+            bot.send_message(message.chat.id, "ebay")
+
         price = soup.find('span', id = 'prcIsum').get_text()
         bot.send_message(message.chat.id, "prezzo: " + price)
 
     
     elif re.search(patternSubito, str(message)):
-        bot.send_message(message.chat.id, "subito")
+        if debug:
+            bot.send_message(message.chat.id, "subito")
+
         price = soup.find('p', class_="index-module_price__N7M2x AdInfo_ad-info__price__tGg9h index-module_large__SUacX").get_text()
         bot.send_message(message.chat.id, "prezzo: " + price)
 
@@ -133,20 +167,16 @@ def add(message):
     bot.register_next_step_handler(msg, addStep2)
 
 def addStep2(message):
-    if urlCheck(message):
-        # try:
-        urlSito = message.text
-        utente = message.chat.id
-        html = get_soup(urlSito)
-        db.collection('Sito').add({'url': urlSito})
-        db.collection('Utente-Sito').add({'sito':urlSito, 'utente':utente})
-        storage.child(storagePath + truncate_url(urlSito)).put("test.py")
-        bot.send_message(message.chat.id, "Url aggiunto con successo")
+    
+    try:
+        uploadHtml(message)
+        bot.reply_to(message, "Url aggiunto con successo 👍")
+    except:
+        bot.send_message(message.chat.id, "Ops, qualcosa è andato storto ☹")
 
-        # except Exception as e:
-        #     bot.reply_to(message, str(e))
         
-        
+
+
     
 
 #COMANDO /removeURL
