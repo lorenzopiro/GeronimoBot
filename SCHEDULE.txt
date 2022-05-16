@@ -1,14 +1,16 @@
 SCHEDULE
 
+-Comando aggiungisito X
+
 -Comando rimuoviSito
 
 -Comando aggiungiProdotto
 
 -Comando rimuoviProdotto
 
--Comando registraEmail
+-Comando registraEmail X
 
--Comando listaSiti
+-Comando listaSiti X
 
 -Comando listaProdotti
 
@@ -19,6 +21,6 @@ SCHEDULE
 
 -Aggiungere email utente
 
--Hostare servere con node o flask
+-Hostare server con node o flask
 
 
