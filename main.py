@@ -77,7 +77,7 @@ def truncate_url(url):
     return t
 
 
-def uploadHtml(url):  
+def uploadHtml(url, nomeCustom):  
     if urlCheck(url):
         # try:
         urlSito = url.text
@@ -104,7 +104,7 @@ def uploadHtml(url):
 
         us = db.collection('Utente-Sito').where("utente", "==", utente).where("sito", "==", urlSito).get()
         if len(us)==0: # Se il sito non era già stato registrato dall'utente
-            db.collection('Utente-Sito').add({'utente':utente, 'sito':urlSito})
+            db.collection('Utente-Sito').add({'utente':utente, 'sito':urlSito, 'nome': nomeCustom.text})
             return True
         return False
 
@@ -166,14 +166,16 @@ def mioSend(message):
 #COMANDO /webList
 @bot.message_handler(commands=['listasiti'])
 def list(message):
-    lista = []
+    dict = {}
     docs = db.collection("Utente-Sito").where("utente", "==", message.chat.id).get()
 
     for doc in docs:
-        if doc.get('sito') not in lista:
-            lista.append(doc.get('sito')) 
+        if doc.get('sito') not in dict: #unique
+            dict[doc.get('sito')] = doc.get('nome')
 
-    print(lista)
+    print(dict)
+
+   
 
 
 
@@ -183,26 +185,31 @@ def add(message):
     msg = bot.send_message(message.chat.id, "Bene, mandami qui di seguito l'URL del sito che vuoi monitorare: ")
     bot.register_next_step_handler(msg, addStep2)
 
-
+ 
 def addStep2(message):
     
     if not urlCheck(message):
         bot.reply_to(message, "Questo url non è valido ☹")
 
     else:
+        urlDaSalvare = message
+        msg = bot.reply_to(message, "Con che nome vorresti memorizzare questo link?") #todo: force reply?
+        bot.register_next_step_handler(msg, addStep3, urlDaSalvare)
+ 
 
-        try:
-            if uploadHtml(message):
+
+        
+def addStep3(message, urlDaSalvare):
+
+    try:
+            if uploadHtml(urlDaSalvare, message):
                 bot.reply_to(message, "Url aggiunto con successo 👍")
             else:
                 bot.reply_to(message, "L'url inserito era già stato aggiunto 😁")
 
-        except Exception as e:
-            bot.send_message(message.chat.id, "Ops, qualcosa è andato storto ☹")
-            print(e)
-
-        
-
+    except Exception as e:
+        bot.send_message(message.chat.id, "Ops, qualcosa è andato storto ☹")
+        print(e)
 
     
 
