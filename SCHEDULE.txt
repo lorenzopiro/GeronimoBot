@@ -1,8 +1,5 @@
 SCHEDULE
 
--Comando aggiungiSito:
-    -controllare che il sito non sia già presente nello storage prima di inserirlo
-
 -Comando rimuoviSito
 
 -Comando aggiungiProdotto
