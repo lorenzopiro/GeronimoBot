@@ -5,10 +5,14 @@ import telebot
 from telebot import types
 import os
 import re
+import urllib
 from bs4 import BeautifulSoup
+import pyrebase
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
+
+debug = True
 
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred)
@@ -17,8 +21,22 @@ db = firestore.client()
 
 API_KEY = creds.API_KEY
 
-bot = telebot.TeleBot(API_KEY)   
 
+firebase = pyrebase.initialize_app(creds.firebaseConfig)
+auth = firebase.auth()
+storage = firebase.storage()
+storagePath = "Soups/"
+
+#UPLOAD
+#storage.child(cloudfilename).put(filename)
+#DOWNLOAD
+#storage.child(cloudfilename).download(path, filename)
+
+#LETTURA SENZA DOWNLOAD
+#storage.child(cloudfilename).get_url(None)
+#f = urllib.request.urlopen(url).read
+bot = telebot.TeleBot(API_KEY)   
+USER = None
 
 
 HEADERS = ({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36',
@@ -48,12 +66,18 @@ def urlCheck(message):
 
 
 
+def truncate_url(url):
+    pattern = r"https?:\/\/(www\.)?([-a-zA-Z0-9@:%._\+~#=]{1,256}\.\w+)\/?"
+    t = re.search(pattern, url).group(2)
+    if debug:
+        print("URL TRONCATO : " + t)
+    return t
 
 
 @bot.message_handler(commands=['start'])#Registra l'utente nel database
 def start(message):
-    user = message.chat.id
-    db.collection('Utente').add({'nome': user})
+    USER = message.chat.id
+    db.collection('Utente').add({'nome': USER})
     bot.send_message(message.chat.id, "Benvenuto, io sono Geronimo utilizza i comandi per poter tracciare siti web e prodotti: ")
 
 
@@ -71,15 +95,21 @@ def mioSend(message):
     if re.search(patternAmazon, str(message)):
         bot.send_message(message.chat.id, "amazon")
         price = soup.find('span', class_="a-offscreen").get_text()
+        bot.send_message(message.chat.id, "prezzo: " + price)
+
 
     elif re.search(patternEbay, str(message)): 
         print("ebay")
         bot.send_message(message.chat.id, "ebay")
         price = soup.find('span', id = 'prcIsum').get_text()
+        bot.send_message(message.chat.id, "prezzo: " + price)
+
     
     elif re.search(patternSubito, str(message)):
         bot.send_message(message.chat.id, "subito")
         price = soup.find('p', class_="index-module_price__N7M2x AdInfo_ad-info__price__tGg9h index-module_large__SUacX").get_text()
+        bot.send_message(message.chat.id, "prezzo: " + price)
+
 
     
     pricePattern="\d+((\.|\,)\d+)?"
@@ -88,7 +118,8 @@ def mioSend(message):
     # if numeric_price > 0:
     #     print(numeric_price)
 
-    bot.send_message(message.chat.id, "prezzo: " + price)
+
+
 
 #COMANDO /webList
 @bot.message_handler(commands=['listaSiti'])
@@ -103,15 +134,17 @@ def add(message):
 
 def addStep2(message):
     if urlCheck(message):
-        try:
-            urlSito = message.text
-            html = get_soup(urlSito)
-            db.collection('Sito').add({'url': urlSito, 'html': html})
-            db.collection('Utente-Sito').add({'sito':urlSito, 'utente':message.chat.id})
-            bot.send_message(message.chat.id, "Url aggiunto con successo")
+        # try:
+        urlSito = message.text
+        utente = message.chat.id
+        html = get_soup(urlSito)
+        db.collection('Sito').add({'url': urlSito})
+        db.collection('Utente-Sito').add({'sito':urlSito, 'utente':utente})
+        storage.child(storagePath + truncate_url(urlSito)).put("test.py")
+        bot.send_message(message.chat.id, "Url aggiunto con successo")
 
-        except Exception as e:
-            bot.reply_to(message, str(e))
+        # except Exception as e:
+        #     bot.reply_to(message, str(e))
         
         
     
@@ -137,21 +170,16 @@ def productsList(message):
     pass
 
 
-markup = types.ReplyKeyboardMarkup(row_width=2)
-itembtn1 = types.KeyboardButton('a')
-itembtn2 = types.KeyboardButton('b')
-itembtn3 = types.KeyboardButton('c')
-itembtn4 = types.KeyboardButton('d')
-markup.add(itembtn1, itembtn2, itembtn3, itembtn4)
+# markup = types.ReplyKeyboardMarkup(row_width=2)
+# itembtn1 = types.KeyboardButton('a')
+# itembtn2 = types.KeyboardButton('b')
+# itembtn3 = types.KeyboardButton('c')
+# itembtn4 = types.KeyboardButton('d')
+# markup.add(itembtn1, itembtn2, itembtn3, itembtn4)
 
 
 
-
-
-
-
-
-bot.infinity_polling()   
+bot.polling()   
 
 
 

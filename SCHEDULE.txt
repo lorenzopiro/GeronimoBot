@@ -1,0 +1,26 @@
+SCHEDULE
+
+-Comando aggiungiSito:
+    -farmi restituire il token dei file per inserirlo nel database e collegare lo storage
+    -riuscire a caricare la soup delle pagine senza salvare il file localmente
+
+-Comando rimuoviSito
+
+-Comando aggiungiProdotto
+
+-Comando rimuoviProdotto
+
+-Comando registraEmail
+
+-Comando listaSiti
+
+-Comando listaProdotti
+
+-Funzione di monitoring
+    -Controllare ogni tot minuti se l'html di una pagina nel database risulta diversa
+    -notificare l'utente tramite telegram
+    -notificare l'utente tramite email
+
+-Aggiungere email utente
+
+-Hostare servere con node o flask
