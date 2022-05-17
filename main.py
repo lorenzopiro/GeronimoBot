@@ -5,6 +5,7 @@ import creds
 import webbrowser
 import telebot
 from telebot import types
+from telebot.types import InlineKeyboardButton, InlineKeyboardMarkup
 import os
 import re
 import urllib
@@ -119,46 +120,46 @@ def start(message):
 
 
     
-@bot.message_handler(func=urlCheck) #CONTROLLA CHE SIA UN URL E CHE SIA VALIDO
-def mioSend(message):
-    URL = message.text
-    soup = get_soup(URL)
-    price = "prezzo non trovato"
+# @bot.message_handler(func=urlCheck) #CONTROLLA CHE SIA UN URL E CHE SIA VALIDO
+# def mioSend(message):
+#     URL = message.text
+#     soup = get_soup(URL)
+#     price = "prezzo non trovato"
 
-    patternAmazon = "amazon\.\w+\/.+"
-    patternSubito = "subito.it\/\w+"
-    patternEbay = "ebay\.\w+\/\w+"
+#     patternAmazon = "amazon\.\w+\/.+"
+#     patternSubito = "subito.it\/\w+"
+#     patternEbay = "ebay\.\w+\/\w+"
 
-    if re.search(patternAmazon, str(message)):
-        if debug:
-            bot.send_message(message.chat.id, "amazon")
+#     if re.search(patternAmazon, str(message)):
+#         if debug:
+#             bot.send_message(message.chat.id, "amazon")
 
-        price = soup.find('span', class_="a-offscreen").get_text()
-        bot.send_message(message.chat.id, "prezzo: " + price)
+#         price = soup.find('span', class_="a-offscreen").get_text()
+#         bot.send_message(message.chat.id, "prezzo: " + price)
 
 
-    elif re.search(patternEbay, str(message)): 
-        if debug:
-            bot.send_message(message.chat.id, "ebay")
+#     elif re.search(patternEbay, str(message)): 
+#         if debug:
+#             bot.send_message(message.chat.id, "ebay")
 
-        price = soup.find('span', id = 'prcIsum').get_text()
-        bot.send_message(message.chat.id, "prezzo: " + price)
-
-    
-    elif re.search(patternSubito, str(message)):
-        if debug:
-            bot.send_message(message.chat.id, "subito")
-
-        price = soup.find('p', class_="index-module_price__N7M2x AdInfo_ad-info__price__tGg9h index-module_large__SUacX").get_text()
-        bot.send_message(message.chat.id, "prezzo: " + price)
-
+#         price = soup.find('span', id = 'prcIsum').get_text()
+#         bot.send_message(message.chat.id, "prezzo: " + price)
 
     
-    pricePattern="\d+((\.|\,)\d+)?"
-    # numeric_price = re.match(pricePattern, price)
-    # numeric_price = int(numeric_price)
-    # if numeric_price > 0:
-    #     print(numeric_price)
+#     elif re.search(patternSubito, str(message)):
+#         if debug:
+#             bot.send_message(message.chat.id, "subito")
+
+#         price = soup.find('p', class_="index-module_price__N7M2x AdInfo_ad-info__price__tGg9h index-module_large__SUacX").get_text()
+#         bot.send_message(message.chat.id, "prezzo: " + price)
+
+
+    
+#     pricePattern="\d+((\.|\,)\d+)?"
+#     # numeric_price = re.match(pricePattern, price)
+#     # numeric_price = int(numeric_price)
+#     # if numeric_price > 0:
+#     #     print(numeric_price)
 
 
 
@@ -168,10 +169,19 @@ def mioSend(message):
 def list(message):
     dict = {}
     docs = db.collection("Utente-Sito").where("utente", "==", message.chat.id).get()
+    keyboard = []
 
     for doc in docs:
         if doc.get('sito') not in dict: #unique
             dict[doc.get('sito')] = doc.get('nome')
+
+  
+    for k in dict.keys():
+        tempButton = InlineKeyboardButton(text = dict[k], url = k)
+        keyboard.append([tempButton])
+
+    markup = InlineKeyboardMarkup(keyboard)
+    bot.send_message(message.chat.id, "Ecco la lista dei siti salvati:" ,reply_markup=markup)
 
     print(dict)
 
