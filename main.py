@@ -14,8 +14,9 @@ import pyrebase
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
+#import scraper
 
-debug = True
+debug = False
 
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred)
@@ -58,7 +59,16 @@ def get_soup(url):
 
     else:
         print(response.status_code)
-        
+
+def static_soup(soup: BeautifulSoup) -> BeautifulSoup:
+    for s in soup.select('script'):
+        s.extract()
+    
+    for s in soup.select('meta'):
+        s.extract()
+
+    return soup
+
 def urlCheck(message):
     # pattern1 = r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.\w+\/?"
     # pattern2 = r"[-a-zA-Z0-9]{1,256}\.[a-zA-Z0-9()]{1,6}"
@@ -88,7 +98,7 @@ def uploadHtml(url, nomeCustom):
         # try:
         urlSito = url.text
         utente = url.chat.id
-        html = get_soup(urlSito).prettify()
+        html = str(get_soup(urlSito).prettify())
         #troncato = truncate_url(urlSito)
         
         
@@ -103,7 +113,7 @@ def uploadHtml(url, nomeCustom):
 
 
             try: 
-                os.remove(nomeFile)
+                os.unlink(nomeFile)
                 print("rimosso")
             except Exception as e:
                 print(e)
@@ -188,7 +198,7 @@ def list(message):
     markup = InlineKeyboardMarkup(keyboard)
     bot.send_message(message.chat.id, "Ecco la lista dei siti salvati:" ,reply_markup=markup)
 
-    print(dict)
+
 
    
 
@@ -270,9 +280,68 @@ def productsList(message):
 # itembtn4 = types.KeyboardButton('d')
 # markup.add(itembtn1, itembtn2, itembtn3, itembtn4)
 
+def paginaCambiata(url, storageId):
+    newSoup = str(get_soup(url).prettify()) 
+    storage.child(storagePath + storageId).download("", storageId)
+    fh=open(storageId, 'r', encoding="utf-8")
+    oldSoup = fh.read()
+    fh.close()
+    
+
+    if newSoup == oldSoup:
+        print("Sito Uguale")
+        return False
+
+    # else:
+    #     #storage.child(storagePath + storageId).put(storageId)
 
 
-bot.polling()   
+    # try: 
+    #     os.unlink(storageId)
+
+    # except Exception as e:
+    #     print(e)
+
+    print("SitoCambiato")
+    return True
+    
+
+
+@bot.message_handler(commands=['check'])
+def checkPagine(message):
+    utenteSito = db.collection('Utente-Sito').get()
+    sitiCambiati = []
+    utentiDaAvvisare = []
+    for sito in utenteSito:
+        urlSito = sito.get('sito')
+        s = db.collection('Sito').where('url',"==",urlSito).get()
+        storageid = s[0].get('storageid')
+        
+        if paginaCambiata(urlSito, storageid):
+            sitiCambiati.append(urlSito)
+
+    for utente in utenteSito:
+        urlSalvato = utente.get('sito')
+        user = utente.get('utente')
+        nomeSito = utente.get('nome')
+        
+        if urlSalvato in sitiCambiati:
+            avvisaUtente(user, urlSalvato, nomeSito)
+
+
+def avvisaUtente(utente, url, nomeSito):
+    bot.send_message(utente, f"Il sito memorizzato come '{nomeSito}' ha subito dei cambiamenti: \n" + url)
+
+bot.infinity_polling()
+
+# if __name__ == "__main__":
+
+
+#     # scraper.checkPagine()
+#     # scraper.checkProdotti()
+#     scraper.paginaCambiata("https://firebasestorage.googleapis.com/v0/b/geronimo-499a0.appspot.com/o/Soups%2F002f90e61b6446149d0bc5f639450084?alt=media&token=9c112c82-75c1-4cc4-9a4d-40a745719150","002f90e61b6446149d0bc5f639450084")
+
+#     bot.infinity_polling()   
 
 
 
