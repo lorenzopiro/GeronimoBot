@@ -69,6 +69,11 @@ def urlCheck(message):
     return False
 
 
+def nomeEsistente(nome, utente):
+    nomi = db.collection('Utente-Sito').where("utente", "==", utente).where("nome", "==", nome).get()
+    if len(nomi)>0:
+        return True
+    return False
 
 def truncate_url(url):
     pattern = r"https?:\/\/(www\.)?([-a-zA-Z0-9@:%._\+~#=]{1,256}\.\w+)\/?"
@@ -211,22 +216,36 @@ def addStep2(message):
         
 def addStep3(message, urlDaSalvare):
 
-    try:
-            if uploadHtml(urlDaSalvare, message):
-                bot.reply_to(message, "Url aggiunto con successo 👍")
-            else:
-                bot.reply_to(message, "L'url inserito era già stato aggiunto 😁")
+    # if nomeEsistente(message.text, message.chat.id):
+    #     msg =  bot.reply_to(message,"Hai già utilizzato il nome inserito, inseriscine uno nuovo:")
+    #     bot.register_next_step_handler(msg, addStep3, urlDaSalvare)
 
-    except Exception as e:
-        bot.send_message(message.chat.id, "Ops, qualcosa è andato storto ☹")
-        print(e)
+    if uploadHtml(urlDaSalvare, message):
+        bot.reply_to(message, "Url aggiunto con successo 👍")
+    else:
+        bot.send_message(message.chat.id, "L'url inserito era già stato aggiunto 😁")
+
+    #except Exception as e:
+        # bot.send_message(message.chat.id, "Ops, qualcosa è andato storto ☹")
+        # print(e)
 
     
 
 #COMANDO /removeURL
 @bot.message_handler(commands=['rimuovisito'])
 def remove(message):
-    pass
+    msg = bot.send_message(message.chat.id, "Bene, inviami il nome da te scelto o l'url del sito che vuoi ELIMINARE dalla lista:")
+    bot.register_next_step_handler(msg,removeStep2)
+
+def removeStep2(message):
+    perUrl = db.collection('Utente-Sito').where("sito", "==", message.text).get()
+    perNome = db.collection('Utente-Sito').where("nome", "==", message.text).get()
+    docs = [*perUrl, *perNome]
+    for doc in docs:
+        key = doc.id
+        db.collection('Utente-Sito').document(key).delete()
+        bot.send_message(message.chat.id, f"Il sito memorizzato come '{doc.get('nome')}' è stato eliminato \n" + doc.get('sito'))
+        #break
 
 #COMANDO /addProduct
 @bot.message_handler(commands=['aggiungiprodotto'])
