@@ -15,6 +15,7 @@ import pyrebase
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
+from firebase_admin import storage
 import yagmail
 import smtplib
 from email.mime.text import MIMEText
@@ -82,10 +83,12 @@ def urlCheck(message):
     # pattern1 = r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.\w+\/?"
     # pattern2 = r"[-a-zA-Z0-9]{1,256}\.[a-zA-Z0-9()]{1,6}"
     # if re.match(pattern1, message.text) or re.match(pattern2, message.text):
-    if message.entities[0].type == "url":
-        return True
+    try:
+        if message.entities[0].type == "url":
+            return True
         
-    return False
+    except:
+        return False
 
 
 def nomeEsistente(nome, utente):
@@ -114,6 +117,7 @@ def uploadHtml(url, nomeCustom):
             nomeFile = uuid.uuid4().hex
             fh = open(nomeFile, "w", encoding="utf-8")
             fh.write(str(html))
+            fh.close()
             storage.child(storagePath + nomeFile).put(nomeFile)
             db.collection('Sito').add({'url': urlSito, 'storageid': nomeFile})
 
@@ -136,7 +140,7 @@ def uploadHtml(url, nomeCustom):
 
 
 def paginaCambiata(url, storageId):
-    newSoup = str(get_soup(url).prettify()) 
+    newSoup = str(get_soup(url).prettify()) + "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
     storage.child(storagePath + storageId).download("", storageId)
     fh=open(storageId, 'r', encoding="utf-8")
     oldSoup = fh.read()
@@ -147,12 +151,16 @@ def paginaCambiata(url, storageId):
         print("Sito Uguale")
         return False
 
-    # else:
+    else:
 
-    #     handler = open(storageId, 'w', encoding='utf-8')
-    #     handler.write(str(newSoup))
-    #     storage.child(storagePath + storageId).delete()
-    #     storage.child(storagePath + storageId).put(storageId)
+        bucket = storage.bucket("gs://geronimo-499a0.appspot.com/Soups")
+        blob1 = bucket.blob
+        handler = open(storageId, 'w', encoding='utf-8')
+        handler.write(str(newSoup))
+        handler.close()
+        token = storage.child(storagePath + storageId).bucket.get_blob()
+        storage.child(storagePath + storageId).delete(storageId, token)
+        storage.child(storagePath + storageId).put(storageId)
         
 
 
