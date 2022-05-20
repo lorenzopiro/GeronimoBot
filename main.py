@@ -14,123 +14,14 @@ import pyrebase
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
-#import scraper
-
-debug = False
-
-cred = credentials.Certificate("serviceAccountKey.json")
-firebase_admin.initialize_app(cred)
-
-db = firestore.client()
-
-API_KEY = creds.API_KEY
-
-
-firebase = pyrebase.initialize_app(creds.firebaseConfig)
-auth = firebase.auth()
-storage = firebase.storage()
-storagePath = "Soups/"
-
-#UPLOAD
-#storage.child(cloudfilename).put(filename)
-#DOWNLOAD
-#storage.child(cloudfilename).download(path, filename)
-
-#LETTURA SENZA DOWNLOAD
-#storage.child(cloudfilename).get_url(None)
-#f = urllib.request.urlopen(url).read
-bot = telebot.TeleBot(API_KEY)   
-USER = None
-
-
-HEADERS = ({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36',
-            'Content-Type': 'application/json',
-            })
-
-
-
-def get_soup(url):
-    response = requests.get(url, headers=HEADERS)
-
-   
-    if response.ok:
-        soup = BeautifulSoup(response.content, 'html.parser')
-        return soup
-
-    else:
-        print(response.status_code)
-
-def static_soup(soup: BeautifulSoup) -> BeautifulSoup:
-    for s in soup.select('script'):
-        s.extract()
-    
-    for s in soup.select('meta'):
-        s.extract()
-
-    return soup
-
-def urlCheck(message):
-    # pattern1 = r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.\w+\/?"
-    # pattern2 = r"[-a-zA-Z0-9]{1,256}\.[a-zA-Z0-9()]{1,6}"
-    # if re.match(pattern1, message.text) or re.match(pattern2, message.text):
-    if message.entities[0].type == "url":
-        return True
-        
-    return False
-
-
-def nomeEsistente(nome, utente):
-    nomi = db.collection('Utente-Sito').where("utente", "==", utente).where("nome", "==", nome).get()
-    if len(nomi)>0:
-        return True
-    return False
-
-def truncate_url(url):
-    pattern = r"https?:\/\/(www\.)?([-a-zA-Z0-9@:%._\+~#=]{1,256}\.\w+)\/?"
-    t = re.search(pattern, url).group(2)
-    if debug:
-        print("URL TRONCATO : " + t)
-    return t
-
-
-def uploadHtml(url, nomeCustom):  
-    if urlCheck(url):
-        # try:
-        urlSito = url.text
-        utente = url.chat.id
-        html = str(get_soup(urlSito).prettify())
-        #troncato = truncate_url(urlSito)
-        
-        
-        s = db.collection('Sito').where("url", "==", urlSito).get()
-        if len(s) == 0: #Se il sito non era già presente
-            nomeFile = uuid.uuid4().hex
-            fh = open(nomeFile, "w", encoding="utf-8")
-            fh.write(str(html))
-            storage.child(storagePath + nomeFile).put(nomeFile)
-            db.collection('Sito').add({'url': urlSito, 'storageid': nomeFile})
-
-
-
-            try: 
-                os.unlink(nomeFile)
-                print("rimosso")
-            except Exception as e:
-                print(e)
-
-        us = db.collection('Utente-Sito').where("utente", "==", utente).where("sito", "==", urlSito).get()
-        if len(us)==0: # Se il sito non era già stato registrato dall'utente
-            db.collection('Utente-Sito').add({'utente':utente, 'sito':urlSito, 'nome': nomeCustom.text})
-            return True
-        return False
-
-        # except Exception as e:
-        #     bot.reply_to(message, str(e)) 
+from functions import *
 
 @bot.message_handler(commands=['start'])#Registra l'utente nel database
 def start(message):
+    global USER, EMAIL
     USER = message.chat.id
-    db.collection('Utente').add({'nome': USER})
+    EMAIL = ""
+    db.collection('Utente').add({'nome': USER, 'email' : EMAIL})
     bot.send_message(message.chat.id, "Benvenuto, io sono Geronimo utilizza i comandi per poter tracciare siti web e prodotti: ")
 
 
@@ -184,7 +75,7 @@ def start(message):
 def list(message):
     dict = {}
     docs = db.collection("Utente-Sito").where("utente", "==", message.chat.id).get()
-    keyboard = []
+    keyboard = [] 
 
     for doc in docs:
         if doc.get('sito') not in dict: #unique
@@ -221,8 +112,6 @@ def addStep2(message):
         msg = bot.reply_to(message, "Con che nome vorresti memorizzare questo link?") #todo: force reply?
         bot.register_next_step_handler(msg, addStep3, urlDaSalvare)
  
-
-
         
 def addStep3(message, urlDaSalvare):
 
@@ -280,31 +169,57 @@ def productsList(message):
 # itembtn4 = types.KeyboardButton('d')
 # markup.add(itembtn1, itembtn2, itembtn3, itembtn4)
 
-def paginaCambiata(url, storageId):
-    newSoup = str(get_soup(url).prettify()) 
-    storage.child(storagePath + storageId).download("", storageId)
-    fh=open(storageId, 'r', encoding="utf-8")
-    oldSoup = fh.read()
-    fh.close()
+
     
 
-    if newSoup == oldSoup:
-        print("Sito Uguale")
-        return False
 
-    # else:
-    #     #storage.child(storagePath + storageId).put(storageId)
+@bot.message_handler(commands=['registraemail'])
+def registraEmail(message):
+    global USER
+    USER = message.chat.id
+    Utente = db.collection('Utente').where("nome", "==", USER).get()[0]
+    email = Utente.get("email")
+    if email == "":
+        msg = bot.reply_to(message,"Bene, mandami qui di seguito l'email che vuoi registrare sul tuo account:")
+
+    else:
+        button = InlineKeyboardButton(text = "Annulla", callback_data = "annulla")
+        keyboard=[[button]]
+        markup = InlineKeyboardMarkup(keyboard)
+        global EMAIL
+        global ANNULLA
+        ANNULLA = False
+        EMAIL = Utente.get('email')
+        stringa = f"Hai già un'email registrata con l'indirizzo '{EMAIL}', vorresti sovrascrivere l'indirizzo con uno nuovo? Se si inviami il nuovo indirizzo, altrimenti premi il tasto 'Annulla' "
+        msg = bot.send_message(USER, stringa, reply_markup=markup)
+        
+
+    bot.register_next_step_handler(msg, mailStep2)
 
 
-    # try: 
-    #     os.unlink(storageId)
+@bot.callback_query_handler(func=lambda call: call.data.find("annulla") != -1)
+def annullaRegistrazione(call):
+    global ANNULLA 
+    ANNULLA = True
+    print("annulla")
+    bot.send_message(USER, f"Il tuo indirizzo email è rimasto invariato ({EMAIL})")
 
-    # except Exception as e:
-    #     print(e)
+def mailStep2(message):
+    if not ANNULLA:
+        print(ANNULLA)
+        Utente = db.collection('Utente').where("nome", "==", USER).get()
+        if message.entities[0].type == "email":
+            db.collection('Utente').document(Utente[0].id).update({"email":message.text})
+            bot.send_message(message.chat.id, f"Il tuo indirizzo email '{message.text}' è stato registrato 👍")
 
-    print("SitoCambiato")
-    return True
-    
+
+        else:
+            bot.reply_to(message, f"Ops, l'indirizzo email inserito non è valido 😕")
+
+
+
+            
+ 
 
 
 @bot.message_handler(commands=['check'])
@@ -329,19 +244,12 @@ def checkPagine(message):
             avvisaUtente(user, urlSalvato, nomeSito)
 
 
-def avvisaUtente(utente, url, nomeSito):
-    bot.send_message(utente, f"Il sito memorizzato come '{nomeSito}' ha subito dei cambiamenti: \n" + url)
-
-bot.infinity_polling()
-
-# if __name__ == "__main__":
 
 
-#     # scraper.checkPagine()
-#     # scraper.checkProdotti()
-#     scraper.paginaCambiata("https://firebasestorage.googleapis.com/v0/b/geronimo-499a0.appspot.com/o/Soups%2F002f90e61b6446149d0bc5f639450084?alt=media&token=9c112c82-75c1-4cc4-9a4d-40a745719150","002f90e61b6446149d0bc5f639450084")
 
-#     bot.infinity_polling()   
+if __name__ == "__main__":
+    bot.infinity_polling()   
+    #checkLoop()
 
 
 
