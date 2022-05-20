@@ -98,6 +98,7 @@ def list(message):
 #COMANDO /addURL
 @bot.message_handler(commands=['aggiungisito'])
 def add(message):
+    
     msg = bot.send_message(message.chat.id, "Bene, mandami qui di seguito l'URL del sito che vuoi monitorare: ")
     bot.register_next_step_handler(msg, addStep2)
 
@@ -125,7 +126,7 @@ def addStep3(message, urlDaSalvare):
         bot.send_message(message.chat.id, "L'url inserito era già stato aggiunto 😁")
 
     #except Exception as e:
-        # bot.send_message(message.chat.id, "Ops, qualcosa è andato storto ☹")
+        # bot.send_message(message.chat.id, "Ops, qualcosa è andato storto 😕")
         # print(e)
 
     
@@ -208,13 +209,18 @@ def mailStep2(message):
     if not ANNULLA:
         print(ANNULLA)
         Utente = db.collection('Utente').where("nome", "==", USER).get()
-        if message.entities[0].type == "email":
-            db.collection('Utente').document(Utente[0].id).update({"email":message.text})
-            bot.send_message(message.chat.id, f"Il tuo indirizzo email '{message.text}' è stato registrato 👍")
 
+        try:
+            if message.entities[0].type == "email":
+                db.collection('Utente').document(Utente[0].id).update({"email":message.text})
+                bot.send_message(message.chat.id, f"Il tuo indirizzo email '{message.text}' è stato registrato 👍")
 
-        else:
-            bot.reply_to(message, f"Ops, l'indirizzo email inserito non è valido 😕")
+            else:
+                bot.reply_to(message, f"Ops, l'indirizzo email inserito non è valido 😕")
+
+        except:
+            bot.reply_to(message, f"Ops, l'indirizzo email inserito non è valido 😕") 
+
 
 
 
