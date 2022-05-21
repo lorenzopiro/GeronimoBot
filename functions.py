@@ -21,7 +21,7 @@ import smtplib
 from email.mime.text import MIMEText
 
 
-SENDING_EMAIL_USERNAME = "geronimotelegram"
+SENDING_EMAIL_USERNAME = "geronimotelegram@gmail.com"
 SENDING_EMAIL_PASSWORD = creds.SENDING_EMAIL_PASSWORD 
 
 #10 minuti : 600s
@@ -140,7 +140,7 @@ def uploadHtml(url, nomeCustom):
 
 
 def paginaCambiata(url, storageId):
-    newSoup = str(get_soup(url).prettify()) + "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    newSoup = str(get_soup(url).prettify())
     storage.child(storagePath + storageId).download("", storageId)
     fh=open(storageId, 'r', encoding="utf-8")
     oldSoup = fh.read()
@@ -151,16 +151,16 @@ def paginaCambiata(url, storageId):
         print("Sito Uguale")
         return False
 
-    else:
+    # else:
 
-        bucket = storage.bucket("gs://geronimo-499a0.appspot.com/Soups")
-        blob1 = bucket.blob
-        handler = open(storageId, 'w', encoding='utf-8')
-        handler.write(str(newSoup))
-        handler.close()
-        token = storage.child(storagePath + storageId).bucket.get_blob()
-        storage.child(storagePath + storageId).delete(storageId, token)
-        storage.child(storagePath + storageId).put(storageId)
+    #     bucket = storage.bucket("gs://geronimo-499a0.appspot.com/Soups")
+    #     blob1 = bucket.blob
+    #     handler = open(storageId, 'w', encoding='utf-8')
+    #     handler.write(str(newSoup))
+    #     handler.close()
+    #     token = storage.child(storagePath + storageId).bucket.get_blob()
+    #     storage.child(storagePath + storageId).delete(storageId, token)
+    #     storage.child(storagePath + storageId).put(storageId)
         
 
 
@@ -182,7 +182,7 @@ def avvisaUtente(utente, url, nomeSito):
     mailAddress = dbUser.get('email')
     oggetto = "Cambiamento pagine"
     contenuto = f"Il sito memorizzato come '{nomeSito}' ha subito dei cambiamenti: \n" + url
-    #inviaEmail(mailAddress,oggetto, contenuto)
+    inviaEmail(mailAddress,oggetto, contenuto)
 
 def checkAutomatico():
     utenteSito = db.collection('Utente-Sito').get()
