@@ -1,4 +1,5 @@
 from time import sleep
+from threading import Thread
 import  requests
 import uuid
 from threading import Barrier
@@ -21,11 +22,12 @@ import smtplib
 from email.mime.text import MIMEText
 
 
+NOTIFICA_EMAIL = False
+
 SENDING_EMAIL_USERNAME = "geronimotelegram@gmail.com"
 SENDING_EMAIL_PASSWORD = creds.SENDING_EMAIL_PASSWORD 
 
-#10 minuti : 600s
-TIMEOUT = 10 
+TIMEOUT = 300 
 
 debug = False
 
@@ -182,7 +184,9 @@ def avvisaUtente(utente, url, nomeSito):
     mailAddress = dbUser.get('email')
     oggetto = "Cambiamento pagine"
     contenuto = f"Il sito memorizzato come '{nomeSito}' ha subito dei cambiamenti: \n" + url
-    inviaEmail(mailAddress,oggetto, contenuto)
+
+    if NOTIFICA_EMAIL:
+        inviaEmail(mailAddress,oggetto, contenuto)
 
 def checkAutomatico():
     utenteSito = db.collection('Utente-Sito').get()
@@ -203,11 +207,17 @@ def checkAutomatico():
         if urlSalvato in sitiCambiati:
             avvisaUtente(user, urlSalvato, nomeSito)
 
-def checkLoop():
-    while True:
-        checkAutomatico()
-        sleep(TIMEOUT)
 
 def inviaEmail(destinatario, oggetto, contenuto):
-    """Sends an email alert. The subject and body will be the same. """
     yagmail.SMTP(SENDING_EMAIL_USERNAME, SENDING_EMAIL_PASSWORD).send(destinatario, oggetto, contenuto)
+
+
+class checkThread(Thread):
+    def __init__(self):
+        super().__init__()
+
+    def run(self):
+        while True:
+            print("running")
+            checkAutomatico()
+            sleep(TIMEOUT)

@@ -1,3 +1,4 @@
+from tabnanny import check
 import  requests
 import uuid
 from threading import Barrier
@@ -163,12 +164,7 @@ def productsList(message):
     pass
 
 
-# markup = types.ReplyKeyboardMarkup(row_width=2)
-# itembtn1 = types.KeyboardButton('a')
-# itembtn2 = types.KeyboardButton('b')
-# itembtn3 = types.KeyboardButton('c')
-# itembtn4 = types.KeyboardButton('d')
-# markup.add(itembtn1, itembtn2, itembtn3, itembtn4)
+
 
 
     
@@ -225,14 +221,44 @@ def mailStep2(message):
 
 
             
- 
+@bot.message_handler(commands=['eliminaemail'])
+def eliminaEmail(message):
+    utente = message.chat.id
+
+    email = db.collection('Utente').where("nome", "==", utente).get()[0].get("email")
+
+    if email != "":
+        markup = types.ReplyKeyboardMarkup(row_width=1)
+        itembtn1 = types.KeyboardButton('Elimina')
+        itembtn2 = types.KeyboardButton('Annulla')
+        markup.add(itembtn1, itembtn2)
+        msg = bot.send_message(utente, "Sei sicuro di voler eliminare il tuo indirizzo email? Così facendo non riceverai più notifiche tramite email, se dicidi di proseguire ricordati che puoi registrare una nuova email quando vuoi tramite il comando /registraemail", reply_markup=markup)
+        bot.register_next_step_handler(msg,eliminaEmailStep2)
+
+    else:
+        bot.send_message(utente, "Non hai nessuna email registrata, se vuoi ricevere notifiche sul tuo indirizzo di posta, utilizza il comando /registraemail 🙂")
+
+def eliminaEmailStep2(message):
+    utente = message.chat.id
+    email = db.collection('Utente').where("nome", "==", utente).get()[0].get("email")
+    if message.text == "Elimina":
+        key = db.collection('Utente').where('nome', '==', utente).get()[0].id
+        db.collection('Utente').document(key).update({'email':''})
+        bot.send_message(utente, "Indirizzo email eliminato con successo 👍")
+
+    elif message.text == "Annulla":
+        bot.send_message(utente, f"Il tuo indirizzo email è rimasto invariato ({email}) 👌")
+
+    else:
+        bot.send_message(utente, f"Comando non valido, il tuo indirizzo email è rimasto invariato ({email})")
+
+
 
 
 @bot.message_handler(commands=['check'])
 def checkPagine(message):
     utenteSito = db.collection('Utente-Sito').get()
     sitiCambiati = []
-    utentiDaAvvisare = []
     for sito in utenteSito:
         urlSito = sito.get('sito')
         s = db.collection('Sito').where('url',"==",urlSito).get()
@@ -251,11 +277,10 @@ def checkPagine(message):
 
 
 
-
-
 if __name__ == "__main__":
-    bot.infinity_polling()   
-    #checkLoop()
+    ct = checkThread()
+    #ct.start()
+    bot.infinity_polling() 
 
 
 
