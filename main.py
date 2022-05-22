@@ -164,59 +164,62 @@ def productsList(message):
     pass
 
 
-
-
-
     
 
 
 @bot.message_handler(commands=['registraemail'])
 def registraEmail(message):
-    global USER
     USER = message.chat.id
     Utente = db.collection('Utente').where("nome", "==", USER).get()[0]
     email = Utente.get("email")
     if email == "":
         msg = bot.reply_to(message,"Bene, mandami qui di seguito l'email che vuoi registrare sul tuo account:")
+        bot.register_next_step_handler(msg, mailStep3)
 
     else:
-        button = InlineKeyboardButton(text = "Annulla", callback_data = "annulla")
-        keyboard=[[button]]
-        markup = InlineKeyboardMarkup(keyboard)
-        global EMAIL
-        global ANNULLA
-        ANNULLA = False
-        EMAIL = Utente.get('email')
-        stringa = f"Hai già un'email registrata con l'indirizzo '{EMAIL}', vorresti sovrascrivere l'indirizzo con uno nuovo? Se si inviami il nuovo indirizzo, altrimenti premi il tasto 'Annulla' "
+        markup = types.ReplyKeyboardMarkup(row_width=1)
+        itembtn1 = types.KeyboardButton('Modifica ⚙️')
+        itembtn2 = types.KeyboardButton('Annulla ↩️')
+        markup.add(itembtn1, itembtn2)
+        stringa = f"Hai già un'email registrata con l'indirizzo '{email}', vorresti modificare il tuo indirizzo? Se si seleziona 'Modifica', altrimenti seleziona 'Annulla' "
         msg = bot.send_message(USER, stringa, reply_markup=markup)
+        bot.register_next_step_handler(msg, mailStep2)
         
 
-    bot.register_next_step_handler(msg, mailStep2)
-
-
-@bot.callback_query_handler(func=lambda call: call.data.find("annulla") != -1)
-def annullaRegistrazione(call):
-    global ANNULLA 
-    ANNULLA = True
-    print("annulla")
-    bot.send_message(USER, f"Il tuo indirizzo email è rimasto invariato ({EMAIL})")
-
 def mailStep2(message):
-    if not ANNULLA:
-        print(ANNULLA)
-        Utente = db.collection('Utente').where("nome", "==", USER).get()
+    USER = message.chat.id
+    Utente = db.collection('Utente').where("nome", "==", USER).get()[0]
+    email = Utente.get("email")
+    markup = types.ReplyKeyboardRemove()
 
-        try:
-            if message.entities[0].type == "email":
-                db.collection('Utente').document(Utente[0].id).update({"email":message.text})
-                bot.send_message(message.chat.id, f"Il tuo indirizzo email '{message.text}' è stato registrato 👍")
+    if message.text == "Annulla ↩️":
+        bot.send_message(USER, f"Il tuo indirizzo email è rimasto invariato ({email}) 👌", reply_markup=markup)
 
-            else:
-                bot.reply_to(message, f"Ops, l'indirizzo email inserito non è valido 😕")
+    elif message.text == "Modifica ⚙️":
+        msg = bot.send_message(USER, "Mandami qui di seguito il tuo nuovo indirizzo email:", reply_markup=markup)
+        bot.register_next_step_handler(msg, mailStep3)
 
-        except:
-            bot.reply_to(message, f"Ops, l'indirizzo email inserito non è valido 😕") 
+    else:
+        bot.send_message(USER, "Ops, il messaggio da te inviato non è valido 😕", reply_markup=markup)
 
+    
+
+def mailStep3(message):
+    USER = message.chat.id
+    Utente = db.collection('Utente').where("nome", "==", USER).get()[0]
+    markup = types.ReplyKeyboardRemove()
+    try:
+        if message.entities[0].type == "email":
+            db.collection('Utente').document(Utente.id).update({"email":message.text})
+            bot.send_message(message.chat.id, f"Il tuo indirizzo email '{message.text}' è stato registrato 👍", reply_markup=markup)
+
+        else:
+            bot.reply_to(message, f"Ops, l'indirizzo email inserito non è valido 😕", reply_markup=markup)
+
+    except Exception as e:
+        print(e)
+        bot.reply_to(message, f"Ops, l'indirizzo email inserito non è valido 😕", reply_markup=markup)
+    
 
 
 
@@ -229,10 +232,10 @@ def eliminaEmail(message):
 
     if email != "":
         markup = types.ReplyKeyboardMarkup(row_width=1)
-        itembtn1 = types.KeyboardButton('Elimina')
-        itembtn2 = types.KeyboardButton('Annulla')
+        itembtn1 = types.KeyboardButton('Elimina ❌')
+        itembtn2 = types.KeyboardButton('Annulla ↩️')
         markup.add(itembtn1, itembtn2)
-        msg = bot.send_message(utente, "Sei sicuro di voler eliminare il tuo indirizzo email? Così facendo non riceverai più notifiche tramite email, se dicidi di proseguire ricordati che puoi registrare una nuova email quando vuoi tramite il comando /registraemail", reply_markup=markup)
+        msg = bot.send_message(utente, "Sei sicuro di voler eliminare il tuo indirizzo email? Così facendo non riceverai più notifiche tramite email, se decidi di proseguire ricordati che puoi registrare una nuova email quando vuoi tramite il comando /registraemail", reply_markup=markup)
         bot.register_next_step_handler(msg,eliminaEmailStep2)
 
     else:
@@ -241,16 +244,17 @@ def eliminaEmail(message):
 def eliminaEmailStep2(message):
     utente = message.chat.id
     email = db.collection('Utente').where("nome", "==", utente).get()[0].get("email")
-    if message.text == "Elimina":
+    markup = types.ReplyKeyboardRemove()
+    if message.text == "Elimina ❌":
         key = db.collection('Utente').where('nome', '==', utente).get()[0].id
         db.collection('Utente').document(key).update({'email':''})
-        bot.send_message(utente, "Indirizzo email eliminato con successo 👍")
+        bot.send_message(utente, "Indirizzo email eliminato con successo 👍", reply_markup=markup)
 
-    elif message.text == "Annulla":
-        bot.send_message(utente, f"Il tuo indirizzo email è rimasto invariato ({email}) 👌")
+    elif message.text == "Annulla ↩️":
+        bot.send_message(utente, f"Il tuo indirizzo email è rimasto invariato ({email}) 👌", reply_markup=markup)
 
     else:
-        bot.send_message(utente, f"Comando non valido, il tuo indirizzo email è rimasto invariato ({email})")
+        bot.send_message(utente, f"Comando non valido, il tuo indirizzo email è rimasto invariato ({email})", reply_markup=markup)
 
 
 
