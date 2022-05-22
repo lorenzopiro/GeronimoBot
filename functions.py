@@ -141,6 +141,46 @@ def uploadHtml(url, nomeCustom):
         #     bot.reply_to(message, str(e)) 
 
 
+# def paginaCambiata(url, storageId):
+#     print(storageId)
+#     newSoup = str(get_soup(url).prettify())
+#     storage.child(storagePath + storageId).download("", storageId)
+#     fh=open(storageId, 'r', encoding="utf-8")
+#     oldSoup = fh.read()
+#     fh.close()
+    
+
+#     # if newSoup == oldSoup:
+#     #     print("Sito Uguale")
+#     #     try: 
+#     #         print("eliminato")
+#     #         os.unlink(storageId)
+
+#     #     except Exception as e:
+#     #         print(e)
+#     #     return False
+
+#     # else : 
+#     #     handler = open(storageId, 'w', encoding='utf-8')
+#     #     handler.write(str(newSoup))
+#     #     handler.close()
+#     #     print(storageId)
+#     #     storage.child(storagePath + storageId).delete(storagePath + storageId, str(cred))
+#     #     storage.child(storagePath + storageId).put(storageId)
+     
+        
+
+
+#     # try: 
+#     #     print("eliminato")
+#     #     os.unlink(storageId)
+
+#     # except Exception as e:
+#     #     print(e)
+
+#     # print("SitoCambiato")
+#     # return True
+
 def paginaCambiata(url, storageId):
     newSoup = str(get_soup(url).prettify())
     storage.child(storagePath + storageId).download("", storageId)
@@ -150,33 +190,32 @@ def paginaCambiata(url, storageId):
     
 
     if newSoup == oldSoup:
+        try: 
+            os.unlink(storageId)
+
+        except Exception as e:
+            print(e)
         print("Sito Uguale")
         return False
 
     # else:
 
-    #     bucket = storage.bucket("gs://geronimo-499a0.appspot.com/Soups")
-    #     blob1 = bucket.blob
     #     handler = open(storageId, 'w', encoding='utf-8')
     #     handler.write(str(newSoup))
     #     handler.close()
-    #     token = storage.child(storagePath + storageId).bucket.get_blob()
-    #     storage.child(storagePath + storageId).delete(storageId, token)
-    #     storage.child(storagePath + storageId).put(storageId)
+    #     storage.child(storagePath).delete(storageId, str(cred))
+    #     storage.child(storagePath).put(storageId)
         
 
 
     try: 
         os.unlink(storageId)
 
-
-
     except Exception as e:
         print(e)
 
     print("SitoCambiato")
     return True
-
 
 def avvisaUtente(utente, url, nomeSito):
     bot.send_message(utente, f"Il sito memorizzato come '{nomeSito}' ha subito dei cambiamenti: \n" + url)
