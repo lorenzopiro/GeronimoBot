@@ -123,24 +123,98 @@ def removeStep2(message): #TODO da rivedere e fare senza foreach
         bot.send_message(message.chat.id, "Il sito da te specificato non risulta presente nella lista 😕")
         print("non rimosso")
 
+
 @bot.message_handler(commands=['aggiungiprodotto'])
-def add(message):
+def addProduct(message):
     
     msg = bot.send_message(message.chat.id, "Bene, mandami qui di seguito l'URL del prodotto che vuoi monitorare: ")
     bot.register_next_step_handler(msg, prodStep2)
 
 def prodStep2(message):
-    bot.send_message(message.chat.id, str(getProductprice(message.text)) + "€")
+    try:
+        prezzo = getProductprice(message.text)
+        prodotto = message.text
+        db.collection('Prodotto').add({'id': prodotto, 'prezzo': prezzo})
+        db.collection('Utente-Prodotto').add({'prodotto':message.text, 'utente':message.chat.id})
+        msg = bot.send_message(message.chat.id, "Con che nome vorresti memorizzare questo prodotto?")
+        bot.register_next_step_handler(msg, prodStep3, prodotto)
+
+    except Exception as e:
+        print(e)
+        bot.reply_to(message, "Mi dispiace ma non sono riuscito a recuparare il prezzo di questo prodotto 😕")
+
+def prodStep3(message, prodotto):
+    nome = message.text
+    prod = db.collection('Utente-Prodotto').where('prodotto',"==",prodotto).where('utente', '==', message.chat.id).get()[0]
+    key = prod.id
+    db.collection('Utente-Prodotto').document(key).update({'nome':nome})
+    msg = bot.send_message(message.chat.id, "Bene, infine mandami il prezzo obiettivo sotto il quale ti interesserebbe comprare il prodotto:")
+    bot.register_next_step_handler(msg, prodStep4,prodotto, nome)
+
+def prodStep4(message,prodotto, nome):
+    obiettivo = priceConverter(message.text)
+    prod = db.collection('Utente-Prodotto').where('prodotto',"==",prodotto).where('utente', '==', message.chat.id).get()[0]
+    key = prod.id
+    db.collection('Utente-Prodotto').document(key).update({'obiettivo':obiettivo})
+    bot.send_message(message.chat.id, f"Ottimo, il prodotto salvato come '{nome}' è stato registrato 👍 \n {prodotto}")
+
+
+
+
 
 #COMANDO /removeProduct
 @bot.message_handler(commands=['rimuoviprodotto'])
 def removeProduct(message):
-    pass
+    if len(db.collection("Utente-Sito").where("utente", "==", message.chat.id).get()) == 0:
+        bot.send_message(message.chat.id, "Al momento non hai salvato nessun prodotto, per aggiungere un prodotto da monitorare utilizza il comando /aggiungiprodotto:")
+
+    else:
+        msg = bot.send_message(message.chat.id, "Bene, inviami il nome da te scelto o l'url del prodotto che vuoi ELIMINARE dalla lista:")
+        bot.register_next_step_handler(msg,removeStep2)
+
+def removeStep2(message): 
+    try:
+        perUrl = db.collection('Utente-Prodotto').where("prodotto", "==", message.text).get()
+        perNome = db.collection('Utente-Prodotto').where("nome", "==", message.text).get()
+        docs = [*perUrl, *perNome]
+        if len(docs) > 0:
+            for doc in docs:
+                key = doc.id
+                db.collection('Utente-Prodotto').document(key).delete()
+                bot.send_message(message.chat.id, f"Il prodotto memorizzato come '{doc.get('nome')}' è stato eliminato \n" + doc.get('prodotto'))
+                break
+
+        else:    
+            bot.send_message(message.chat.id, "Il prodotto da te specificato non risulta presente nella lista 😕")
+
+    except:
+        bot.send_message(message.chat.id, "Il prodotto da te specificato non risulta presente nella lista 😕")
+        print("non rimosso")
+
 
 #COMANDO /productsList
 @bot.message_handler(commands=['listaprodotti'])
 def productsList(message):
-    pass
+    dict = {}
+    docs = db.collection("Utente-Prodotto").where("utente", "==", message.chat.id).get()
+    keyboard = [] 
+
+    for doc in docs:
+        Prodotto = db.collection('Prodotto').where('id','==', doc.get('prodotto')).get()[0]
+        prezzo = Prodotto.get('prezzo')
+        if doc.get('prodotto') not in dict: #unique
+            dict[doc.get('prodotto')] = f"{doc.get('nome')}  ({prezzo}€)"
+
+    if len(dict) > 0:
+        for k in dict.keys():
+            tempButton = InlineKeyboardButton(text = dict[k], url = k)
+            keyboard.append([tempButton])
+
+        markup = InlineKeyboardMarkup(keyboard)
+        bot.send_message(message.chat.id, "Ecco la lista dei prodotti salvati:" ,reply_markup=markup)
+
+    else:
+        bot.send_message(message.chat.id, "Al momento non hai salvato nessun prodotto da monitorare, per aggiungere una pagina utilizza il comando /aggiungiprodotto:" )
 
 
     

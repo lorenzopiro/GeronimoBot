@@ -25,7 +25,7 @@ from email.mime.text import MIMEText
 
 NOTIFICA_EMAIL = False
 
-SENDING_EMAIL_USERNAME = "geronimotelegram@gmail.com"
+SENDING_EMAIL_USERNAME = creds.SENDING_EMAIL_USERNAME
 SENDING_EMAIL_PASSWORD = creds.SENDING_EMAIL_PASSWORD 
 
 TIMEOUT = 300 
@@ -142,45 +142,7 @@ def uploadHtml(url, nomeCustom):
         #     bot.reply_to(message, str(e)) 
 
 
-# def paginaCambiata(url, storageId):
-#     print(storageId)
-#     newSoup = str(get_soup(url).prettify())
-#     storage.child(storagePath + storageId).download("", storageId)
-#     fh=open(storageId, 'r', encoding="utf-8")
-#     oldSoup = fh.read()
-#     fh.close()
-    
 
-#     # if newSoup == oldSoup:
-#     #     print("Sito Uguale")
-#     #     try: 
-#     #         print("eliminato")
-#     #         os.unlink(storageId)
-
-#     #     except Exception as e:
-#     #         print(e)
-#     #     return False
-
-#     # else : 
-#     #     handler = open(storageId, 'w', encoding='utf-8')
-#     #     handler.write(str(newSoup))
-#     #     handler.close()
-#     #     print(storageId)
-#     #     storage.child(storagePath + storageId).delete(storagePath + storageId, str(cred))
-#     #     storage.child(storagePath + storageId).put(storageId)
-     
-        
-
-
-#     # try: 
-#     #     print("eliminato")
-#     #     os.unlink(storageId)
-
-#     # except Exception as e:
-#     #     print(e)
-
-#     # print("SitoCambiato")
-#     # return True
 
 def paginaCambiata(url, storageId):
     newSoup = str(get_soup(url).prettify())
@@ -199,7 +161,7 @@ def paginaCambiata(url, storageId):
         print("Sito Uguale")
         return False
 
-    # else: #sostituisci la vecchia soup con la nuova
+    # else: #sostituisci la vecchia soup con la nuova e aggiorna la data dell'ultima modifica
 
     #     handler = open(storageId, 'w', encoding='utf-8')
     #     handler.write(str(newSoup))
@@ -251,6 +213,16 @@ def checkAutomatico():
 def inviaEmail(destinatario, oggetto, contenuto):
     yagmail.SMTP(SENDING_EMAIL_USERNAME, SENDING_EMAIL_PASSWORD).send(destinatario, oggetto, contenuto)
 
+def priceConverter(strPrice):
+    pricePattern="(\d+((\.|\,)\d+)?)"
+    try:
+        numeric_price = re.search(pricePattern, strPrice).group(1).replace(".", "")
+        numeric_price = numeric_price.replace(",", ".")
+    except:
+        numeric_price = re.search(pricePattern, strPrice).group(1)
+    numeric_price = float(numeric_price)
+    
+    return numeric_price
 
 def getProductprice(urlProd):
     soup = get_soup(urlProd)
@@ -274,15 +246,7 @@ def getProductprice(urlProd):
     else:
         return -1
     
-    pricePattern="(\d+((\.|\,)\d+)?)"
-    try:
-        numeric_price = re.search(pricePattern, price).group(1).replace(".", "")
-        numeric_price = numeric_price.replace(",", ".")
-    except:
-        numeric_price = re.search(pricePattern, price).group(1)
-    numeric_price = float(numeric_price)
-    if numeric_price > 0:
-        print("numeric price: " + str(numeric_price))
+    numeric_price = priceConverter(price)    
 
     return numeric_price
 
