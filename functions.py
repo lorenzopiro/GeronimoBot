@@ -1,5 +1,6 @@
 from time import sleep
 from threading import Thread
+from unicodedata import numeric
 import  requests
 import uuid
 from threading import Barrier
@@ -198,12 +199,12 @@ def paginaCambiata(url, storageId):
         print("Sito Uguale")
         return False
 
-    # else:
+    # else: #sostituisci la vecchia soup con la nuova
 
     #     handler = open(storageId, 'w', encoding='utf-8')
     #     handler.write(str(newSoup))
     #     handler.close()
-    #     storage.child(storagePath).delete(storageId, str(cred))
+    #     storage.child(storagePath).delete(storageId)
     #     storage.child(storagePath).put(storageId)
         
 
@@ -250,6 +251,40 @@ def checkAutomatico():
 def inviaEmail(destinatario, oggetto, contenuto):
     yagmail.SMTP(SENDING_EMAIL_USERNAME, SENDING_EMAIL_PASSWORD).send(destinatario, oggetto, contenuto)
 
+
+def getProductprice(urlProd):
+    soup = get_soup(urlProd)
+    price = "prezzo non trovato"
+
+    patternAmazon = "amazon\.\w+\/.+"
+    patternSubito = "subito.it\/\w+"
+    patternEbay = "ebay\.\w+\/\w+"
+
+    if re.search(patternAmazon, str(urlProd)):
+        price = soup.find('span', class_="a-offscreen").get_text()
+
+
+    elif re.search(patternEbay, str(urlProd)): 
+        price = soup.find('span', id = 'prcIsum').get_text()
+
+    
+    elif re.search(patternSubito, str(urlProd)):
+        price = soup.find('p', class_="index-module_price__N7M2x AdInfo_ad-info__price__tGg9h index-module_large__SUacX").get_text()
+
+    else:
+        return -1
+    
+    pricePattern="(\d+((\.|\,)\d+)?)"
+    try:
+        numeric_price = re.search(pricePattern, price).group(1).replace(".", "")
+        numeric_price = numeric_price.replace(",", ".")
+    except:
+        numeric_price = re.search(pricePattern, price).group(1)
+    numeric_price = float(numeric_price)
+    if numeric_price > 0:
+        print("numeric price: " + str(numeric_price))
+
+    return numeric_price
 
 class checkThread(Thread):
     def __init__(self):

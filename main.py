@@ -1,4 +1,3 @@
-from tabnanny import check
 import  requests
 import uuid
 from threading import Barrier
@@ -19,54 +18,14 @@ from functions import *
 
 @bot.message_handler(commands=['start'])#Registra l'utente nel database
 def start(message):
-    global USER, EMAIL
     USER = message.chat.id
     EMAIL = ""
     db.collection('Utente').add({'nome': USER, 'email' : EMAIL})
-    bot.send_message(message.chat.id, "Benvenuto, io sono Geronimo utilizza i comandi per poter tracciare siti web e prodotti: ")
+    bot.send_message(message.chat.id, "Benvenuto, io sono Geronimo, utilizza i comandi per poter tracciare siti web e prodotti: ")
 
 
     
-# @bot.message_handler(func=urlCheck) #CONTROLLA CHE SIA UN URL E CHE SIA VALIDO
-# def mioSend(message):
-#     URL = message.text
-#     soup = get_soup(URL)
-#     price = "prezzo non trovato"
 
-#     patternAmazon = "amazon\.\w+\/.+"
-#     patternSubito = "subito.it\/\w+"
-#     patternEbay = "ebay\.\w+\/\w+"
-
-#     if re.search(patternAmazon, str(message)):
-#         if debug:
-#             bot.send_message(message.chat.id, "amazon")
-
-#         price = soup.find('span', class_="a-offscreen").get_text()
-#         bot.send_message(message.chat.id, "prezzo: " + price)
-
-
-#     elif re.search(patternEbay, str(message)): 
-#         if debug:
-#             bot.send_message(message.chat.id, "ebay")
-
-#         price = soup.find('span', id = 'prcIsum').get_text()
-#         bot.send_message(message.chat.id, "prezzo: " + price)
-
-    
-#     elif re.search(patternSubito, str(message)):
-#         if debug:
-#             bot.send_message(message.chat.id, "subito")
-
-#         price = soup.find('p', class_="index-module_price__N7M2x AdInfo_ad-info__price__tGg9h index-module_large__SUacX").get_text()
-#         bot.send_message(message.chat.id, "prezzo: " + price)
-
-
-    
-#     pricePattern="\d+((\.|\,)\d+)?"
-#     # numeric_price = re.match(pricePattern, price)
-#     # numeric_price = int(numeric_price)
-#     # if numeric_price > 0:
-#     #     print(numeric_price)
 
 
 
@@ -82,15 +41,17 @@ def list(message):
         if doc.get('sito') not in dict: #unique
             dict[doc.get('sito')] = doc.get('nome')
 
-  
-    for k in dict.keys():
-        tempButton = InlineKeyboardButton(text = dict[k], url = k)
-        keyboard.append([tempButton])
+    if len(dict) > 0:
+        for k in dict.keys():
+            tempButton = InlineKeyboardButton(text = dict[k], url = k)
+            keyboard.append([tempButton])
 
-    markup = InlineKeyboardMarkup(keyboard)
-    bot.send_message(message.chat.id, "Ecco la lista dei siti salvati:" ,reply_markup=markup)
+        markup = InlineKeyboardMarkup(keyboard)
+        bot.send_message(message.chat.id, "Ecco la lista dei siti salvati:" ,reply_markup=markup)
 
-
+    else:
+        bot.send_message(message.chat.id, "Al momento non hai salvato nessuna pagina web da monitorare, per aggiungere una pagina utilizza il comando /aggiungisito:" )
+      
 
    
 
@@ -117,41 +78,59 @@ def addStep2(message):
         
 def addStep3(message, urlDaSalvare):
 
-    # if nomeEsistente(message.text, message.chat.id):
-    #     msg =  bot.reply_to(message,"Hai già utilizzato il nome inserito, inseriscine uno nuovo:")
-    #     bot.register_next_step_handler(msg, addStep3, urlDaSalvare)
+    if(type(message.text) is str):
 
-    if uploadHtml(urlDaSalvare, message):
-        bot.reply_to(message, "Url aggiunto con successo 👍")
+        if uploadHtml(urlDaSalvare, message):
+            bot.reply_to(message, "Url aggiunto con successo 👍")
+        else:
+            bot.send_message(message.chat.id, "L'url inserito era già stato aggiunto 😁")
+
     else:
-        bot.send_message(message.chat.id, "L'url inserito era già stato aggiunto 😁")
+        bot.send_message(message.chat.id, "Il nome specificato non è valido 😕")
 
-    #except Exception as e:
-        # bot.send_message(message.chat.id, "Ops, qualcosa è andato storto 😕")
-        # print(e)
+
+
+
 
     
 
 #COMANDO /removeURL
 @bot.message_handler(commands=['rimuovisito'])
 def remove(message):
-    msg = bot.send_message(message.chat.id, "Bene, inviami il nome da te scelto o l'url del sito che vuoi ELIMINARE dalla lista:")
-    bot.register_next_step_handler(msg,removeStep2)
+    if len(db.collection("Utente-Sito").where("utente", "==", message.chat.id).get()) == 0:
+        bot.send_message(message.chat.id, "Al momento non hai salvato nessuna pagina web da monitorare, per aggiungere una pagina utilizza il comando /aggiungisito:")
 
-def removeStep2(message):
-    perUrl = db.collection('Utente-Sito').where("sito", "==", message.text).get()
-    perNome = db.collection('Utente-Sito').where("nome", "==", message.text).get()
-    docs = [*perUrl, *perNome]
-    for doc in docs:
-        key = doc.id
-        db.collection('Utente-Sito').document(key).delete()
-        bot.send_message(message.chat.id, f"Il sito memorizzato come '{doc.get('nome')}' è stato eliminato \n" + doc.get('sito'))
-        #break
+    else:
+        msg = bot.send_message(message.chat.id, "Bene, inviami il nome da te scelto o l'url del sito che vuoi ELIMINARE dalla lista:")
+        bot.register_next_step_handler(msg,removeStep2)
 
-#COMANDO /addProduct
+def removeStep2(message): #TODO da rivedere e fare senza foreach
+    try:
+        perUrl = db.collection('Utente-Sito').where("sito", "==", message.text).get()
+        perNome = db.collection('Utente-Sito').where("nome", "==", message.text).get()
+        docs = [*perUrl, *perNome]
+        if len(docs) > 0:
+            for doc in docs:
+                key = doc.id
+                db.collection('Utente-Sito').document(key).delete()
+                bot.send_message(message.chat.id, f"Il sito memorizzato come '{doc.get('nome')}' è stato eliminato \n" + doc.get('sito'))
+                break
+
+        else:    
+            bot.send_message(message.chat.id, "Il sito da te specificato non risulta presente nella lista 😕")
+
+    except:
+        bot.send_message(message.chat.id, "Il sito da te specificato non risulta presente nella lista 😕")
+        print("non rimosso")
+
 @bot.message_handler(commands=['aggiungiprodotto'])
-def addProduct(message):
-    pass
+def add(message):
+    
+    msg = bot.send_message(message.chat.id, "Bene, mandami qui di seguito l'URL del prodotto che vuoi monitorare: ")
+    bot.register_next_step_handler(msg, prodStep2)
+
+def prodStep2(message):
+    bot.send_message(message.chat.id, str(getProductprice(message.text)) + "€")
 
 #COMANDO /removeProduct
 @bot.message_handler(commands=['rimuoviprodotto'])
