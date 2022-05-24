@@ -73,15 +73,6 @@ def get_soup(url):
         print(response.status_code)
 
 
-def static_soup(soup) -> BeautifulSoup:
-    for s in soup.select('script'):
-        s.extract()
-    
-    for s in soup.select('meta'):
-        s.extract()
-
-    return soup
-
 def urlCheck(message):
     # pattern1 = r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.\w+\/?"
     # pattern2 = r"[-a-zA-Z0-9]{1,256}\.[a-zA-Z0-9()]{1,6}"
@@ -142,7 +133,11 @@ def uploadHtml(url, nomeCustom):
         #     bot.reply_to(message, str(e)) 
 
 
-
+def prezzoAbbassato(prodotto, obiettivo):
+    nuovoPrezzo = getProductprice(prodotto)
+    if nuovoPrezzo < obiettivo:
+        return nuovoPrezzo
+    return -1
 
 def paginaCambiata(url, storageId):
     newSoup = str(get_soup(url).prettify())
@@ -180,7 +175,7 @@ def paginaCambiata(url, storageId):
     print("SitoCambiato")
     return True
 
-def avvisaUtente(utente, url, nomeSito):
+def avvisaUtenteSito(utente, url, nomeSito):
     bot.send_message(utente, f"Il sito memorizzato come '{nomeSito}' ha subito dei cambiamenti: \n" + url)
     dbUser = db.collection('Utente').where('nome', '==', utente).get()[0]
     mailAddress = dbUser.get('email')
@@ -190,7 +185,18 @@ def avvisaUtente(utente, url, nomeSito):
     if NOTIFICA_EMAIL:
         inviaEmail(mailAddress,oggetto, contenuto)
 
-def checkAutomatico():
+def avvisaUtenteProdotto(user, prodotto, nomeProd, nuovoPrezzo):
+    bot.send_message(user, f"Il prezzo del prodotto memorizzato come '{nomeProd}' si è abbassato a {nuovoPrezzo}€: \n" + prodotto)
+    dbUser = db.collection('Utente').where('nome', '==', user).get()[0]
+    mailAddress = dbUser.get('email')
+    oggetto = "Abbassamento prezzo"
+    contenuto = f"Il prezzo del prodotto memorizzato come '{nomeProd}' si è abbassato a {nuovoPrezzo}€: \n" + prodotto
+
+    if NOTIFICA_EMAIL:
+        inviaEmail(mailAddress,oggetto, contenuto)
+
+
+def checkAutomaticoSito():
     utenteSito = db.collection('Utente-Sito').get()
     sitiCambiati = []
     for sito in utenteSito:
@@ -207,8 +213,27 @@ def checkAutomatico():
         nomeSito = utente.get('nome')
         
         if urlSalvato in sitiCambiati:
-            avvisaUtente(user, urlSalvato, nomeSito)
+            avvisaUtenteSito(user, urlSalvato, nomeSito)
 
+def checkAutomaticoProdotto():
+    utenteProdotto = db.collection('Utente-Prodotto').where('utente', "!=", "").get()
+    prodottiAbbassati = {}
+    for prodotto in utenteProdotto:
+        urlProdotto = prodotto.get('prodotto')
+        obiettivo = prodotto.get('obiettivo')
+        nuovoPrezzo = prezzoAbbassato(urlProdotto, obiettivo)
+        if nuovoPrezzo != -1:
+            prodottiAbbassati[urlProdotto] = nuovoPrezzo
+
+    for utente in utenteProdotto:
+        prodotto = utente.get('prodotto')
+        user = utente.get('utente')
+        nomeProd = utente.get('nome')
+
+
+        if prodotto in prodottiAbbassati:
+            nuovoPrezzo = prodottiAbbassati[prodotto]
+            avvisaUtenteProdotto(user, prodotto, nomeProd, nuovoPrezzo)
 
 def inviaEmail(destinatario, oggetto, contenuto):
     yagmail.SMTP(SENDING_EMAIL_USERNAME, SENDING_EMAIL_PASSWORD).send(destinatario, oggetto, contenuto)
@@ -257,5 +282,6 @@ class checkThread(Thread):
     def run(self):
         while True:
             print("running")
-            checkAutomatico()
+            checkAutomaticoSito()
+            checkAutomaticoProdotto()
             sleep(TIMEOUT)
