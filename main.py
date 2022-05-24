@@ -72,7 +72,7 @@ def addStep2(message):
 
     else:
         urlDaSalvare = message
-        msg = bot.reply_to(message, "Con che nome vorresti memorizzare questo link?") #todo: force reply?
+        msg = bot.reply_to(message, "Con che nome vorresti memorizzare questo link?") 
         bot.register_next_step_handler(msg, addStep3, urlDaSalvare)
  
         
@@ -104,7 +104,7 @@ def remove(message):
         msg = bot.send_message(message.chat.id, "Bene, inviami il nome da te scelto o l'url del sito che vuoi ELIMINARE dalla lista:")
         bot.register_next_step_handler(msg,removeStep2)
 
-def removeStep2(message): #TODO da rivedere e fare senza foreach
+def removeStep2(message): 
     try:
         perUrl = db.collection('Utente-Sito').where("sito", "==", message.text).get()
         perNome = db.collection('Utente-Sito').where("nome", "==", message.text).get()
@@ -119,7 +119,8 @@ def removeStep2(message): #TODO da rivedere e fare senza foreach
         else:    
             bot.send_message(message.chat.id, "Il sito da te specificato non risulta presente nella lista 😕")
 
-    except:
+    except Exception as e:
+        print(e)
         bot.send_message(message.chat.id, "Il sito da te specificato non risulta presente nella lista 😕")
         print("non rimosso")
 
@@ -132,6 +133,7 @@ def addProduct(message):
 
 def prodStep2(message):
     try:
+        prodotti = db.collection('Utente-Prodotto').where()
         prezzo = getProductprice(message.text)
         prodotto = message.text
         db.collection('Prodotto').add({'id': prodotto, 'prezzo': prezzo})
@@ -144,19 +146,28 @@ def prodStep2(message):
         bot.reply_to(message, "Mi dispiace ma non sono riuscito a recuparare il prezzo di questo prodotto 😕")
 
 def prodStep3(message, prodotto):
-    nome = message.text
-    prod = db.collection('Utente-Prodotto').where('prodotto',"==",prodotto).where('utente', '==', message.chat.id).get()[0]
-    key = prod.id
-    db.collection('Utente-Prodotto').document(key).update({'nome':nome})
-    msg = bot.send_message(message.chat.id, "Bene, infine mandami il prezzo obiettivo sotto il quale ti interesserebbe comprare il prodotto:")
-    bot.register_next_step_handler(msg, prodStep4,prodotto, nome)
+    if(type(message.text) is str):
+        nome = message.text
+        prod = db.collection('Utente-Prodotto').where('prodotto',"==",prodotto).where('utente', '==', message.chat.id).get()[0]
+        key = prod.id
+        db.collection('Utente-Prodotto').document(key).update({'nome':nome})
+        msg = bot.send_message(message.chat.id, "Bene, infine mandami il prezzo obiettivo sotto il quale ti interesserebbe comprare il prodotto:")
+        bot.register_next_step_handler(msg, prodStep4,prodotto, nome)
+
+    else:
+        bot.send_message(message.chat.id, "Il nome specificato non è valido 😕")
+    
 
 def prodStep4(message,prodotto, nome):
-    obiettivo = priceConverter(message.text)
-    prod = db.collection('Utente-Prodotto').where('prodotto',"==",prodotto).where('utente', '==', message.chat.id).get()[0]
-    key = prod.id
-    db.collection('Utente-Prodotto').document(key).update({'obiettivo':obiettivo})
-    bot.send_message(message.chat.id, f"Ottimo, il prodotto salvato come '{nome}' è stato registrato 👍 \n {prodotto}")
+    try:
+        obiettivo = priceConverter(message.text)
+        prod = db.collection('Utente-Prodotto').where('prodotto',"==",prodotto).where('utente', '==', message.chat.id).get()[0]
+        key = prod.id
+        db.collection('Utente-Prodotto').document(key).update({'obiettivo':obiettivo})
+        bot.send_message(message.chat.id, f"Ottimo, il prodotto salvato come '{nome}' è stato registrato 👍 \n {prodotto}")
+
+    except:
+        bot.send_message(message.chat.id, "Il prezzo specificato non è valido 😕")
 
 
 
@@ -170,9 +181,9 @@ def removeProduct(message):
 
     else:
         msg = bot.send_message(message.chat.id, "Bene, inviami il nome da te scelto o l'url del prodotto che vuoi ELIMINARE dalla lista:")
-        bot.register_next_step_handler(msg,removeStep2)
+        bot.register_next_step_handler(msg,removeProdStep2)
 
-def removeStep2(message): 
+def removeProdStep2(message): 
     try:
         perUrl = db.collection('Utente-Prodotto').where("prodotto", "==", message.text).get()
         perNome = db.collection('Utente-Prodotto').where("nome", "==", message.text).get()
@@ -312,7 +323,7 @@ def eliminaEmailStep2(message):
 
 
 
-@bot.message_handler(commands=['check'])
+@bot.message_handler(commands=['checksiti'])
 def checkPagine(message):
     utenteSito = db.collection('Utente-Sito').get()
     sitiCambiati = []
@@ -330,7 +341,30 @@ def checkPagine(message):
         nomeSito = utente.get('nome')
         
         if urlSalvato in sitiCambiati:
-            avvisaUtente(user, urlSalvato, nomeSito)
+            avvisaUtenteSito(user, urlSalvato, nomeSito)
+
+
+
+@bot.message_handler(commands=['checkprodotti'])
+def checkProdotto(message):
+    utenteProdotto = db.collection('Utente-Prodotto').where('utente', "!=", "").get()
+    prodottiAbbassati = {}
+    for prodotto in utenteProdotto:
+        urlProdotto = prodotto.get('prodotto')
+        obiettivo = prodotto.get('obiettivo')
+        nuovoPrezzo = prezzoAbbassato(urlProdotto, obiettivo)
+        if nuovoPrezzo != -1:
+            prodottiAbbassati[urlProdotto] = nuovoPrezzo
+
+    for utente in utenteProdotto:
+        prodotto = utente.get('prodotto')
+        user = utente.get('utente')
+        nomeProd = utente.get('nome')
+
+
+        if prodotto in prodottiAbbassati:
+            nuovoPrezzo = prodottiAbbassati[prodotto]
+            avvisaUtenteProdotto(user, prodotto, nomeProd, nuovoPrezzo)
 
 
 
