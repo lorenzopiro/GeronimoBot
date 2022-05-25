@@ -102,7 +102,7 @@ def uploadHtml(url, nomeCustom):
         # try:
         urlSito = url.text
         utente = url.chat.id
-        html = str(get_soup(urlSito).prettify())
+        html = str(get_soup(urlSito).prettify()) 
         #troncato = truncate_url(urlSito)
         
         
@@ -156,14 +156,11 @@ def paginaCambiata(url, storageId):
         print("Sito Uguale")
         return False
 
-    # else: #sostituisci la vecchia soup con la nuova e aggiorna la data dell'ultima modifica
-
-    #     handler = open(storageId, 'w', encoding='utf-8')
-    #     handler.write(str(newSoup))
-    #     handler.close()
-    #     storage.child(storagePath).delete(storageId)
-    #     storage.child(storagePath).put(storageId)
-        
+    else: #sostituisci la vecchia soup con la nuova e aggiorna la data dell'ultima modifica
+        handler = open(storageId, 'w', encoding='utf-8')
+        handler.write(str(newSoup))
+        handler.close()
+        storage.child(storagePath + storageId).put(storageId)        
 
 
     try: 
@@ -239,6 +236,7 @@ def inviaEmail(destinatario, oggetto, contenuto):
     yagmail.SMTP(SENDING_EMAIL_USERNAME, SENDING_EMAIL_PASSWORD).send(destinatario, oggetto, contenuto)
 
 def priceConverter(strPrice):
+    print(strPrice)
     pricePattern="(\d+((\.|\,)\d+)?)"
     try:
         numeric_price = re.search(pricePattern, strPrice).group(1).replace(".", "")
@@ -254,8 +252,10 @@ def getProductprice(urlProd):
     price = "prezzo non trovato"
 
     patternAmazon = "amazon\.\w+\/.+"
-    patternSubito = "subito.it\/\w+"
+    patternSubito = "subito\.it\/\w+"
     patternEbay = "ebay\.\w+\/\w+"
+    patternZalando = "zalando\.it/\w+"
+    patternVinted = "vinted\.it/\w+"
 
     if re.search(patternAmazon, str(urlProd)):
         price = soup.find('span', class_="a-offscreen").get_text()
@@ -268,8 +268,17 @@ def getProductprice(urlProd):
     elif re.search(patternSubito, str(urlProd)):
         price = soup.find('p', class_="index-module_price__N7M2x AdInfo_ad-info__price__tGg9h index-module_large__SUacX").get_text()
 
+    elif re.search(patternZalando, str(urlProd)):
+        price = soup.find('p', class_="RYghuO uqkIZw ka2E9k uMhVZi FxZV-M pVrzNP").get_text()
+
+    # elif re.search(patternVinted, str(urlProd)):
+    #     print("vinted")
+    #     price = soup.find('h1', class_="Text_text__QBn4- Text_heading__gV4um Text_left__3s3CR").get_text()
+
+    
+
     else:
-        return -1
+        raise Exception("Prezzo non trovato")
     
     numeric_price = priceConverter(price)    
 

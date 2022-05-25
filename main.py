@@ -133,7 +133,6 @@ def addProduct(message):
 
 def prodStep2(message):
     try:
-        prodotti = db.collection('Utente-Prodotto').where()
         prezzo = getProductprice(message.text)
         prodotto = message.text
         db.collection('Prodotto').add({'id': prodotto, 'prezzo': prezzo})
@@ -146,15 +145,19 @@ def prodStep2(message):
         bot.reply_to(message, "Mi dispiace ma non sono riuscito a recuparare il prezzo di questo prodotto 😕")
 
 def prodStep3(message, prodotto):
-    if(type(message.text) is str):
-        nome = message.text
-        prod = db.collection('Utente-Prodotto').where('prodotto',"==",prodotto).where('utente', '==', message.chat.id).get()[0]
-        key = prod.id
-        db.collection('Utente-Prodotto').document(key).update({'nome':nome})
-        msg = bot.send_message(message.chat.id, "Bene, infine mandami il prezzo obiettivo sotto il quale ti interesserebbe comprare il prodotto:")
-        bot.register_next_step_handler(msg, prodStep4,prodotto, nome)
+    try:
+        if(type(message.text) is str):
+            nome = message.text
+            prod = db.collection('Utente-Prodotto').where('prodotto',"==",prodotto).where('utente', '==', message.chat.id).get()[0]
+            key = prod.id
+            db.collection('Utente-Prodotto').document(key).update({'nome':nome})
+            msg = bot.send_message(message.chat.id, "Bene, infine mandami il prezzo obiettivo sotto il quale ti interesserebbe comprare il prodotto:")
+            bot.register_next_step_handler(msg, prodStep4,prodotto, nome)
 
-    else:
+        else:
+            bot.send_message(message.chat.id, "Il nome specificato non è valido 😕")
+    except Exception as e:
+        print(e)
         bot.send_message(message.chat.id, "Il nome specificato non è valido 😕")
     
 
