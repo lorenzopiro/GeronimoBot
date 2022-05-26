@@ -39,21 +39,9 @@ def start(message):
 #COMANDO /webList
 @bot.message_handler(commands=['listasiti'])
 def list(message):
-    dict = {}
-    docs = db.collection("Utente-Sito").where("utente", "==", message.chat.id).get()
-    keyboard = [] 
-
-    for doc in docs:
-        if doc.get('sito') not in dict: #unique
-            docData = db.collection('Sito').where('url', '==', doc.get('sito')).get()[0]
-            data = docData.get('data')
-            dict[doc.get('sito')] =f"{doc.get('nome')} - [{data}]"
-
-    if len(dict) > 0:
-        for k in dict.keys():
-            tempButton = InlineKeyboardButton(text = dict[k], url = k)
-            keyboard.append([tempButton])
-
+    keyboard = websitesListKeyboard(message)
+    
+    if len(keyboard) > 0:
         markup = InlineKeyboardMarkup(keyboard)
         bot.send_message(message.chat.id, "Ecco la lista dei siti salvati:" ,reply_markup=markup)
 
@@ -109,7 +97,9 @@ def remove(message):
         bot.send_message(message.chat.id, "Al momento non hai salvato nessuna pagina web da monitorare, per aggiungere una pagina utilizza il comando /aggiungisito:")
 
     else:
-        msg = bot.send_message(message.chat.id, "Bene, inviami il nome da te scelto o l'url del sito che vuoi ELIMINARE dalla lista:")
+        keyboard = websitesListKeyboard(message)
+        markup = InlineKeyboardMarkup(keyboard)
+        msg = bot.send_message(message.chat.id, "Bene, inviami il nome da te scelto o l'url del sito che vuoi ELIMINARE dalla lista:", reply_markup=markup)
         bot.register_next_step_handler(msg,removeStep2)
 
 def removeStep2(message): 
@@ -188,11 +178,13 @@ def prodStep4(message,prod):
 #COMANDO /removeProduct
 @bot.message_handler(commands=['rimuoviprodotto'])
 def removeProduct(message):
-    if len(db.collection("Utente-Sito").where("utente", "==", message.chat.id).get()) == 0:
+    if len(db.collection("Utente-Prodotto").where("utente", "==", message.chat.id).get()) == 0:
         bot.send_message(message.chat.id, "Al momento non hai salvato nessun prodotto, per aggiungere un prodotto da monitorare utilizza il comando /aggiungiprodotto:")
 
     else:
-        msg = bot.send_message(message.chat.id, "Bene, inviami il nome da te scelto o l'url del prodotto che vuoi ELIMINARE dalla lista:")
+        keyboard = productListKeyboard(message)
+        markup = InlineKeyboardMarkup(keyboard)
+        msg = bot.send_message(message.chat.id, "Bene, inviami il nome da te scelto o l'url del prodotto che vuoi ELIMINARE dalla lista:", reply_markup=markup)
         bot.register_next_step_handler(msg,removeProdStep2)
 
 def removeProdStep2(message): 
@@ -217,37 +209,15 @@ def removeProdStep2(message):
 #COMANDO /productsList
 @bot.message_handler(commands=['listaprodotti'])
 def productsList(message):
-    dict = {}
-    docs = db.collection("Utente-Prodotto").where("utente", "==", message.chat.id).get()
-    keyboard = [] 
+    keyboard = productListKeyboard(message)
 
-    for doc in docs:
-        Prodotto = db.collection('Prodotto').where('id','==', doc.get('prodotto')).get()[0]
-        pattern = "(\d+)\.(\d+)"
-        prezzo = str(Prodotto.get('prezzo'))
-        euro = str(re.search(pattern,prezzo).group(1))
-        centesimi = str(re.search(pattern,prezzo).group(2))
-        if centesimi == "0":
-            prezzo = euro
-        else:
-            prezzo = f"{euro},{centesimi}"
-
-        if doc.get('prodotto') not in dict: #unique
-            dict[doc.get('prodotto')] = f"{doc.get('nome')}  ({prezzo}€)"
-
-    if len(dict) > 0:
-        for k in dict.keys():
-            tempButton = InlineKeyboardButton(text = dict[k], url = k)
-            keyboard.append([tempButton])
-
+    if len(keyboard)>0:
         markup = InlineKeyboardMarkup(keyboard)
         bot.send_message(message.chat.id, "Ecco la lista dei prodotti salvati:" ,reply_markup=markup)
 
     else:
         bot.send_message(message.chat.id, "Al momento non hai salvato nessun prodotto da monitorare, per aggiungere una pagina utilizza il comando /aggiungiprodotto:" )
 
-
-    
 
 
 @bot.message_handler(commands=['registraemail'])

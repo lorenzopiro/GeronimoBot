@@ -193,7 +193,7 @@ def avvisaUtenteSito(utente, url, nomeSito):
     oggetto = "Cambiamento pagine"
     contenuto = f"Il sito memorizzato come '{nomeSito}' ha subito dei cambiamenti: \n" + url
 
-    if NOTIFICA_EMAIL:
+    if NOTIFICA_EMAIL and mailAddress!="":
         inviaEmail(mailAddress,oggetto, contenuto)
 
 def avvisaUtenteProdotto(user, prodotto, nomeProd, nuovoPrezzo):
@@ -203,7 +203,7 @@ def avvisaUtenteProdotto(user, prodotto, nomeProd, nuovoPrezzo):
     oggetto = "Abbassamento prezzo"
     contenuto = f"Il prezzo del prodotto memorizzato come '{nomeProd}' si è abbassato a {nuovoPrezzo}€: \n" + prodotto
 
-    if NOTIFICA_EMAIL:
+    if NOTIFICA_EMAIL and mailAddress!="":
         inviaEmail(mailAddress,oggetto, contenuto)
 
 
@@ -259,6 +259,50 @@ def priceConverter(strPrice):
     numeric_price = float(numeric_price)
     
     return numeric_price
+
+def productListKeyboard(message):
+    dict = {}
+    docs = db.collection("Utente-Prodotto").where("utente", "==", message.chat.id).get()
+    keyboard = [] 
+
+    for doc in docs:
+        Prodotto = db.collection('Prodotto').where('id','==', doc.get('prodotto')).get()[0]
+        pattern = "(\d+)\.(\d+)"
+        prezzo = str(Prodotto.get('prezzo'))
+        euro = str(re.search(pattern,prezzo).group(1))
+        centesimi = str(re.search(pattern,prezzo).group(2))
+        if centesimi == "0":
+            prezzo = euro
+        else:
+            prezzo = f"{euro},{centesimi}"
+
+        if doc.get('prodotto') not in dict: #unique
+            dict[doc.get('prodotto')] = f"{doc.get('nome')}  ({prezzo}€)"
+
+    if len(dict) > 0:
+        for k in dict.keys():
+            tempButton = InlineKeyboardButton(text = dict[k], url = k)
+            keyboard.append([tempButton])
+
+    return keyboard
+    
+def websitesListKeyboard(message):
+    dict = {}
+    docs = db.collection("Utente-Sito").where("utente", "==", message.chat.id).get()
+    keyboard = [] 
+
+    for doc in docs:
+        if doc.get('sito') not in dict: #unique
+            docData = db.collection('Sito').where('url', '==', doc.get('sito')).get()[0]
+            data = docData.get('data')
+            dict[doc.get('sito')] =f"{doc.get('nome')} - [{data}]"
+
+    if len(dict) > 0:
+        for k in dict.keys():
+            tempButton = InlineKeyboardButton(text = dict[k], url = k)
+            keyboard.append([tempButton])
+
+    return keyboard
 
 def getProductprice(urlProd):
     soup = get_soup(urlProd)
