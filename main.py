@@ -30,13 +30,7 @@ def start(message):
     bot.send_message(message.chat.id, "Benvenuto, io sono Geronimo, utilizza i comandi per poter tracciare siti web e prodotti: ")
 
 
-    
 
-
-
-
-
-#COMANDO /webList
 @bot.message_handler(commands=['listasiti'])
 def list(message):
     keyboard = websitesListKeyboard(message)
@@ -53,7 +47,6 @@ def list(message):
 
 
 
-#COMANDO /addURL
 @bot.message_handler(commands=['aggiungisito'])
 def add(message):
     
@@ -86,11 +79,8 @@ def addStep3(message, urlDaSalvare):
 
 
 
-
-
     
 
-#COMANDO /removeURL
 @bot.message_handler(commands=['rimuovisito'])
 def remove(message):
     if len(db.collection("Utente-Sito").where("utente", "==", message.chat.id).get()) == 0:
@@ -160,6 +150,9 @@ def prodStep3(message, prod):
 def prodStep4(message,prod):
     try:
         obiettivo = priceConverter(message.text)  
+        if obiettivo > prod['prezzo']:
+            bot.reply_to(message, "Il prodotto costa già meno del prezzo che hai specificato 😁")
+            return
         prod['obiettivo'] = obiettivo 
         db.collection('Utente-Prodotto').add({'utente' : prod['utente'],'prodotto': prod['prodotto'], 'nome': prod['nome'], 'obiettivo': prod['obiettivo']})
         db.collection('Prodotto').add({'id': prod['prodotto'], 'prezzo': prod['prezzo']})
@@ -172,10 +165,6 @@ def prodStep4(message,prod):
         
 
 
-
-
-
-#COMANDO /removeProduct
 @bot.message_handler(commands=['rimuoviprodotto'])
 def removeProduct(message):
     if len(db.collection("Utente-Prodotto").where("utente", "==", message.chat.id).get()) == 0:
@@ -206,7 +195,6 @@ def removeProdStep2(message):
         bot.send_message(message.chat.id, "Il prodotto da te specificato non risulta presente nella lista 😕")
 
 
-#COMANDO /productsList
 @bot.message_handler(commands=['listaprodotti'])
 def productsList(message):
     keyboard = productListKeyboard(message)
@@ -362,6 +350,8 @@ if __name__ == "__main__":
     ct = checkThread()
     #ct.start()
     bot.infinity_polling() 
+
+
 
 
 
