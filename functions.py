@@ -21,6 +21,7 @@ from firebase_admin import storage
 import yagmail
 import smtplib
 from email.mime.text import MIMEText
+from datetime import date
 
 
 NOTIFICA_EMAIL = False
@@ -114,7 +115,10 @@ def uploadHtml(url, nomeCustom):
             fh.write(html)
             fh.close()
             storage.child(storagePath + nomeFile).put(nomeFile)
-            db.collection('Sito').add({'url': urlSito, 'storageid': nomeFile})
+            today = date.today()
+            data = str(today.strftime("%d/%m/%y"))
+            print(data)
+            db.collection('Sito').add({'url': urlSito, 'storageid': nomeFile, 'data':data})
 
 
 
@@ -158,12 +162,16 @@ def paginaCambiata(url, storageId):
         return False
 
     else: 
-        fh = open("Vecchiosito", "w", encoding='utf-8')
-        fh.write(oldSoup)
-        fh.close()
-        fh2 = open("Nuovosito", "w", encoding='utf-8')
-        fh2.write(newSoup)
-        fh2.close()
+        # fh = open("Vecchiosito", "w", encoding='utf-8')
+        # fh.write(oldSoup)
+        # fh.close()
+        # fh2 = open("Nuovosito", "w", encoding='utf-8')
+        # fh2.write(newSoup)
+        # fh2.close()
+        today = date.today()
+        data = str(today.strftime("%d/%m/%y"))
+        key = db.collection('Sito').where('url', '==', url).get[0].id
+        db.collection('Sito').document(key).update({'data': data})
         handler = open(storageId, 'w', encoding='utf-8')
         handler.write(newSoup)
         handler.close()

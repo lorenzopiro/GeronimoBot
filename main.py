@@ -45,7 +45,9 @@ def list(message):
 
     for doc in docs:
         if doc.get('sito') not in dict: #unique
-            dict[doc.get('sito')] = doc.get('nome')
+            docData = db.collection('Sito').where('url', '==', doc.get('sito')).get()[0]
+            data = docData.get('data')
+            dict[doc.get('sito')] =f"{doc.get('nome')} - [{data}]"
 
     if len(dict) > 0:
         for k in dict.keys():
@@ -221,7 +223,15 @@ def productsList(message):
 
     for doc in docs:
         Prodotto = db.collection('Prodotto').where('id','==', doc.get('prodotto')).get()[0]
-        prezzo = Prodotto.get('prezzo')
+        pattern = "(\d+)\.(\d+)"
+        prezzo = str(Prodotto.get('prezzo'))
+        euro = str(re.search(pattern,prezzo).group(1))
+        centesimi = str(re.search(pattern,prezzo).group(2))
+        if centesimi == "0":
+            prezzo = euro
+        else:
+            prezzo = f"{euro},{centesimi}"
+
         if doc.get('prodotto') not in dict: #unique
             dict[doc.get('prodotto')] = f"{doc.get('nome')}  ({prezzo}€)"
 
