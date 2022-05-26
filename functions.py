@@ -197,6 +197,13 @@ def avvisaUtenteSito(utente, url, nomeSito):
         inviaEmail(mailAddress,oggetto, contenuto)
 
 def avvisaUtenteProdotto(user, prodotto, nomeProd, nuovoPrezzo):
+    pattern = "(\d+)\.(\d+)"
+    euro = str(re.search(pattern,str(nuovoPrezzo)).group(1))
+    centesimi = str(re.search(pattern,str(nuovoPrezzo)).group(2))
+    if centesimi == "0":
+        nuovoPrezzo = euro + ",00"
+    else:
+        nuovoPrezzo = f"{euro},{centesimi}"
     bot.send_message(user, f"Il prezzo del prodotto memorizzato come '{nomeProd}' si è abbassato a {nuovoPrezzo}€: \n" + prodotto)
     dbUser = db.collection('Utente').where('nome', '==', user).get()[0]
     mailAddress = dbUser.get('email')
@@ -272,7 +279,7 @@ def productListKeyboard(message):
         euro = str(re.search(pattern,prezzo).group(1))
         centesimi = str(re.search(pattern,prezzo).group(2))
         if centesimi == "0":
-            prezzo = euro
+            prezzo = euro + ",00"
         else:
             prezzo = f"{euro},{centesimi}"
 
