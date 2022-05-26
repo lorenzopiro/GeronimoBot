@@ -67,6 +67,7 @@ def get_soup(url):
    
     if response.ok:
         soup = BeautifulSoup(response.content, 'html.parser')
+        soup.prettify()
         return soup
 
     else:
@@ -102,7 +103,7 @@ def uploadHtml(url, nomeCustom):
         # try:
         urlSito = url.text
         utente = url.chat.id
-        html = str(get_soup(urlSito).prettify()) 
+        html = str(get_soup(urlSito)) 
         #troncato = truncate_url(urlSito)
         
         
@@ -110,7 +111,7 @@ def uploadHtml(url, nomeCustom):
         if len(s) == 0: #Se il sito non era già presente
             nomeFile = uuid.uuid4().hex
             fh = open(nomeFile, "w", encoding="utf-8")
-            fh.write(str(html))
+            fh.write(html)
             fh.close()
             storage.child(storagePath + nomeFile).put(nomeFile)
             db.collection('Sito').add({'url': urlSito, 'storageid': nomeFile})
@@ -119,7 +120,6 @@ def uploadHtml(url, nomeCustom):
 
             try: 
                 os.unlink(nomeFile)
-                print("rimossoUpload")
             except Exception as e:
                 print(e)
 
@@ -140,7 +140,7 @@ def prezzoAbbassato(prodotto, obiettivo):
     return -1
 
 def paginaCambiata(url, storageId):
-    newSoup = str(get_soup(url).prettify())
+    newSoup = str(get_soup(url))
     storage.child(storagePath + storageId).download("", storageId)
     fh=open(storageId, 'r', encoding="utf-8")
     oldSoup = fh.read()
@@ -148,17 +148,24 @@ def paginaCambiata(url, storageId):
     
 
     if newSoup == oldSoup:
+        print("Uguali")
         try: 
             os.unlink(storageId)
 
         except Exception as e:
             print(e)
-        print("Sito Uguale")
+
         return False
 
-    else: #sostituisci la vecchia soup con la nuova e aggiorna la data dell'ultima modifica
+    else: 
+        fh = open("Vecchiosito", "w", encoding='utf-8')
+        fh.write(oldSoup)
+        fh.close()
+        fh2 = open("Nuovosito", "w", encoding='utf-8')
+        fh2.write(newSoup)
+        fh2.close()
         handler = open(storageId, 'w', encoding='utf-8')
-        handler.write(str(newSoup))
+        handler.write(newSoup)
         handler.close()
         storage.child(storagePath + storageId).put(storageId)        
 
@@ -169,7 +176,6 @@ def paginaCambiata(url, storageId):
     except Exception as e:
         print(e)
 
-    print("SitoCambiato")
     return True
 
 def avvisaUtenteSito(utente, url, nomeSito):
@@ -236,7 +242,6 @@ def inviaEmail(destinatario, oggetto, contenuto):
     yagmail.SMTP(SENDING_EMAIL_USERNAME, SENDING_EMAIL_PASSWORD).send(destinatario, oggetto, contenuto)
 
 def priceConverter(strPrice):
-    print(strPrice)
     pricePattern="(\d+((\.|\,)\d+)?)"
     try:
         numeric_price = re.search(pricePattern, strPrice).group(1).replace(".", "")

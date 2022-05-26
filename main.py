@@ -20,7 +20,13 @@ from functions import *
 def start(message):
     USER = message.chat.id
     EMAIL = ""
-    db.collection('Utente').add({'nome': USER, 'email' : EMAIL})
+    tabelleUtente = db.collection('Utente').get()
+    users = []
+    for i in tabelleUtente:
+        users.append(i.get('nome'))
+
+    if USER not in users:
+        db.collection('Utente').add({'nome': USER, 'email' : EMAIL})
     bot.send_message(message.chat.id, "Benvenuto, io sono Geronimo, utilizza i comandi per poter tracciare siti web e prodotti: ")
 
 
@@ -122,37 +128,35 @@ def removeStep2(message):
     except Exception as e:
         print(e)
         bot.send_message(message.chat.id, "Il sito da te specificato non risulta presente nella lista 😕")
-        print("non rimosso")
 
 
 @bot.message_handler(commands=['aggiungiprodotto'])
 def addProduct(message):
-    
+    prod = {}
     msg = bot.send_message(message.chat.id, "Bene, mandami qui di seguito l'URL del prodotto che vuoi monitorare: ")
-    bot.register_next_step_handler(msg, prodStep2)
+    bot.register_next_step_handler(msg, prodStep2, prod)
 
-def prodStep2(message):
+def prodStep2(message, prod):
     try:
         prezzo = getProductprice(message.text)
         prodotto = message.text
-        db.collection('Prodotto').add({'id': prodotto, 'prezzo': prezzo})
-        db.collection('Utente-Prodotto').add({'prodotto':message.text, 'utente':message.chat.id})
+        prod['prodotto'] = prodotto
+        prod['utente'] = message.chat.id
+        prod['prezzo'] = prezzo
         msg = bot.send_message(message.chat.id, "Con che nome vorresti memorizzare questo prodotto?")
-        bot.register_next_step_handler(msg, prodStep3, prodotto)
+        bot.register_next_step_handler(msg, prodStep3, prod)
 
     except Exception as e:
         print(e)
         bot.reply_to(message, "Mi dispiace ma non sono riuscito a recuparare il prezzo di questo prodotto 😕")
 
-def prodStep3(message, prodotto):
+def prodStep3(message, prod):
     try:
         if(type(message.text) is str):
             nome = message.text
-            prod = db.collection('Utente-Prodotto').where('prodotto',"==",prodotto).where('utente', '==', message.chat.id).get()[0]
-            key = prod.id
-            db.collection('Utente-Prodotto').document(key).update({'nome':nome})
+            prod['nome'] = nome
             msg = bot.send_message(message.chat.id, "Bene, infine mandami il prezzo obiettivo sotto il quale ti interesserebbe comprare il prodotto:")
-            bot.register_next_step_handler(msg, prodStep4,prodotto, nome)
+            bot.register_next_step_handler(msg, prodStep4,prod)
 
         else:
             bot.send_message(message.chat.id, "Il nome specificato non è valido 😕")
@@ -161,16 +165,19 @@ def prodStep3(message, prodotto):
         bot.send_message(message.chat.id, "Il nome specificato non è valido 😕")
     
 
-def prodStep4(message,prodotto, nome):
+def prodStep4(message,prod):
     try:
-        obiettivo = priceConverter(message.text)
-        prod = db.collection('Utente-Prodotto').where('prodotto',"==",prodotto).where('utente', '==', message.chat.id).get()[0]
-        key = prod.id
-        db.collection('Utente-Prodotto').document(key).update({'obiettivo':obiettivo})
-        bot.send_message(message.chat.id, f"Ottimo, il prodotto salvato come '{nome}' è stato registrato 👍 \n {prodotto}")
+        obiettivo = priceConverter(message.text)  
+        prod['obiettivo'] = obiettivo 
+        db.collection('Utente-Prodotto').add({'utente' : prod['utente'],'prodotto': prod['prodotto'], 'nome': prod['nome'], 'obiettivo': prod['obiettivo']})
+        db.collection('Prodotto').add({'id': prod['prodotto'], 'prezzo': prod['prezzo']})
+        bot.send_message(message.chat.id, f"Ottimo, il prodotto salvato come '{prod['nome']}' è stato registrato 👍 \n {prod['prodotto']}")
 
-    except:
+    except Exception as e:
+        print(e)
         bot.send_message(message.chat.id, "Il prezzo specificato non è valido 😕")
+
+        
 
 
 
@@ -203,7 +210,6 @@ def removeProdStep2(message):
 
     except:
         bot.send_message(message.chat.id, "Il prodotto da te specificato non risulta presente nella lista 😕")
-        print("non rimosso")
 
 
 #COMANDO /productsList
@@ -372,6 +378,7 @@ def checkProdotto(message):
 
 
 if __name__ == "__main__":
+
     ct = checkThread()
     #ct.start()
     bot.infinity_polling() 
