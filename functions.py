@@ -75,6 +75,29 @@ def get_soup(url):
         print(response.status_code)
 
 
+def get_html(url):
+    response = requests.get(url, headers=HEADERS)
+
+   
+    if response.ok:
+        soup = BeautifulSoup(response.content, 'html.parser')
+        soup.prettify()
+        for s in soup.select('script'):
+            s.extract()
+
+        for m in soup.select('meta'):
+            m.extract()
+
+        soupString = str(soup).replace('\r','')
+        soupString = re.sub(r"nonce=\"[-a-zA-Z0-9@:%._\+~#=]+\"",'', soupString )
+        soupString = re.sub(r"src=\".+googleusercontent\.com\/.+\"",'', soupString )
+        
+        return soupString
+
+    else:
+        print(response.status_code)
+
+
 def urlCheck(message):
     # pattern1 = r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.\w+\/?"
     # pattern2 = r"[-a-zA-Z0-9]{1,256}\.[a-zA-Z0-9()]{1,6}"
@@ -104,7 +127,7 @@ def uploadHtml(url, nomeCustom):
         # try:
         urlSito = url.text
         utente = url.chat.id
-        html = str(get_soup(urlSito)) 
+        html = get_html(urlSito)
         #troncato = truncate_url(urlSito)
         
         
@@ -148,7 +171,7 @@ def prezzoAbbassato(prodotto, obiettivo):
     return -1
 
 def paginaCambiata(url, storageId):
-    newSoup = str(get_soup(url))
+    newSoup = get_html(url)
     storage.child(storagePath + storageId).download("", storageId)
     fh=open(storageId, 'r', encoding="utf-8")
     oldSoup = fh.read()
