@@ -90,7 +90,7 @@ def get_html(url):
 
         soupString = str(soup).replace('\r','')
         soupString = re.sub(r"nonce=\"[-a-zA-Z0-9@:%._\+~#=]+\"",'', soupString )
-        soupString = re.sub(r"src=\".+googleusercontent\.com\/.+\"",'', soupString )
+        soupString = re.sub(r"=\".+googleusercontent\.com\/.+\"",'', soupString )
         
         return soupString
 
