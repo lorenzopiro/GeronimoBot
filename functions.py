@@ -46,14 +46,7 @@ auth = firebase.auth()
 storage = firebase.storage()
 storagePath = "Soups/"
 
-#UPLOAD
-#storage.child(cloudfilename).put(filename)
-#DOWNLOAD
-#storage.child(cloudfilename).download(path, filename)
 
-#LETTURA SENZA DOWNLOAD
-#storage.child(cloudfilename).get_url(None)
-#f = urllib.request.urlopen(url).read
 bot = telebot.TeleBot(API_KEY)   
 
 
@@ -179,7 +172,6 @@ def paginaCambiata(url, storageId):
     
 
     if newSoup == oldSoup:
-        print("Uguali")
         try: 
             os.unlink(storageId)
 
