@@ -37,7 +37,7 @@ def list(message):
     
     if len(keyboard) > 0:
         markup = InlineKeyboardMarkup(keyboard)
-        bot.send_message(message.chat.id, "Ecco la lista dei siti salvati:" ,reply_markup=markup)
+        bot.send_message(message.chat.id, "Ecco la lista dei siti salvati:", reply_markup=markup)
 
     else:
         bot.send_message(message.chat.id, "Al momento non hai salvato nessuna pagina web da monitorare, per aggiungere una pagina utilizza il comando /aggiungisito:" )
