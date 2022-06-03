@@ -350,7 +350,6 @@ if __name__ == "__main__":
     wct = pageCheckThread()
     pct = productCheckThread()
     #wct.start()
-    #pct.start()
     bot.infinity_polling() 
 
 

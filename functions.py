@@ -339,6 +339,7 @@ def getProductprice(urlProd):
     patternSubito = "subito\.it\/\w+"
     patternZalando = "zalando\.it/\w+"
     patternEprice = "eprice\.it/\w+"
+    
 
 
     if re.search(patternAmazon, str(urlProd)):
