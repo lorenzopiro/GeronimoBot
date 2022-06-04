@@ -79,7 +79,6 @@ def addStep3(message, urlDaSalvare):
 
 
 
-    
 
 @bot.message_handler(commands=['rimuovisito'])
 def remove(message):
@@ -122,6 +121,12 @@ def prodStep2(message, prod):
     try:
         prezzo = getProductprice(message.text)
         prodotto = message.text
+        prodotti = db.collection('Utente-Prodotto').where('utente', '==', message.chat.id).get()
+        for p in prodotti:
+            key = p.id
+            if prodotto == db.collection('Utente-Prodotto').document(key).get().get('prodotto'):
+                bot.send_message(message.chat.id, "Il prodotto da te specificato era già stato inserito 🙂👌")
+                return
         prod['prodotto'] = prodotto
         prod['utente'] = message.chat.id
         prod['prezzo'] = prezzo
@@ -346,11 +351,10 @@ def checkProdotto(message):
 
 
 if __name__ == "__main__":
-
     wct = pageCheckThread()
     pct = productCheckThread()
-    #wct.start()
-    #pct.start()
+    wct.start()
+    pct.start()
     bot.infinity_polling() 
 
 

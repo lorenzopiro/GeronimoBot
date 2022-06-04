@@ -24,7 +24,7 @@ from email.mime.text import MIMEText
 from datetime import date
 
 
-NOTIFICA_EMAIL = False
+NOTIFICA_EMAIL = True
 
 SENDING_EMAIL_USERNAME = creds.SENDING_EMAIL_USERNAME
 SENDING_EMAIL_PASSWORD = creds.SENDING_EMAIL_PASSWORD 
@@ -33,7 +33,7 @@ TIMEOUT = 300
 
 debug = False
 
-cred = credentials.Certificate("serviceAccountKey.json")
+cred = credentials.Certificate("Geronimo/serviceAccountKey.json")
 firebase_admin.initialize_app(cred)
 
 db = firestore.client()
@@ -133,7 +133,6 @@ def uploadHtml(url, nomeCustom):
             storage.child(storagePath + nomeFile).put(nomeFile)
             today = date.today()
             data = str(today.strftime("%d/%m/%y"))
-            print(data)
             db.collection('Sito').add({'url': urlSito, 'storageid': nomeFile, 'data':data})
 
 
@@ -230,12 +229,11 @@ def avvisaUtenteProdotto(user, prodotto, nomeProd, nuovoPrezzo):
     mailAddress = dbUser.get('email')
     
     if NOTIFICA_EMAIL and mailAddress!="":
-        print(mailAddress)
         inviaEmail(mailAddress, oggetto, contenuto)
 
 
 def checkAutomaticoSito():
-    utenteSito = db.collection('Utente-Sito').where('utente', '!=', '').where('sito', '!=', '').get()
+    utenteSito = db.collection('Utente-Sito').get()
     sitiCambiati = []
     for sito in utenteSito:
         urlSito = sito.get('sito')
@@ -254,7 +252,7 @@ def checkAutomaticoSito():
             avvisaUtenteSito(user, urlSalvato, nomeSito)
 
 def checkAutomaticoProdotto():
-    utenteProdotto = db.collection('Utente-Prodotto').where('utente', "!=", "").where('prodotto', '!=', '').get()
+    utenteProdotto = db.collection('Utente-Prodotto').where('utente', "!=", "").get()
     prodottiAbbassati = {}
     for prodotto in utenteProdotto:
         urlProdotto = prodotto.get('prodotto')
