@@ -43,9 +43,6 @@ def list(message):
         bot.send_message(message.chat.id, "Al momento non hai salvato nessuna pagina web da monitorare, per aggiungere una pagina utilizza il comando /aggiungisito:" )
       
 
-   
-
-
 
 @bot.message_handler(commands=['aggiungisito'])
 def add(message):
@@ -309,6 +306,7 @@ def eliminaEmailStep2(message):
 def checkPagine(message):
     utenteSito = db.collection('Utente-Sito').get()
     sitiCambiati = []
+    change = False
     for sito in utenteSito:
         urlSito = sito.get('sito')
         s = db.collection('Sito').where('url',"==",urlSito).get()
@@ -316,6 +314,7 @@ def checkPagine(message):
         
         if paginaCambiata(urlSito, storageid):
             sitiCambiati.append(urlSito)
+            change = True
 
     for utente in utenteSito:
         urlSalvato = utente.get('sito')
@@ -325,17 +324,22 @@ def checkPagine(message):
         if urlSalvato in sitiCambiati:
             avvisaUtenteSito(user, urlSalvato, nomeSito)
 
+    if not change:
+        bot.send_message(message.chat.id, "Non sono stati rilevati cambiamenti sulle pagine salvate")
+
 
 
 @bot.message_handler(commands=['checkprodotti'])
 def checkProdotto(message):
     utenteProdotto = db.collection('Utente-Prodotto').where('utente', "!=", "").get()
     prodottiAbbassati = {}
+    change = False
     for prodotto in utenteProdotto:
         urlProdotto = prodotto.get('prodotto')
         obiettivo = prodotto.get('obiettivo')
         nuovoPrezzo = prezzoAbbassato(urlProdotto, obiettivo)
         if nuovoPrezzo != -1:
+            change = True
             prodottiAbbassati[urlProdotto] = nuovoPrezzo
 
     for utente in utenteProdotto:
@@ -347,6 +351,9 @@ def checkProdotto(message):
         if prodotto in prodottiAbbassati:
             nuovoPrezzo = prodottiAbbassati[prodotto]
             avvisaUtenteProdotto(user, prodotto, nomeProd, nuovoPrezzo)
+
+    if not change:
+        bot.send_message(message.chat.id, "Non sono stati rilevati cambiamenti sui prodotti salvati")
 
 
 

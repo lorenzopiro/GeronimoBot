@@ -82,8 +82,10 @@ def get_html(url):
             m.extract()
 
         soupString = str(soup).replace('\r','')
-        soupString = re.sub(r"nonce=\"[-a-zA-Z0-9@:%._\+~#=]+\"",'', soupString )
-        soupString = re.sub(r"=\".+googleusercontent\.com\/.+\"",'', soupString )
+        soupString = re.sub(r"nonce=\"[-a-zA-Z0-9@:%._\+~#=]+?\"",'', soupString )
+        soupString = re.sub(r"=\"https:\/\/lh\d\.googleusercontent\.com\/.+?\"",'', soupString )
+        soupString = re.sub(r"=\"https:\/\/www\.gstatic.+?\"",'', soupString )
+        
         
         return soupString
 
@@ -180,12 +182,12 @@ def paginaCambiata(url, storageId):
         return False
 
     else: 
-        # fh = open("Vecchiosito", "w", encoding='utf-8')
-        # fh.write(oldSoup)
-        # fh.close()
-        # fh2 = open("Nuovosito", "w", encoding='utf-8')
-        # fh2.write(newSoup)
-        # fh2.close()
+        fh = open("Vecchiosito", "w", encoding='utf-8')
+        fh.write(oldSoup)
+        fh.close()
+        fh2 = open("Nuovosito", "w", encoding='utf-8')
+        fh2.write(newSoup)
+        fh2.close()
         today = date.today()
         data = str(today.strftime("%d/%m/%y"))
         key = db.collection('Sito').where('url', '==', url).get()[0].id
