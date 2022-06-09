@@ -98,7 +98,7 @@ def urlCheck(message):
     # pattern2 = r"[-a-zA-Z0-9]{1,256}\.[a-zA-Z0-9()]{1,6}"
     # if re.match(pattern1, message.text) or re.match(pattern2, message.text):
     try:
-        if message.entities[0].type == "url":
+        if message.entities[0].type == "url" or message.entities[1].type == "url" or message.entities[2].type == "url":
             return True
         
     except:
@@ -200,6 +200,7 @@ def paginaCambiata(url, storageId):
 
     try: 
         os.unlink(storageId)
+
 
     except Exception as e:
         print(e)

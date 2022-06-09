@@ -52,7 +52,6 @@ def add(message):
 
  
 def addStep2(message):
-    
     if not urlCheck(message):
         bot.reply_to(message, "Questo url non è valido ☹")
 
@@ -116,8 +115,9 @@ def addProduct(message):
 
 def prodStep2(message, prod):
     try:
-        prezzo = getProductprice(message.text)
-        prodotto = message.text
+        pattern = r"(https?:\/\/www\..*)\s?"
+        prodotto = str(re.search(pattern, message.text).group(1))
+        prezzo = getProductprice(prodotto)
         prodotti = db.collection('Utente-Prodotto').where('utente', '==', message.chat.id).get()
         for p in prodotti:
             key = p.id
@@ -362,7 +362,7 @@ if __name__ == "__main__":
     pct = productCheckThread()
     wct.start()
     pct.start()
-    bot.infinity_polling() 
+    bot.infinity_polling(60) 
 
 
 
