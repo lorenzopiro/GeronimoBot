@@ -52,8 +52,17 @@ def add(message):
 
  
 def addStep2(message):
+    siti = db.collection('Utente-Sito').where('utente','==',message.chat.id).get()
+
+    for s in siti:
+        key = s.id
+        if message.text == db.collection('Utente-Sito').document(key).get().get('sito'):
+            bot.send_message(message.chat.id, "L'URL indicato era già stato memorizzato 🙂👌")
+            return
+
     if not urlCheck(message):
         bot.reply_to(message, "Questo url non è valido ☹")
+
 
     else:
         urlDaSalvare = message
@@ -115,7 +124,7 @@ def addProduct(message):
 
 def prodStep2(message, prod):
     try:
-        pattern = r"(https?:\/\/www\..*)\s?"
+        pattern = r"(https?:\/\/\w+\.\w+.*)\s?"
         prodotto = str(re.search(pattern, message.text).group(1))
         prezzo = getProductprice(prodotto)
         prodotti = db.collection('Utente-Prodotto').where('utente', '==', message.chat.id).get()

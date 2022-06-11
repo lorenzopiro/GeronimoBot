@@ -337,13 +337,14 @@ def getProductprice(urlProd):
     price = "prezzo non trovato"
 
     patternAmazon = "amazon\.\w+\/.+"
+    patternAmazon2 = "https?:\/\/amzn\.\w+/.+"
     patternSubito = "subito\.it\/\w+"
     patternZalando = "zalando\.it/\w+"
     patternEprice = "eprice\.it/\w+"
     
 
 
-    if re.search(patternAmazon, str(urlProd)):
+    if re.search(patternAmazon, str(urlProd)) or re.search(patternAmazon2, str(urlProd)):
         price = soup.find('span', class_="a-offscreen").get_text()
     
     elif re.search(patternSubito, str(urlProd)):
