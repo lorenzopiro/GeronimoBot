@@ -126,6 +126,7 @@ def prodStep2(message, prod):
     try:
         pattern = r"(https?:\/\/\w+\.\w+.*)\s?"
         prodotto = str(re.search(pattern, message.text).group(1))
+        print(prodotto)
         prezzo = getProductprice(prodotto)
         prodotti = db.collection('Utente-Prodotto').where('utente', '==', message.chat.id).get()
         for p in prodotti:
