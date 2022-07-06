@@ -143,7 +143,7 @@ def prodStep2(message, prod):
     except Exception as e:
         print(e)
         bot.reply_to(message, "Mi dispiace ma non sono riuscito a recuparare il prezzo di questo prodotto 😕")
-
+       
 def prodStep3(message, prod):
     try:
         if(type(message.text) is str):

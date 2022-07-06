@@ -33,7 +33,7 @@ TIMEOUT = 300
 
 debug = False
 
-cred = credentials.Certificate("serviceAccountKey.json")
+cred = credentials.Certificate(creds.PATH)
 firebase_admin.initialize_app(cred)
 
 db = firestore.client()
